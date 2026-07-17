@@ -1,0 +1,182 @@
+{
+  "receipt_type": "lal_oracle_phase_comparison",
+  "belief_moved": false,
+  "generated_at": "2026-07-16T11:36:28.617328+00:00",
+  "reference": "LALSimulation IMRPhenomD (lalsuite 7.26.15, isolated venv)",
+  "metric": "noise-weighted phase match (common amplitude, aLIGO design PSD, max over time+phase)",
+  "declared_deviations": "1.5PN-only spin sector, anchor-QNM (not Paper-1 fits), single chi_eff",
+  "rows": [
+    {
+      "m1": 36.0,
+      "m2": 29.0,
+      "chi_eff": 0.0,
+      "m_total": 65.0,
+      "band_hz": [
+        20.0,
+        624.5
+      ],
+      "phase_match": 0.9962,
+      "phase_resid_rms_rad_inspiral": 0.0079,
+      "phase_resid_rms_rad_merger": 0.01
+    },
+    {
+      "m1": 30.0,
+      "m2": 30.0,
+      "chi_eff": 0.0,
+      "m_total": 60.0,
+      "band_hz": [
+        20.0,
+        676.6
+      ],
+      "phase_match": 0.98992,
+      "phase_resid_rms_rad_inspiral": 0.0074,
+      "phase_resid_rms_rad_merger": 0.0096
+    },
+    {
+      "m1": 60.0,
+      "m2": 40.0,
+      "chi_eff": 0.0,
+      "m_total": 100.0,
+      "band_hz": [
+        20.0,
+        405.9
+      ],
+      "phase_match": 0.99992,
+      "phase_resid_rms_rad_inspiral": 0.0095,
+      "phase_resid_rms_rad_merger": 0.0107
+    },
+    {
+      "m1": 50.0,
+      "m2": 45.0,
+      "chi_eff": 0.0,
+      "m_total": 95.0,
+      "band_hz": [
+        20.0,
+        427.2
+      ],
+      "phase_match": 0.97451,
+      "phase_resid_rms_rad_inspiral": 0.008,
+      "phase_resid_rms_rad_merger": 0.0096
+    },
+    {
+      "m1": 50.0,
+      "m2": 40.0,
+      "chi_eff": 0.2,
+      "m_total": 90.0,
+      "band_hz": [
+        20.0,
+        451.0
+      ],
+      "phase_match": 0.9777,
+      "phase_resid_rms_rad_inspiral": 0.1496,
+      "phase_resid_rms_rad_merger": 0.0513
+    },
+    {
+      "m1": 36.0,
+      "m2": 30.0,
+      "chi_eff": 0.2,
+      "m_total": 66.0,
+      "band_hz": [
+        20.0,
+        615.0
+      ],
+      "phase_match": 0.98864,
+      "phase_resid_rms_rad_inspiral": 0.2834,
+      "phase_resid_rms_rad_merger": 0.0514
+    },
+    {
+      "m1": 70.0,
+      "m2": 50.0,
+      "chi_eff": 0.2,
+      "m_total": 120.0,
+      "band_hz": [
+        20.0,
+        338.2
+      ],
+      "phase_match": 0.99743,
+      "phase_resid_rms_rad_inspiral": 0.0647,
+      "phase_resid_rms_rad_merger": 0.0496
+    },
+    {
+      "m1": 45.0,
+      "m2": 40.0,
+      "chi_eff": 0.3,
+      "m_total": 85.0,
+      "band_hz": [
+        20.0,
+        477.5
+      ],
+      "phase_match": 0.94782,
+      "phase_resid_rms_rad_inspiral": 0.2413,
+      "phase_resid_rms_rad_merger": 0.0977
+    },
+    {
+      "m1": 80.0,
+      "m2": 70.0,
+      "chi_eff": 0.3,
+      "m_total": 150.0,
+      "band_hz": [
+        20.0,
+        270.5
+      ],
+      "phase_match": 0.96204,
+      "phase_resid_rms_rad_inspiral": 0.0853,
+      "phase_resid_rms_rad_merger": 0.1046
+    },
+    {
+      "m1": 60.0,
+      "m2": 55.0,
+      "chi_eff": 0.4,
+      "m_total": 115.0,
+      "band_hz": [
+        20.0,
+        352.9
+      ],
+      "phase_match": 0.98951,
+      "phase_resid_rms_rad_inspiral": 0.1565,
+      "phase_resid_rms_rad_merger": 0.1845
+    },
+    {
+      "m1": 65.0,
+      "m2": 55.0,
+      "chi_eff": 0.4,
+      "m_total": 120.0,
+      "band_hz": [
+        20.0,
+        338.2
+      ],
+      "phase_match": 0.99402,
+      "phase_resid_rms_rad_inspiral": 0.1441,
+      "phase_resid_rms_rad_merger": 0.1781
+    },
+    {
+      "m1": 40.0,
+      "m2": 35.0,
+      "chi_eff": 0.5,
+      "m_total": 75.0,
+      "band_hz": [
+        20.0,
+        541.2
+      ],
+      "phase_match": 0.94626,
+      "phase_resid_rms_rad_inspiral": 0.4722,
+      "phase_resid_rms_rad_merger": 0.3172
+    },
+    {
+      "m1": 55.0,
+      "m2": 48.0,
+      "chi_eff": 0.6,
+      "m_total": 103.0,
+      "band_hz": [
+        20.0,
+        394.0
+      ],
+      "phase_match": 0.91751,
+      "phase_resid_rms_rad_inspiral": 0.3538,
+      "phase_resid_rms_rad_merger": 0.6918
+    }
+  ],
+  "median_phase_match": 0.98864,
+  "min_phase_match": 0.91751,
+  "receipt_sha256": "69c138b0a0ec3e79f34f6893c2920129277323c1bffde6077ce00d75f543897a"
+}

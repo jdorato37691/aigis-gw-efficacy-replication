@@ -1,0 +1,25 @@
+# Isolated lal_venv package list (python 3.13.12)
+# captured via: uv pip list --format=freeze
+# Provides lalsuite/lalsimulation for the external oracle grid
+# (lal_oracle_compare.py). Never install lalsuite into the main .venv.
+astropy==8.0.1
+astropy-iers-data==0.2026.7.13.0.54.2
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.63.0
+igwn-ligolw==2.1.1
+igwn-segments==2.1.1
+kiwisolver==1.5.0
+lalsuite==7.26.15
+lscsoft-glue==4.1.1
+matplotlib==3.11.0
+numpy==2.5.1
+packaging==26.2
+pillow==12.3.0
+pyerfa==2.0.1.5
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+pyyaml==6.0.3
+scipy==1.18.0
+six==1.17.0
+tqdm==4.68.4

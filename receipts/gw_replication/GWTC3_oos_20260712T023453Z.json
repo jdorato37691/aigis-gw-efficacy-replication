@@ -1,0 +1,252 @@
+{
+  "receipt_type": "gwtc3_oos_study",
+  "preregistration": "docs/research/preregistrations/2026-07-12-gwtc3-out-of-sample.md",
+  "generated_at": "2026-07-12T02:34:53.652060+00:00",
+  "rows": [
+    {
+      "event": "GW200316_215756",
+      "m_det": 25.5,
+      "chi_eff": 0.13,
+      "published_snr": 10.3,
+      "r_hat": 0.849,
+      "offsource_max": 6.187,
+      "recovered_snr": 7.848,
+      "recovery_fraction": 0.762,
+      "abs_error_vs_r_hat": 0.087,
+      "status": "measured"
+    },
+    {
+      "event": "GW200311_115853",
+      "m_det": 76.1,
+      "chi_eff": -0.02,
+      "published_snr": 17.8,
+      "r_hat": 0.428,
+      "offsource_max": 5.398,
+      "recovered_snr": 5.812,
+      "recovery_fraction": 0.327,
+      "abs_error_vs_r_hat": 0.101,
+      "status": "measured"
+    },
+    {
+      "event": "GW200302_015811",
+      "m_det": 74.0,
+      "chi_eff": 0.01,
+      "published_snr": 10.8,
+      "r_hat": 0.428,
+      "status": "data_unavailable"
+    },
+    {
+      "event": "GW200225_060421",
+      "m_det": 40.6,
+      "chi_eff": -0.12,
+      "published_snr": 12.5,
+      "r_hat": 0.554,
+      "offsource_max": 6.193,
+      "recovered_snr": 8.203,
+      "recovery_fraction": 0.656,
+      "abs_error_vs_r_hat": 0.102,
+      "status": "measured"
+    },
+    {
+      "event": "GW200224_222234",
+      "m_det": 96.0,
+      "chi_eff": 0.1,
+      "published_snr": 20.0,
+      "r_hat": 0.428,
+      "offsource_max": 9.774,
+      "status": "instrument_invalid_no_verdict"
+    },
+    {
+      "event": "GW200220_124850",
+      "m_det": 110.9,
+      "chi_eff": -0.07,
+      "published_snr": 8.5,
+      "r_hat": 0.21,
+      "offsource_max": 5.805,
+      "recovered_snr": 2.194,
+      "recovery_fraction": 0.258,
+      "abs_error_vs_r_hat": 0.048,
+      "status": "measured"
+    },
+    {
+      "event": "GW200219_094415",
+      "m_det": 102.7,
+      "chi_eff": -0.08,
+      "published_snr": 10.7,
+      "r_hat": 0.21,
+      "offsource_max": 5.611,
+      "recovered_snr": 2.552,
+      "recovery_fraction": 0.239,
+      "abs_error_vs_r_hat": 0.029,
+      "status": "measured"
+    },
+    {
+      "event": "GW200202_154313",
+      "m_det": 19.0,
+      "chi_eff": 0.04,
+      "published_snr": 10.8,
+      "r_hat": 0.849,
+      "offsource_max": 6.276,
+      "recovered_snr": 9.503,
+      "recovery_fraction": 0.88,
+      "abs_error_vs_r_hat": 0.031,
+      "status": "measured"
+    },
+    {
+      "event": "GW200128_022011",
+      "m_det": 116.7,
+      "chi_eff": 0.12,
+      "published_snr": 10.6,
+      "r_hat": 0.21,
+      "offsource_max": 4.953,
+      "recovered_snr": 4.697,
+      "recovery_fraction": 0.443,
+      "abs_error_vs_r_hat": 0.233,
+      "status": "measured"
+    },
+    {
+      "event": "GW200112_155838",
+      "m_det": 79.2,
+      "chi_eff": 0.06,
+      "published_snr": 19.8,
+      "r_hat": 0.428,
+      "status": "data_unavailable"
+    },
+    {
+      "event": "GW191230_180458",
+      "m_det": 146.0,
+      "chi_eff": -0.05,
+      "published_snr": 10.4,
+      "r_hat": 0.21,
+      "offsource_max": 3.451,
+      "recovered_snr": 2.639,
+      "recovery_fraction": 0.254,
+      "abs_error_vs_r_hat": 0.044,
+      "status": "measured"
+    },
+    {
+      "event": "GW191222_033537",
+      "m_det": 120.5,
+      "chi_eff": -0.04,
+      "published_snr": 12.5,
+      "r_hat": 0.21,
+      "offsource_max": 5.165,
+      "recovered_snr": 3.719,
+      "recovery_fraction": 0.298,
+      "abs_error_vs_r_hat": 0.088,
+      "status": "measured"
+    },
+    {
+      "event": "GW191216_213338",
+      "m_det": 21.2,
+      "chi_eff": 0.11,
+      "published_snr": 18.6,
+      "r_hat": 0.849,
+      "status": "data_unavailable"
+    },
+    {
+      "event": "GW191215_223052",
+      "m_det": 58.1,
+      "chi_eff": -0.04,
+      "published_snr": 11.2,
+      "r_hat": 0.554,
+      "offsource_max": 5.945,
+      "recovered_snr": 5.483,
+      "recovery_fraction": 0.49,
+      "abs_error_vs_r_hat": 0.064,
+      "status": "measured"
+    },
+    {
+      "event": "GW191204_171526",
+      "m_det": 22.7,
+      "chi_eff": 0.16,
+      "published_snr": 17.4,
+      "r_hat": 0.849,
+      "offsource_max": 6.705,
+      "recovered_snr": 11.408,
+      "recovery_fraction": 0.656,
+      "abs_error_vs_r_hat": 0.193,
+      "status": "measured"
+    },
+    {
+      "event": "GW191204_110529",
+      "m_det": 62.3,
+      "chi_eff": 0.05,
+      "published_snr": 8.9,
+      "r_hat": 0.554,
+      "offsource_max": 16.202,
+      "status": "instrument_invalid_no_verdict"
+    },
+    {
+      "event": "GW191129_134029",
+      "m_det": 20.2,
+      "chi_eff": 0.06,
+      "published_snr": 13.1,
+      "r_hat": 0.849,
+      "offsource_max": 6.15,
+      "recovered_snr": 10.774,
+      "recovery_fraction": 0.822,
+      "abs_error_vs_r_hat": 0.027,
+      "status": "measured"
+    },
+    {
+      "event": "GW191127_050227",
+      "m_det": 120.9,
+      "chi_eff": 0.18,
+      "published_snr": 9.2,
+      "r_hat": 0.21,
+      "offsource_max": 5.063,
+      "recovered_snr": 3.661,
+      "recovery_fraction": 0.398,
+      "abs_error_vs_r_hat": 0.188,
+      "status": "measured"
+    },
+    {
+      "event": "GW191126_115259",
+      "m_det": 26.5,
+      "chi_eff": 0.21,
+      "published_snr": 8.3,
+      "r_hat": 0.849,
+      "offsource_max": 5.843,
+      "recovered_snr": 6.211,
+      "recovery_fraction": 0.748,
+      "abs_error_vs_r_hat": 0.101,
+      "status": "measured"
+    },
+    {
+      "event": "GW191109_010717",
+      "m_det": 140.0,
+      "chi_eff": -0.29,
+      "published_snr": 17.3,
+      "r_hat": 0.21,
+      "offsource_max": 4.324,
+      "recovered_snr": 1.69,
+      "recovery_fraction": 0.098,
+      "abs_error_vs_r_hat": 0.112,
+      "status": "measured"
+    }
+  ],
+  "n_measured": 15,
+  "excluded": [
+    "GW200302_015811",
+    "GW200224_222234",
+    "GW200112_155838",
+    "GW191216_213338",
+    "GW191204_110529"
+  ],
+  "predictions": {
+    "O1_trend_generalizes": {
+      "criterion": "spearman rho <= -0.5",
+      "rho": -0.87,
+      "p_value": 2.4e-05,
+      "passed": true
+    },
+    "O2_curve_predicts": {
+      "criterion": "median |R - r_hat| <= 0.15",
+      "median_abs_error": 0.088,
+      "passed": true
+    }
+  },
+  "can_influence_belief": false,
+  "receipt_sha256": "e38e953f1d89bc280a2ef7c7562b665129ee0e5c6f40e8c01c048f24c70ced53"
+}

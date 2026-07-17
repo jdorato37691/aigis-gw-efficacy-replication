@@ -1,0 +1,165 @@
+{
+  "can_influence_belief": false,
+  "catalog_release": "GWTC-2.1-confident",
+  "cohort_frozen_at": "2026-07-16T23:05:36.883809+00:00",
+  "cohort_manifest_sha256": "28e6dfbf670d18e09603d7b566d4d0c7c59c42d6cd0b40f3eb5cd3e106e49aff",
+  "development_events": [
+    "GW150914",
+    "GW151012",
+    "GW151226",
+    "GW170104",
+    "GW170608",
+    "GW170729",
+    "GW170809",
+    "GW170814",
+    "GW170817",
+    "GW170818",
+    "GW170823",
+    "GW191109_010717",
+    "GW191126_115259",
+    "GW191127_050227",
+    "GW191129_134029",
+    "GW191204_110529",
+    "GW191204_171526",
+    "GW191215_223052",
+    "GW191216_213338",
+    "GW191222_033537",
+    "GW191230_180458",
+    "GW200112_155838",
+    "GW200128_022011",
+    "GW200202_154313",
+    "GW200219_094415",
+    "GW200220_124850",
+    "GW200224_222234",
+    "GW200225_060421",
+    "GW200302_015811",
+    "GW200311_115853",
+    "GW200316_215756"
+  ],
+  "development_manifest_sha256": "8c9245eba2eaae551489b9c1126dc00651adbe1c2ff55b55545b1d26e5562750",
+  "evaluation_completed_at": "2026-07-16T23:23:41.717725+00:00",
+  "evaluation_receipt_sha256": "2d3b5248f7f25ba3aad571b7f833c41e94f59c6f761b7b250cf7d2cb6631064b",
+  "evaluation_started_at": "2026-07-16T23:06:17.150772+00:00",
+  "events": [
+    "GW190521_074359",
+    "GW190412",
+    "GW190828_063405",
+    "GW190630_185205",
+    "GW190519_153544",
+    "GW190408_181802",
+    "GW190910_112807",
+    "GW190521",
+    "GW190706_222641",
+    "GW190708_232457"
+  ],
+  "freeze_receipt_sha256": "525e91a805c2d1fa23b5875097ecbbf70f74ff9ee942c037f82d1caa25a4f69b",
+  "outcome": "confirmed",
+  "preregistration": "docs/research/preregistrations/2026-07-16-fresh-untouched-holdout.md",
+  "result": {
+    "O1_trend_generalizes": {
+      "criterion": "spearman rho(M_det, R) <= -0.5",
+      "p_value": 0.000475,
+      "passed": true,
+      "rho": -0.9636
+    },
+    "O2_curve_predicts": {
+      "criterion": "median |R - r_hat(M_det)| <= 0.15",
+      "median_abs_error": 0.129,
+      "passed": true
+    },
+    "catalog_release": "GWTC-2.1-confident",
+    "excluded": [
+      {
+        "event": "GW190630_185205",
+        "status": "data_unavailable"
+      },
+      {
+        "event": "GW190910_112807",
+        "status": "data_unavailable"
+      },
+      {
+        "event": "GW190708_232457",
+        "status": "data_unavailable"
+      }
+    ],
+    "measured_rows": [
+      {
+        "abs_error_vs_r_hat": 0.081,
+        "chi_eff": 0.1,
+        "event": "GW190521_074359",
+        "m_det": 92.9,
+        "published_snr": 25.9,
+        "r_hat": 0.428,
+        "recovered_snr": 8.986,
+        "recovery_fraction": 0.347
+      },
+      {
+        "abs_error_vs_r_hat": 0.129,
+        "chi_eff": 0.21,
+        "event": "GW190412",
+        "m_det": 42.2,
+        "published_snr": 19.8,
+        "r_hat": 0.554,
+        "recovered_snr": 13.53,
+        "recovery_fraction": 0.683
+      },
+      {
+        "abs_error_vs_r_hat": 0.014,
+        "chi_eff": 0.15,
+        "event": "GW190828_063405",
+        "m_det": 79.6,
+        "published_snr": 16.5,
+        "r_hat": 0.428,
+        "recovered_snr": 6.832,
+        "recovery_fraction": 0.414
+      },
+      {
+        "abs_error_vs_r_hat": 0.21,
+        "chi_eff": 0.33,
+        "event": "GW190519_153544",
+        "m_det": 153.6,
+        "published_snr": 15.9,
+        "r_hat": 0.21,
+        "recovered_snr": 0.0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "abs_error_vs_r_hat": 0.123,
+        "chi_eff": -0.03,
+        "event": "GW190408_181802",
+        "m_det": 55.9,
+        "published_snr": 14.6,
+        "r_hat": 0.554,
+        "recovered_snr": 9.886,
+        "recovery_fraction": 0.677
+      },
+      {
+        "abs_error_vs_r_hat": 0.21,
+        "chi_eff": -0.14,
+        "event": "GW190521",
+        "m_det": 242.7,
+        "published_snr": 14.3,
+        "r_hat": 0.21,
+        "recovered_snr": 0.0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "abs_error_vs_r_hat": 0.21,
+        "chi_eff": 0.28,
+        "event": "GW190706_222641",
+        "m_det": 181.4,
+        "published_snr": 13.4,
+        "r_hat": 0.21,
+        "recovered_snr": 0.0,
+        "recovery_fraction": 0.0
+      }
+    ],
+    "n_cohort": 10,
+    "n_measured": 7,
+    "outcome": "confirmed"
+  },
+  "result_sha256": "bb2385b3eb3dd6a6011618caf341ca6cd6d6c986a0dd2f5fe59eaeda792b7be6",
+  "schema": "aigis.gw.fresh_holdout.v1",
+  "template_commit_sha256": "4c43f31143db2a98cf53c19d8fce6f062d18c5c920cd6c4c4ca5d54a62340446",
+  "template_locked_at": "2026-07-14T20:20:13-04:00"
+}

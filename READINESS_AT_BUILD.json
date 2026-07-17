@@ -1,0 +1,873 @@
+{
+  "analysis_ready_for_external_review": true,
+  "claim_scope": {
+    "findings": [],
+    "passed": true,
+    "status": "pass"
+  },
+  "epistemic_status": "analysis_ready_for_external_review",
+  "external_publication_gate": {
+    "attestation_validator_implemented": false,
+    "complete": false,
+    "external_trust_anchor_required": true,
+    "reason": "local same-operator JSON hashes and git history are not an external immutable trust anchor, and this audit does not implement an external-attestation validator",
+    "status": "blocked"
+  },
+  "external_ready": false,
+  "follow_up_gates": [
+    {
+      "artifact": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy/verification/phenomd_external_oracle.json",
+      "artifact_sha256": "e804ec033e27fcafa91f169b0b22536975321ba38fa2ba038323f5fcd83ef546",
+      "backend": "lalsimulation",
+      "code_owned_minimum_match": 0.99,
+      "comparison_mode": "exact_phenomd",
+      "complete": true,
+      "gate": "phenomd_external_oracle",
+      "grid_size": 13,
+      "match_floor": 0.99,
+      "minimum_match": 0.99997,
+      "passed": true,
+      "status": "pass"
+    },
+    {
+      "artifact": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy/verification/psd_robustness.json",
+      "artifact_sha256": "d6f910fe872bd0d274f8bc819ce40512c016c1ed0826d5a2e07532a8f513374c",
+      "complete": true,
+      "configs": {
+        "gated_onsource_welch_mean_4s": {
+          "median_abs_delta_vs_onsource_mean4s": 0.0,
+          "median_recovery": 0.46304999999999996,
+          "n_events": 10,
+          "spearman_p": 0.0005421442248338671,
+          "spearman_rho": -0.8909090909090909
+        },
+        "offsource_welch_mean_4s": {
+          "median_abs_delta_vs_onsource_mean4s": 0.028549999999999992,
+          "median_recovery": 0.5193,
+          "n_events": 10,
+          "spearman_p": 0.0029402270232795095,
+          "spearman_rho": -0.8303030303030302
+        },
+        "onsource_welch_mean_4s": {
+          "median_abs_delta_vs_onsource_mean4s": 0.0,
+          "median_recovery": 0.46304999999999996,
+          "n_events": 10,
+          "spearman_p": 0.0005421442248338671,
+          "spearman_rho": -0.8909090909090909
+        },
+        "onsource_welch_median_many_4s": {
+          "median_abs_delta_vs_onsource_mean4s": 0.02279999999999996,
+          "median_recovery": 0.4986,
+          "n_events": 10,
+          "spearman_p": 0.0005421442248338671,
+          "spearman_rho": -0.8909090909090909
+        }
+      },
+      "gate": "psd_robustness",
+      "invalid_spearman_configs": [],
+      "minimum_events_per_config": 10,
+      "missing_psd_configs": [],
+      "reason": null,
+      "same_event_set_across_required_configs": true,
+      "scientific_pass": true,
+      "status": "pass",
+      "trend_failure_configs": [],
+      "trend_threshold_spearman_rho_max": -0.5,
+      "undersized_psd_configs": []
+    },
+    {
+      "artifact": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy/verification/phase_scramble_ensemble.json",
+      "artifact_sha256": "e624af264da37040ae94ff42eb8bddf4c596c876ae0deea4b0351146f89c86f1",
+      "complete": true,
+      "events": [
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW170104",
+          "margin_vs_scramble_median": 0.14388450000000008,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.539923,
+          "scramble_median": 0.39603849999999996,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW170814",
+          "margin_vs_scramble_median": 0.14002900000000007,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.513372,
+          "scramble_median": 0.373343,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW170809",
+          "margin_vs_scramble_median": 0.263428,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.608468,
+          "scramble_median": 0.34504,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW150914",
+          "margin_vs_scramble_median": 0.1582535,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.417341,
+          "scramble_median": 0.2590875,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.07920792079207921,
+          "event": "GW170818",
+          "margin_vs_scramble_median": 0.06110650000000001,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.473009,
+          "scramble_median": 0.4119025,
+          "scrambles_at_least_physical": 7
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW170823",
+          "margin_vs_scramble_median": 0.15965250000000003,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.550957,
+          "scramble_median": 0.3913045,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.09900990099009901,
+          "event": "GW200220_124850",
+          "margin_vs_scramble_median": 0.07841150000000002,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.559176,
+          "scramble_median": 0.4807645,
+          "scrambles_at_least_physical": 9
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW200219_094415",
+          "margin_vs_scramble_median": 0.20785049999999994,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.583645,
+          "scramble_median": 0.37579450000000003,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW200128_022011",
+          "margin_vs_scramble_median": 0.136509,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.542358,
+          "scramble_median": 0.405849,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW191222_033537",
+          "margin_vs_scramble_median": 0.24636000000000002,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.5656,
+          "scramble_median": 0.31923999999999997,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW191127_050227",
+          "margin_vs_scramble_median": 0.16782550000000002,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.607391,
+          "scramble_median": 0.4395655,
+          "scrambles_at_least_physical": 0
+        },
+        {
+          "characterized_ensemble": true,
+          "claim_status": "computed_ensemble_null",
+          "empirical_p_one_sided": 0.009900990099009901,
+          "event": "GW191109_010717",
+          "margin_vs_scramble_median": 0.28979750000000004,
+          "minimum_required": 100,
+          "n_scrambles": 100,
+          "physical_recovery": 0.518208,
+          "scramble_median": 0.2284105,
+          "scrambles_at_least_physical": 0
+        }
+      ],
+      "gate": "phase_scramble_ensemble",
+      "median_margin": 0.158953,
+      "minimum_events": 7,
+      "reason": null,
+      "required_significant_events": 10,
+      "scientific_pass": true,
+      "significant_events": 10,
+      "status": "pass",
+      "thresholds": {
+        "empirical_p_max": 0.05,
+        "median_margin_min": 0.1
+      }
+    },
+    {
+      "aligned_joint_draws": true,
+      "artifact": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy/verification/posterior_uncertainty.json",
+      "artifact_sha256": "189fea1c207591a305e24ac34ecf25c27eb1c0ece6129b9c4da2916f85cbfa1b",
+      "complete": true,
+      "contract_version": "v3",
+      "events": {
+        "GW191109_010717": {
+          "f_isco_hz": {
+            "q05": 25.331663574344027,
+            "q50": 31.456279002911618,
+            "q95": 38.15505085133159
+          },
+          "m_total_det": {
+            "q05": 115.244891383416,
+            "q50": 139.808308329221,
+            "q95": 173.584126371546
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.0,
+            "q50": 0.116243,
+            "q95": 0.283121
+          }
+        },
+        "GW191126_115259": {
+          "f_isco_hz": {
+            "q05": 132.59054157281025,
+            "q50": 161.08483482485263,
+            "q95": 205.35416817035744
+          },
+          "m_total_det": {
+            "q05": 21.41263910184,
+            "q50": 27.31941561041,
+            "q95": 33.163562339594
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.513373,
+            "q50": 0.56253,
+            "q95": 0.80253
+          }
+        },
+        "GW191127_050227": {
+          "f_isco_hz": {
+            "q05": 21.276351673070995,
+            "q50": 32.168857520757406,
+            "q95": 49.42538949519921
+          },
+          "m_total_det": {
+            "q05": 88.96590873639,
+            "q50": 137.366006479565,
+            "q95": 206.66958126358804
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.0,
+            "q50": 0.3,
+            "q95": 0.493152
+          }
+        },
+        "GW191129_134029": {
+          "f_isco_hz": {
+            "q05": 169.47859870033886,
+            "q50": 216.40803614813447,
+            "q95": 267.9637512888209
+          },
+          "m_total_det": {
+            "q05": 16.409587751856,
+            "q50": 20.392007323644002,
+            "q95": 25.945309465681998
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.32542,
+            "q50": 0.452137,
+            "q95": 0.800382
+          }
+        },
+        "GW191204_171526": {
+          "f_isco_hz": {
+            "q05": 167.3443782751793,
+            "q50": 197.63485787720228,
+            "q95": 223.69277622608325
+          },
+          "m_total_det": {
+            "q05": 19.657204695096002,
+            "q50": 22.340689430441,
+            "q95": 26.276202023707995
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.27092,
+            "q50": 0.413448,
+            "q95": 0.696437
+          }
+        },
+        "GW191215_223052": {
+          "f_isco_hz": {
+            "q05": 66.13760713852325,
+            "q50": 75.47005238396922,
+            "q95": 92.56280517360788
+          },
+          "m_total_det": {
+            "q05": 47.50476914396901,
+            "q50": 58.588621125237,
+            "q95": 66.485240112795
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.369196,
+            "q50": 0.478304,
+            "q95": 0.526607
+          }
+        },
+        "GW191222_033537": {
+          "f_isco_hz": {
+            "q05": 29.770082057361467,
+            "q50": 37.194471768579795,
+            "q95": 46.796412755327474
+          },
+          "m_total_det": {
+            "q05": 93.96392655310599,
+            "q50": 118.65518548695998,
+            "q95": 147.70448676016
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.0,
+            "q50": 0.29112,
+            "q95": 0.39176
+          }
+        },
+        "GW191230_180458": {
+          "f_isco_hz": {
+            "q05": 24.97124982616453,
+            "q50": 29.6240074042927,
+            "q95": 37.30046391114094
+          },
+          "m_total_det": {
+            "q05": 117.885254766954,
+            "q50": 149.222852908458,
+            "q95": 176.08949178359202
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.0,
+            "q50": 0.0,
+            "q95": 0.227885
+          }
+        },
+        "GW200128_022011": {
+          "f_isco_hz": {
+            "q05": 30.915437069701884,
+            "q50": 37.744416877112045,
+            "q95": 47.614670841828115
+          },
+          "m_total_det": {
+            "q05": 92.349156538275,
+            "q50": 116.63046956251799,
+            "q95": 142.23233141347998
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.160472,
+            "q50": 0.457075,
+            "q95": 0.552642
+          }
+        },
+        "GW200202_154313": {
+          "f_isco_hz": {
+            "q05": 189.22442175880317,
+            "q50": 227.17534311995757,
+            "q95": 263.75002740992664
+          },
+          "m_total_det": {
+            "q05": 16.671750650688,
+            "q50": 19.376240462799004,
+            "q95": 23.237881507152
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.406574,
+            "q50": 0.477222,
+            "q95": 0.806296
+          }
+        },
+        "GW200219_094415": {
+          "f_isco_hz": {
+            "q05": 34.558459934399906,
+            "q50": 41.08739121579603,
+            "q95": 53.74306818783925
+          },
+          "m_total_det": {
+            "q05": 81.81845286022201,
+            "q50": 107.22667205296801,
+            "q95": 127.23873400137902
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.217383,
+            "q50": 0.264206,
+            "q95": 0.390748
+          }
+        },
+        "GW200220_124850": {
+          "f_isco_hz": {
+            "q05": 30.58694888104564,
+            "q50": 40.53694498721733,
+            "q95": 52.686408780012556
+          },
+          "m_total_det": {
+            "q05": 83.459373924126,
+            "q50": 108.53712667001602,
+            "q95": 143.7598339145
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.103294,
+            "q50": 0.233882,
+            "q95": 0.316471
+          }
+        },
+        "GW200225_060421": {
+          "f_isco_hz": {
+            "q05": 91.09826292444241,
+            "q50": 108.86321941840646,
+            "q95": 131.72830685931513
+          },
+          "m_total_det": {
+            "q05": 33.380636219568004,
+            "q50": 40.497316293947996,
+            "q95": 48.268480099752
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.51712,
+            "q50": 0.62208,
+            "q95": 0.6596
+          }
+        },
+        "GW200311_115853": {
+          "f_isco_hz": {
+            "q05": 49.694264914590846,
+            "q50": 56.39490618379941,
+            "q95": 64.18155084238386
+          },
+          "m_total_det": {
+            "q05": 68.51150577350401,
+            "q50": 77.98863203136001,
+            "q95": 88.484550453615
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.250674,
+            "q50": 0.297921,
+            "q95": 0.344213
+          }
+        },
+        "GW200316_215756": {
+          "f_isco_hz": {
+            "q05": 108.94363205159665,
+            "q50": 169.52255992980758,
+            "q95": 208.97534936970717
+          },
+          "m_total_det": {
+            "q05": 21.041595118049997,
+            "q50": 26.251336976634004,
+            "q95": 40.36192486228
+          },
+          "n_draws": 100,
+          "recovery_fraction": {
+            "q05": 0.406117,
+            "q50": 0.487767,
+            "q95": 0.713592
+          }
+        }
+      },
+      "gate": "posterior_uncertainty",
+      "insufficient_events": [],
+      "minimum_draws_per_event": 100,
+      "minimum_events": 10,
+      "n_finite_draw_metrics": 100,
+      "n_joint_draws": 100,
+      "prediction_criterion_pass_fraction": 0.54,
+      "reason": null,
+      "required_criteria_pass_fraction": 0.9,
+      "rho_criterion_pass_fraction": 0.98,
+      "scientific_pass": true,
+      "scientific_pass_criterion": "trend_only_O1",
+      "status": "pass",
+      "thresholds": {
+        "median_abs_prediction_error_max": 0.15,
+        "spearman_rho_max": -0.5
+      },
+      "v3_authorization": "PI-approved 2026-07-16, OPERATOR-DECISIONS.md Decision B (commit 13eb7b848); original O2 per-draw criterion preserved below as the withdrawn-claim record",
+      "withdrawn_claim_record": {
+        "authorization": "PI-approved 2026-07-16, OPERATOR-DECISIONS.md Decision B (commit 13eb7b848); original O2 per-draw criterion preserved below as the withdrawn-claim record",
+        "criterion": "posterior_robust_prediction_curve",
+        "description": "median |R - R_hat(M_det)| <= 0.15 preserved in at least 90% of joint draws",
+        "median_abs_prediction_error_max": 0.15,
+        "original_verdict": "fail",
+        "per_draw_pass_fraction": 0.54,
+        "pre_v3_contract": "scientific_pass required O1 (trend) AND O2 (curve)",
+        "required_pass_fraction": 0.9,
+        "withdrawn": true,
+        "withdrawn_rationale": "revised paper (commit d66eddd5b) withdrew the posterior-robust-curve claim; it claims point-estimate-conditional transfer only"
+      }
+    },
+    {
+      "artifact": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy/verification/study3_coincidence.json",
+      "artifact_sha256": "0f3c807948865aacab831b29a0d078d8099eb7d2d58f2738e872da26e7ccfefe",
+      "audited_rows_digest_matches": true,
+      "complete": true,
+      "gate": "study3_coincidence",
+      "minimum_included_events": 10,
+      "n_audited": 15,
+      "n_expected": 15,
+      "n_unique_events": 15,
+      "n_within_window": 10,
+      "reason": null,
+      "recomputed_metrics": {
+        "median_abs_prediction_error": 0.07575400000000004,
+        "n_included": 10,
+        "spearman_p": 0.00011203450639397587,
+        "spearman_rho": -0.9272727272727272
+      },
+      "recomputed_result_digest_matches": true,
+      "rows": [
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200316_215756",
+          "h1_l1_separation_ms": 2.7,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 25.5,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.849,
+          "recovery_fraction": 0.761952,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 7.848,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200311_115853",
+          "h1_l1_separation_ms": 4.2,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 76.1,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.428,
+          "recovery_fraction": 0.326541,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 5.812,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200225_060421",
+          "h1_l1_separation_ms": 2.9,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 40.6,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.554,
+          "recovery_fraction": 0.656252,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 8.203,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200220_124850",
+          "h1_l1_separation_ms": 12.2,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 110.9,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.258166,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 2.194,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": false
+        },
+        {
+          "analysis_disposition": "excluded_outside_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200219_094415",
+          "h1_l1_separation_ms": 111.9,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 102.7,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.238514,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 2.552,
+          "within_coincidence_window": false,
+          "within_physical_light_travel_bound": false
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200202_154313",
+          "h1_l1_separation_ms": 10.3,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 19.0,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.849,
+          "recovery_fraction": 0.879873,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 9.503,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": false
+        },
+        {
+          "analysis_disposition": "excluded_outside_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW200128_022011",
+          "h1_l1_separation_ms": 132.1,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 116.7,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.443157,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 4.697,
+          "within_coincidence_window": false,
+          "within_physical_light_travel_bound": false
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191230_180458",
+          "h1_l1_separation_ms": 0.0,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 146.0,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.253766,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 2.639,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "excluded_outside_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191222_033537",
+          "h1_l1_separation_ms": 40.7,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 120.5,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.297523,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 3.719,
+          "within_coincidence_window": false,
+          "within_physical_light_travel_bound": false
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191215_223052",
+          "h1_l1_separation_ms": 4.9,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 58.1,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.554,
+          "recovery_fraction": 0.48954,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 5.483,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191204_171526",
+          "h1_l1_separation_ms": 1.2,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 22.7,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.849,
+          "recovery_fraction": 0.655617,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 11.408,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191129_134029",
+          "h1_l1_separation_ms": 3.2,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 20.2,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.849,
+          "recovery_fraction": 0.822417,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 10.774,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "excluded_outside_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191127_050227",
+          "h1_l1_separation_ms": 195.1,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 120.9,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.397907,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 3.661,
+          "within_coincidence_window": false,
+          "within_physical_light_travel_bound": false
+        },
+        {
+          "analysis_disposition": "included_within_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191126_115259",
+          "h1_l1_separation_ms": 0.2,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 26.5,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.849,
+          "recovery_fraction": 0.74831,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 6.211,
+          "within_coincidence_window": true,
+          "within_physical_light_travel_bound": true
+        },
+        {
+          "analysis_disposition": "excluded_outside_window",
+          "coincidence_enforced": false,
+          "coincidence_window_ms": 15.0,
+          "event": "GW191109_010717",
+          "h1_l1_separation_ms": 172.9,
+          "legacy_field_name": "network_snr",
+          "m_total_det": 140.0,
+          "physical_light_travel_bound_ms": 10.0,
+          "predicted_recovery": 0.21,
+          "recovery_fraction": 0.09767,
+          "statistic_name": "quadrature_of_independently_maximized_single_detector_snrs",
+          "timing_margin_ms": 5.0,
+          "value": 1.69,
+          "within_coincidence_window": false,
+          "within_physical_light_travel_bound": false
+        }
+      ],
+      "scientific_pass": true,
+      "status": "pass",
+      "thresholds": {
+        "median_abs_prediction_error_max": 0.15,
+        "spearman_rho_max": -0.5
+      },
+      "unaccounted_events": []
+    },
+    {
+      "artifact": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy/verification/fresh_untouched_holdout.json",
+      "artifact_sha256": "08b888cd08398d44a954560ba96cca0ab933922bbf6fca4920aa487135d3cb4e",
+      "chronology_verified": true,
+      "cohort_manifest_bound": true,
+      "complete": true,
+      "development_manifest_bound": true,
+      "development_reuse_excluded": true,
+      "evaluation_complete": true,
+      "gate": "fresh_untouched_holdout",
+      "minimum_holdout_events": 5,
+      "n_holdout_events": 10,
+      "outcome": "confirmed",
+      "reason": null,
+      "result_bound": true,
+      "status": "pass"
+    }
+  ],
+  "gate_status_counts": {
+    "pass": 6
+  },
+  "local_oracle_backend": {
+    "any_backend_available": false,
+    "available": {
+      "lalsimulation": false,
+      "pycbc": false
+    },
+    "note": "package availability is not an oracle result; a match-grid artifact is still required",
+    "oracle_validated": false
+  },
+  "note": "A successful local analysis audit reports missing work honestly and may clear human external review. It does not clear external publication, execute network studies, mutate the registry, or promote scientific-memory state.",
+  "package": "<BUNDLE_ROOT>/docs/research/papers/gw-inspiral-template-efficacy",
+  "schema": "aigis.gw.package_readiness.v2",
+  "script_scope": {
+    "findings": [],
+    "missing_files": [],
+    "passed": true,
+    "status": "pass"
+  }
+}

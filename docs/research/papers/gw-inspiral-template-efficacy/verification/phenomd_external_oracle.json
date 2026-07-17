@@ -1,0 +1,238 @@
+{
+  "schema": "aigis.gw.phenomd_oracle.v1",
+  "backend": "lalsimulation",
+  "independent_implementation": true,
+  "comparison_mode": "exact_phenomd",
+  "oracle_environment_sha256": "8869c64f0b486c2d1bcc98e78683faeca8d91fe55cac2f6095dea150dafdd262",
+  "match_floor": 0.99,
+  "reference": "LALSimulation IMRPhenomD (lalsimulation, isolated lal_venv)",
+  "preregistration": "docs/research/preregistrations/2026-07-16-phenomd-oracle-match-grid.md",
+  "retry_preregistration": "docs/research/preregistrations/2026-07-16-phenomd-oracle-spin-sector-retry.md",
+  "provenance_notes": "Reflects the CURRENT implementation after the preregistered spin-sector retry: full sourced two-spin 3.5PN aligned-spin TaylorF2 sector (T1), sourced Paper-1 remnant fits (T2), and sub-bin time-alignment evaluation of the locked match (T3; per-row 'match' is refined, 'match_discrete_time' is the prior discrete-grid evaluation). The prior honest FAIL is preserved at ~/.aigis/research/gw_replication/LAL_oracle_20260716T113628Z.json and in git history (commit 2203e431a).",
+  "belief_moved": false,
+  "generated_at": "2026-07-17T00:10:10.035098+00:00",
+  "declared_deviations": "narrowed D2: Berti-Cardoso-Will fitted QNM conversion (a_f -> f_RD, f_damp) vs LAL's Berti-table interpolation; D4 common amplitude (LAL's) so the match isolates the transcribed phase",
+  "rows": [
+    {
+      "parameters": {
+        "mass1_msun": 36.0,
+        "mass2_msun": 29.0,
+        "chi1z": 0.0,
+        "chi2z": 0.0,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99999,
+      "match_discrete_time": 0.9962,
+      "phase_resid_rms_rad_inspiral": 0.0078,
+      "phase_resid_rms_rad_merger": 0.0098,
+      "band_hz": [
+        20.0,
+        624.5
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 30.0,
+        "mass2_msun": 30.0,
+        "chi1z": 0.0,
+        "chi2z": 0.0,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99999,
+      "match_discrete_time": 0.98992,
+      "phase_resid_rms_rad_inspiral": 0.0074,
+      "phase_resid_rms_rad_merger": 0.0096,
+      "band_hz": [
+        20.0,
+        676.6
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 60.0,
+        "mass2_msun": 40.0,
+        "chi1z": 0.0,
+        "chi2z": 0.0,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99998,
+      "match_discrete_time": 0.99993,
+      "phase_resid_rms_rad_inspiral": 0.0092,
+      "phase_resid_rms_rad_merger": 0.0104,
+      "band_hz": [
+        20.0,
+        405.9
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 50.0,
+        "mass2_msun": 45.0,
+        "chi1z": 0.0,
+        "chi2z": 0.0,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99999,
+      "match_discrete_time": 0.97451,
+      "phase_resid_rms_rad_inspiral": 0.0079,
+      "phase_resid_rms_rad_merger": 0.0095,
+      "band_hz": [
+        20.0,
+        427.2
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 50.0,
+        "mass2_msun": 40.0,
+        "chi1z": 0.2,
+        "chi2z": 0.2,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99999,
+      "match_discrete_time": 0.99916,
+      "phase_resid_rms_rad_inspiral": 0.0039,
+      "phase_resid_rms_rad_merger": 0.0055,
+      "band_hz": [
+        20.0,
+        451.0
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 36.0,
+        "mass2_msun": 30.0,
+        "chi1z": 0.2,
+        "chi2z": 0.2,
+        "f_min_hz": 20.0
+      },
+      "match": 1.0,
+      "match_discrete_time": 0.99996,
+      "phase_resid_rms_rad_inspiral": 0.0036,
+      "phase_resid_rms_rad_merger": 0.0054,
+      "band_hz": [
+        20.0,
+        615.0
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 70.0,
+        "mass2_msun": 50.0,
+        "chi1z": 0.2,
+        "chi2z": 0.2,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99999,
+      "match_discrete_time": 0.99941,
+      "phase_resid_rms_rad_inspiral": 0.0046,
+      "phase_resid_rms_rad_merger": 0.0061,
+      "band_hz": [
+        20.0,
+        338.2
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 45.0,
+        "mass2_msun": 40.0,
+        "chi1z": 0.3,
+        "chi2z": 0.3,
+        "f_min_hz": 20.0
+      },
+      "match": 1.0,
+      "match_discrete_time": 0.99902,
+      "phase_resid_rms_rad_inspiral": 0.001,
+      "phase_resid_rms_rad_merger": 0.0018,
+      "band_hz": [
+        20.0,
+        477.5
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 80.0,
+        "mass2_msun": 70.0,
+        "chi1z": 0.3,
+        "chi2z": 0.3,
+        "f_min_hz": 20.0
+      },
+      "match": 1.0,
+      "match_discrete_time": 0.97584,
+      "phase_resid_rms_rad_inspiral": 0.0011,
+      "phase_resid_rms_rad_merger": 0.0019,
+      "band_hz": [
+        20.0,
+        270.5
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 60.0,
+        "mass2_msun": 55.0,
+        "chi1z": 0.4,
+        "chi2z": 0.4,
+        "f_min_hz": 20.0
+      },
+      "match": 1.0,
+      "match_discrete_time": 0.99222,
+      "phase_resid_rms_rad_inspiral": 0.0019,
+      "phase_resid_rms_rad_merger": 0.0026,
+      "band_hz": [
+        20.0,
+        352.9
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 65.0,
+        "mass2_msun": 55.0,
+        "chi1z": 0.4,
+        "chi2z": 0.4,
+        "f_min_hz": 20.0
+      },
+      "match": 1.0,
+      "match_discrete_time": 0.99417,
+      "phase_resid_rms_rad_inspiral": 0.0018,
+      "phase_resid_rms_rad_merger": 0.0024,
+      "band_hz": [
+        20.0,
+        338.2
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 40.0,
+        "mass2_msun": 35.0,
+        "chi1z": 0.5,
+        "chi2z": 0.5,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99999,
+      "match_discrete_time": 0.99949,
+      "phase_resid_rms_rad_inspiral": 0.0045,
+      "phase_resid_rms_rad_merger": 0.0079,
+      "band_hz": [
+        20.0,
+        541.2
+      ]
+    },
+    {
+      "parameters": {
+        "mass1_msun": 55.0,
+        "mass2_msun": 48.0,
+        "chi1z": 0.6,
+        "chi2z": 0.6,
+        "f_min_hz": 20.0
+      },
+      "match": 0.99997,
+      "match_discrete_time": 0.99791,
+      "phase_resid_rms_rad_inspiral": 0.0072,
+      "phase_resid_rms_rad_merger": 0.0143,
+      "band_hz": [
+        20.0,
+        394.0
+      ]
+    }
+  ]
+}

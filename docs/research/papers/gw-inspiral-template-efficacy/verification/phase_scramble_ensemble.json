@@ -1,0 +1,4893 @@
+{
+ "schema": "aigis.gw.phase_scramble_ensemble.v1",
+ "generated_at": "2026-07-13T16:44:05Z",
+ "template_sha256": "47b49c7eeb9486bc636a4f96096a8673dbe30f6945779f56078ab619c601801b",
+ "n_scrambles_per_event": 100,
+ "belief_moved": false,
+ "rows": [
+  {
+   "event": "GW170104",
+   "physical_recovery": 0.539923,
+   "template_sha256": "b52b939a411c3ff82a1254b1e2bc6edcc42481d0a9b0676f3336dabcb7a7889f",
+   "scrambles": [
+    {
+     "seed": "GW170104:5eed0000",
+     "recovery": 0.403462
+    },
+    {
+     "seed": "GW170104:fd2479b1",
+     "recovery": 0.397846
+    },
+    {
+     "seed": "GW170104:9b5bf362",
+     "recovery": 0.385538
+    },
+    {
+     "seed": "GW170104:39936d13",
+     "recovery": 0.401462
+    },
+    {
+     "seed": "GW170104:d7cae6c4",
+     "recovery": 0.359692
+    },
+    {
+     "seed": "GW170104:76026075",
+     "recovery": 0.347692
+    },
+    {
+     "seed": "GW170104:1439da26",
+     "recovery": 0.411154
+    },
+    {
+     "seed": "GW170104:b27153d7",
+     "recovery": 0.377769
+    },
+    {
+     "seed": "GW170104:50a8cd88",
+     "recovery": 0.374846
+    },
+    {
+     "seed": "GW170104:eee04739",
+     "recovery": 0.406077
+    },
+    {
+     "seed": "GW170104:8d17c0ea",
+     "recovery": 0.418769
+    },
+    {
+     "seed": "GW170104:2b4f3a9b",
+     "recovery": 0.36
+    },
+    {
+     "seed": "GW170104:c986b44c",
+     "recovery": 0.405923
+    },
+    {
+     "seed": "GW170104:67be2dfd",
+     "recovery": 0.446692
+    },
+    {
+     "seed": "GW170104:05f5a7ae",
+     "recovery": 0.382385
+    },
+    {
+     "seed": "GW170104:a42d215f",
+     "recovery": 0.362154
+    },
+    {
+     "seed": "GW170104:42649b10",
+     "recovery": 0.447538
+    },
+    {
+     "seed": "GW170104:e09c14c1",
+     "recovery": 0.431308
+    },
+    {
+     "seed": "GW170104:7ed38e72",
+     "recovery": 0.391692
+    },
+    {
+     "seed": "GW170104:1d0b0823",
+     "recovery": 0.388154
+    },
+    {
+     "seed": "GW170104:bb4281d4",
+     "recovery": 0.426
+    },
+    {
+     "seed": "GW170104:5979fb85",
+     "recovery": 0.455231
+    },
+    {
+     "seed": "GW170104:f7b17536",
+     "recovery": 0.392538
+    },
+    {
+     "seed": "GW170104:95e8eee7",
+     "recovery": 0.383692
+    },
+    {
+     "seed": "GW170104:34206898",
+     "recovery": 0.443231
+    },
+    {
+     "seed": "GW170104:d257e249",
+     "recovery": 0.378154
+    },
+    {
+     "seed": "GW170104:708f5bfa",
+     "recovery": 0.464923
+    },
+    {
+     "seed": "GW170104:0ec6d5ab",
+     "recovery": 0.435
+    },
+    {
+     "seed": "GW170104:acfe4f5c",
+     "recovery": 0.413923
+    },
+    {
+     "seed": "GW170104:4b35c90d",
+     "recovery": 0.393769
+    },
+    {
+     "seed": "GW170104:e96d42be",
+     "recovery": 0.356923
+    },
+    {
+     "seed": "GW170104:87a4bc6f",
+     "recovery": 0.390846
+    },
+    {
+     "seed": "GW170104:25dc3620",
+     "recovery": 0.386769
+    },
+    {
+     "seed": "GW170104:c413afd1",
+     "recovery": 0.354231
+    },
+    {
+     "seed": "GW170104:624b2982",
+     "recovery": 0.377077
+    },
+    {
+     "seed": "GW170104:0082a333",
+     "recovery": 0.416615
+    },
+    {
+     "seed": "GW170104:9eba1ce4",
+     "recovery": 0.4
+    },
+    {
+     "seed": "GW170104:3cf19695",
+     "recovery": 0.355692
+    },
+    {
+     "seed": "GW170104:db291046",
+     "recovery": 0.373769
+    },
+    {
+     "seed": "GW170104:796089f7",
+     "recovery": 0.365462
+    },
+    {
+     "seed": "GW170104:179803a8",
+     "recovery": 0.364846
+    },
+    {
+     "seed": "GW170104:b5cf7d59",
+     "recovery": 0.404385
+    },
+    {
+     "seed": "GW170104:5406f70a",
+     "recovery": 0.434846
+    },
+    {
+     "seed": "GW170104:f23e70bb",
+     "recovery": 0.349154
+    },
+    {
+     "seed": "GW170104:9075ea6c",
+     "recovery": 0.380308
+    },
+    {
+     "seed": "GW170104:2ead641d",
+     "recovery": 0.360462
+    },
+    {
+     "seed": "GW170104:cce4ddce",
+     "recovery": 0.441231
+    },
+    {
+     "seed": "GW170104:6b1c577f",
+     "recovery": 0.366
+    },
+    {
+     "seed": "GW170104:0953d130",
+     "recovery": 0.395846
+    },
+    {
+     "seed": "GW170104:a78b4ae1",
+     "recovery": 0.391769
+    },
+    {
+     "seed": "GW170104:45c2c492",
+     "recovery": 0.373538
+    },
+    {
+     "seed": "GW170104:e3fa3e43",
+     "recovery": 0.374231
+    },
+    {
+     "seed": "GW170104:8231b7f4",
+     "recovery": 0.398538
+    },
+    {
+     "seed": "GW170104:206931a5",
+     "recovery": 0.477308
+    },
+    {
+     "seed": "GW170104:bea0ab56",
+     "recovery": 0.416615
+    },
+    {
+     "seed": "GW170104:5cd82507",
+     "recovery": 0.396231
+    },
+    {
+     "seed": "GW170104:fb0f9eb8",
+     "recovery": 0.355615
+    },
+    {
+     "seed": "GW170104:99471869",
+     "recovery": 0.454538
+    },
+    {
+     "seed": "GW170104:377e921a",
+     "recovery": 0.478538
+    },
+    {
+     "seed": "GW170104:d5b60bcb",
+     "recovery": 0.365846
+    },
+    {
+     "seed": "GW170104:73ed857c",
+     "recovery": 0.378846
+    },
+    {
+     "seed": "GW170104:1224ff2d",
+     "recovery": 0.425462
+    },
+    {
+     "seed": "GW170104:b05c78de",
+     "recovery": 0.363308
+    },
+    {
+     "seed": "GW170104:4e93f28f",
+     "recovery": 0.452385
+    },
+    {
+     "seed": "GW170104:eccb6c40",
+     "recovery": 0.393385
+    },
+    {
+     "seed": "GW170104:8b02e5f1",
+     "recovery": 0.412385
+    },
+    {
+     "seed": "GW170104:293a5fa2",
+     "recovery": 0.431692
+    },
+    {
+     "seed": "GW170104:c771d953",
+     "recovery": 0.428
+    },
+    {
+     "seed": "GW170104:65a95304",
+     "recovery": 0.377615
+    },
+    {
+     "seed": "GW170104:03e0ccb5",
+     "recovery": 0.401308
+    },
+    {
+     "seed": "GW170104:a2184666",
+     "recovery": 0.361308
+    },
+    {
+     "seed": "GW170104:404fc017",
+     "recovery": 0.411077
+    },
+    {
+     "seed": "GW170104:de8739c8",
+     "recovery": 0.404
+    },
+    {
+     "seed": "GW170104:7cbeb379",
+     "recovery": 0.351923
+    },
+    {
+     "seed": "GW170104:1af62d2a",
+     "recovery": 0.452077
+    },
+    {
+     "seed": "GW170104:b92da6db",
+     "recovery": 0.370308
+    },
+    {
+     "seed": "GW170104:5765208c",
+     "recovery": 0.423615
+    },
+    {
+     "seed": "GW170104:f59c9a3d",
+     "recovery": 0.417538
+    },
+    {
+     "seed": "GW170104:93d413ee",
+     "recovery": 0.422462
+    },
+    {
+     "seed": "GW170104:320b8d9f",
+     "recovery": 0.421154
+    },
+    {
+     "seed": "GW170104:d0430750",
+     "recovery": 0.399308
+    },
+    {
+     "seed": "GW170104:6e7a8101",
+     "recovery": 0.405615
+    },
+    {
+     "seed": "GW170104:0cb1fab2",
+     "recovery": 0.395769
+    },
+    {
+     "seed": "GW170104:aae97463",
+     "recovery": 0.352846
+    },
+    {
+     "seed": "GW170104:4920ee14",
+     "recovery": 0.397615
+    },
+    {
+     "seed": "GW170104:e75867c5",
+     "recovery": 0.413769
+    },
+    {
+     "seed": "GW170104:858fe176",
+     "recovery": 0.377308
+    },
+    {
+     "seed": "GW170104:23c75b27",
+     "recovery": 0.451308
+    },
+    {
+     "seed": "GW170104:c1fed4d8",
+     "recovery": 0.390615
+    },
+    {
+     "seed": "GW170104:60364e89",
+     "recovery": 0.393538
+    },
+    {
+     "seed": "GW170104:fe6dc83a",
+     "recovery": 0.441154
+    },
+    {
+     "seed": "GW170104:9ca541eb",
+     "recovery": 0.332462
+    },
+    {
+     "seed": "GW170104:3adcbb9c",
+     "recovery": 0.426538
+    },
+    {
+     "seed": "GW170104:d914354d",
+     "recovery": 0.378154
+    },
+    {
+     "seed": "GW170104:774baefe",
+     "recovery": 0.439692
+    },
+    {
+     "seed": "GW170104:158328af",
+     "recovery": 0.430231
+    },
+    {
+     "seed": "GW170104:b3baa260",
+     "recovery": 0.409615
+    },
+    {
+     "seed": "GW170104:51f21c11",
+     "recovery": 0.392923
+    },
+    {
+     "seed": "GW170104:f02995c2",
+     "recovery": 0.378385
+    },
+    {
+     "seed": "GW170104:8e610f73",
+     "recovery": 0.34
+    }
+   ]
+  },
+  {
+   "event": "GW170814",
+   "physical_recovery": 0.513372,
+   "template_sha256": "53f6b395b96762767824054793e6a9a494f7291f0015a882b939a0dcf9d42618",
+   "scrambles": [
+    {
+     "seed": "GW170814:5eed0000",
+     "recovery": 0.405756
+    },
+    {
+     "seed": "GW170814:fd2479b1",
+     "recovery": 0.389477
+    },
+    {
+     "seed": "GW170814:9b5bf362",
+     "recovery": 0.402267
+    },
+    {
+     "seed": "GW170814:39936d13",
+     "recovery": 0.404651
+    },
+    {
+     "seed": "GW170814:d7cae6c4",
+     "recovery": 0.364012
+    },
+    {
+     "seed": "GW170814:76026075",
+     "recovery": 0.380756
+    },
+    {
+     "seed": "GW170814:1439da26",
+     "recovery": 0.33407
+    },
+    {
+     "seed": "GW170814:b27153d7",
+     "recovery": 0.347151
+    },
+    {
+     "seed": "GW170814:50a8cd88",
+     "recovery": 0.405407
+    },
+    {
+     "seed": "GW170814:eee04739",
+     "recovery": 0.364942
+    },
+    {
+     "seed": "GW170814:8d17c0ea",
+     "recovery": 0.351919
+    },
+    {
+     "seed": "GW170814:2b4f3a9b",
+     "recovery": 0.387733
+    },
+    {
+     "seed": "GW170814:c986b44c",
+     "recovery": 0.372326
+    },
+    {
+     "seed": "GW170814:67be2dfd",
+     "recovery": 0.384884
+    },
+    {
+     "seed": "GW170814:05f5a7ae",
+     "recovery": 0.348372
+    },
+    {
+     "seed": "GW170814:a42d215f",
+     "recovery": 0.395581
+    },
+    {
+     "seed": "GW170814:42649b10",
+     "recovery": 0.382558
+    },
+    {
+     "seed": "GW170814:e09c14c1",
+     "recovery": 0.368605
+    },
+    {
+     "seed": "GW170814:7ed38e72",
+     "recovery": 0.389186
+    },
+    {
+     "seed": "GW170814:1d0b0823",
+     "recovery": 0.365291
+    },
+    {
+     "seed": "GW170814:bb4281d4",
+     "recovery": 0.388895
+    },
+    {
+     "seed": "GW170814:5979fb85",
+     "recovery": 0.355698
+    },
+    {
+     "seed": "GW170814:f7b17536",
+     "recovery": 0.438198
+    },
+    {
+     "seed": "GW170814:95e8eee7",
+     "recovery": 0.388663
+    },
+    {
+     "seed": "GW170814:34206898",
+     "recovery": 0.360174
+    },
+    {
+     "seed": "GW170814:d257e249",
+     "recovery": 0.383663
+    },
+    {
+     "seed": "GW170814:708f5bfa",
+     "recovery": 0.354826
+    },
+    {
+     "seed": "GW170814:0ec6d5ab",
+     "recovery": 0.346512
+    },
+    {
+     "seed": "GW170814:acfe4f5c",
+     "recovery": 0.380698
+    },
+    {
+     "seed": "GW170814:4b35c90d",
+     "recovery": 0.442209
+    },
+    {
+     "seed": "GW170814:e96d42be",
+     "recovery": 0.364651
+    },
+    {
+     "seed": "GW170814:87a4bc6f",
+     "recovery": 0.368488
+    },
+    {
+     "seed": "GW170814:25dc3620",
+     "recovery": 0.412907
+    },
+    {
+     "seed": "GW170814:c413afd1",
+     "recovery": 0.339302
+    },
+    {
+     "seed": "GW170814:624b2982",
+     "recovery": 0.365174
+    },
+    {
+     "seed": "GW170814:0082a333",
+     "recovery": 0.389593
+    },
+    {
+     "seed": "GW170814:9eba1ce4",
+     "recovery": 0.353488
+    },
+    {
+     "seed": "GW170814:3cf19695",
+     "recovery": 0.341977
+    },
+    {
+     "seed": "GW170814:db291046",
+     "recovery": 0.369884
+    },
+    {
+     "seed": "GW170814:796089f7",
+     "recovery": 0.388953
+    },
+    {
+     "seed": "GW170814:179803a8",
+     "recovery": 0.382616
+    },
+    {
+     "seed": "GW170814:b5cf7d59",
+     "recovery": 0.370988
+    },
+    {
+     "seed": "GW170814:5406f70a",
+     "recovery": 0.377616
+    },
+    {
+     "seed": "GW170814:f23e70bb",
+     "recovery": 0.414186
+    },
+    {
+     "seed": "GW170814:9075ea6c",
+     "recovery": 0.362849
+    },
+    {
+     "seed": "GW170814:2ead641d",
+     "recovery": 0.408198
+    },
+    {
+     "seed": "GW170814:cce4ddce",
+     "recovery": 0.398198
+    },
+    {
+     "seed": "GW170814:6b1c577f",
+     "recovery": 0.433488
+    },
+    {
+     "seed": "GW170814:0953d130",
+     "recovery": 0.381047
+    },
+    {
+     "seed": "GW170814:a78b4ae1",
+     "recovery": 0.380174
+    },
+    {
+     "seed": "GW170814:45c2c492",
+     "recovery": 0.360174
+    },
+    {
+     "seed": "GW170814:e3fa3e43",
+     "recovery": 0.384302
+    },
+    {
+     "seed": "GW170814:8231b7f4",
+     "recovery": 0.379942
+    },
+    {
+     "seed": "GW170814:206931a5",
+     "recovery": 0.386047
+    },
+    {
+     "seed": "GW170814:bea0ab56",
+     "recovery": 0.344709
+    },
+    {
+     "seed": "GW170814:5cd82507",
+     "recovery": 0.403256
+    },
+    {
+     "seed": "GW170814:fb0f9eb8",
+     "recovery": 0.385465
+    },
+    {
+     "seed": "GW170814:99471869",
+     "recovery": 0.348488
+    },
+    {
+     "seed": "GW170814:377e921a",
+     "recovery": 0.348721
+    },
+    {
+     "seed": "GW170814:d5b60bcb",
+     "recovery": 0.39
+    },
+    {
+     "seed": "GW170814:73ed857c",
+     "recovery": 0.362151
+    },
+    {
+     "seed": "GW170814:1224ff2d",
+     "recovery": 0.369884
+    },
+    {
+     "seed": "GW170814:b05c78de",
+     "recovery": 0.383023
+    },
+    {
+     "seed": "GW170814:4e93f28f",
+     "recovery": 0.333314
+    },
+    {
+     "seed": "GW170814:eccb6c40",
+     "recovery": 0.374186
+    },
+    {
+     "seed": "GW170814:8b02e5f1",
+     "recovery": 0.385407
+    },
+    {
+     "seed": "GW170814:293a5fa2",
+     "recovery": 0.412616
+    },
+    {
+     "seed": "GW170814:c771d953",
+     "recovery": 0.392384
+    },
+    {
+     "seed": "GW170814:65a95304",
+     "recovery": 0.359419
+    },
+    {
+     "seed": "GW170814:03e0ccb5",
+     "recovery": 0.34314
+    },
+    {
+     "seed": "GW170814:a2184666",
+     "recovery": 0.357151
+    },
+    {
+     "seed": "GW170814:404fc017",
+     "recovery": 0.348721
+    },
+    {
+     "seed": "GW170814:de8739c8",
+     "recovery": 0.3125
+    },
+    {
+     "seed": "GW170814:7cbeb379",
+     "recovery": 0.369651
+    },
+    {
+     "seed": "GW170814:1af62d2a",
+     "recovery": 0.368837
+    },
+    {
+     "seed": "GW170814:b92da6db",
+     "recovery": 0.3725
+    },
+    {
+     "seed": "GW170814:5765208c",
+     "recovery": 0.357791
+    },
+    {
+     "seed": "GW170814:f59c9a3d",
+     "recovery": 0.350581
+    },
+    {
+     "seed": "GW170814:93d413ee",
+     "recovery": 0.384942
+    },
+    {
+     "seed": "GW170814:320b8d9f",
+     "recovery": 0.353372
+    },
+    {
+     "seed": "GW170814:d0430750",
+     "recovery": 0.381395
+    },
+    {
+     "seed": "GW170814:6e7a8101",
+     "recovery": 0.369884
+    },
+    {
+     "seed": "GW170814:0cb1fab2",
+     "recovery": 0.330988
+    },
+    {
+     "seed": "GW170814:aae97463",
+     "recovery": 0.367674
+    },
+    {
+     "seed": "GW170814:4920ee14",
+     "recovery": 0.358256
+    },
+    {
+     "seed": "GW170814:e75867c5",
+     "recovery": 0.400756
+    },
+    {
+     "seed": "GW170814:858fe176",
+     "recovery": 0.333605
+    },
+    {
+     "seed": "GW170814:23c75b27",
+     "recovery": 0.387965
+    },
+    {
+     "seed": "GW170814:c1fed4d8",
+     "recovery": 0.367849
+    },
+    {
+     "seed": "GW170814:60364e89",
+     "recovery": 0.415756
+    },
+    {
+     "seed": "GW170814:fe6dc83a",
+     "recovery": 0.415174
+    },
+    {
+     "seed": "GW170814:9ca541eb",
+     "recovery": 0.37064
+    },
+    {
+     "seed": "GW170814:3adcbb9c",
+     "recovery": 0.323256
+    },
+    {
+     "seed": "GW170814:d914354d",
+     "recovery": 0.344826
+    },
+    {
+     "seed": "GW170814:774baefe",
+     "recovery": 0.359593
+    },
+    {
+     "seed": "GW170814:158328af",
+     "recovery": 0.393547
+    },
+    {
+     "seed": "GW170814:b3baa260",
+     "recovery": 0.400058
+    },
+    {
+     "seed": "GW170814:51f21c11",
+     "recovery": 0.403895
+    },
+    {
+     "seed": "GW170814:f02995c2",
+     "recovery": 0.390523
+    },
+    {
+     "seed": "GW170814:8e610f73",
+     "recovery": 0.433779
+    }
+   ]
+  },
+  {
+   "event": "GW170809",
+   "physical_recovery": 0.608468,
+   "template_sha256": "d69f77578a5253e93f24db8248f153ab0710a0c97caa61e5819f7fd9b8f1a4dc",
+   "scrambles": [
+    {
+     "seed": "GW170809:5eed0000",
+     "recovery": 0.379516
+    },
+    {
+     "seed": "GW170809:fd2479b1",
+     "recovery": 0.320806
+    },
+    {
+     "seed": "GW170809:9b5bf362",
+     "recovery": 0.310242
+    },
+    {
+     "seed": "GW170809:39936d13",
+     "recovery": 0.46629
+    },
+    {
+     "seed": "GW170809:d7cae6c4",
+     "recovery": 0.4175
+    },
+    {
+     "seed": "GW170809:76026075",
+     "recovery": 0.420565
+    },
+    {
+     "seed": "GW170809:1439da26",
+     "recovery": 0.328952
+    },
+    {
+     "seed": "GW170809:b27153d7",
+     "recovery": 0.327097
+    },
+    {
+     "seed": "GW170809:50a8cd88",
+     "recovery": 0.367823
+    },
+    {
+     "seed": "GW170809:eee04739",
+     "recovery": 0.344919
+    },
+    {
+     "seed": "GW170809:8d17c0ea",
+     "recovery": 0.330242
+    },
+    {
+     "seed": "GW170809:2b4f3a9b",
+     "recovery": 0.32379
+    },
+    {
+     "seed": "GW170809:c986b44c",
+     "recovery": 0.282581
+    },
+    {
+     "seed": "GW170809:67be2dfd",
+     "recovery": 0.34
+    },
+    {
+     "seed": "GW170809:05f5a7ae",
+     "recovery": 0.351774
+    },
+    {
+     "seed": "GW170809:a42d215f",
+     "recovery": 0.33371
+    },
+    {
+     "seed": "GW170809:42649b10",
+     "recovery": 0.399919
+    },
+    {
+     "seed": "GW170809:e09c14c1",
+     "recovery": 0.395484
+    },
+    {
+     "seed": "GW170809:7ed38e72",
+     "recovery": 0.328306
+    },
+    {
+     "seed": "GW170809:1d0b0823",
+     "recovery": 0.367984
+    },
+    {
+     "seed": "GW170809:bb4281d4",
+     "recovery": 0.322419
+    },
+    {
+     "seed": "GW170809:5979fb85",
+     "recovery": 0.381048
+    },
+    {
+     "seed": "GW170809:f7b17536",
+     "recovery": 0.367581
+    },
+    {
+     "seed": "GW170809:95e8eee7",
+     "recovery": 0.304677
+    },
+    {
+     "seed": "GW170809:34206898",
+     "recovery": 0.383226
+    },
+    {
+     "seed": "GW170809:d257e249",
+     "recovery": 0.334274
+    },
+    {
+     "seed": "GW170809:708f5bfa",
+     "recovery": 0.340403
+    },
+    {
+     "seed": "GW170809:0ec6d5ab",
+     "recovery": 0.365887
+    },
+    {
+     "seed": "GW170809:acfe4f5c",
+     "recovery": 0.394919
+    },
+    {
+     "seed": "GW170809:4b35c90d",
+     "recovery": 0.337097
+    },
+    {
+     "seed": "GW170809:e96d42be",
+     "recovery": 0.3125
+    },
+    {
+     "seed": "GW170809:87a4bc6f",
+     "recovery": 0.30871
+    },
+    {
+     "seed": "GW170809:25dc3620",
+     "recovery": 0.478629
+    },
+    {
+     "seed": "GW170809:c413afd1",
+     "recovery": 0.301129
+    },
+    {
+     "seed": "GW170809:624b2982",
+     "recovery": 0.375968
+    },
+    {
+     "seed": "GW170809:0082a333",
+     "recovery": 0.418629
+    },
+    {
+     "seed": "GW170809:9eba1ce4",
+     "recovery": 0.335484
+    },
+    {
+     "seed": "GW170809:3cf19695",
+     "recovery": 0.342581
+    },
+    {
+     "seed": "GW170809:db291046",
+     "recovery": 0.29121
+    },
+    {
+     "seed": "GW170809:796089f7",
+     "recovery": 0.349113
+    },
+    {
+     "seed": "GW170809:179803a8",
+     "recovery": 0.382984
+    },
+    {
+     "seed": "GW170809:b5cf7d59",
+     "recovery": 0.290645
+    },
+    {
+     "seed": "GW170809:5406f70a",
+     "recovery": 0.345161
+    },
+    {
+     "seed": "GW170809:f23e70bb",
+     "recovery": 0.35621
+    },
+    {
+     "seed": "GW170809:9075ea6c",
+     "recovery": 0.314435
+    },
+    {
+     "seed": "GW170809:2ead641d",
+     "recovery": 0.409032
+    },
+    {
+     "seed": "GW170809:cce4ddce",
+     "recovery": 0.389113
+    },
+    {
+     "seed": "GW170809:6b1c577f",
+     "recovery": 0.302742
+    },
+    {
+     "seed": "GW170809:0953d130",
+     "recovery": 0.2775
+    },
+    {
+     "seed": "GW170809:a78b4ae1",
+     "recovery": 0.420565
+    },
+    {
+     "seed": "GW170809:45c2c492",
+     "recovery": 0.334355
+    },
+    {
+     "seed": "GW170809:e3fa3e43",
+     "recovery": 0.285
+    },
+    {
+     "seed": "GW170809:8231b7f4",
+     "recovery": 0.327258
+    },
+    {
+     "seed": "GW170809:206931a5",
+     "recovery": 0.301613
+    },
+    {
+     "seed": "GW170809:bea0ab56",
+     "recovery": 0.286452
+    },
+    {
+     "seed": "GW170809:5cd82507",
+     "recovery": 0.32371
+    },
+    {
+     "seed": "GW170809:fb0f9eb8",
+     "recovery": 0.38371
+    },
+    {
+     "seed": "GW170809:99471869",
+     "recovery": 0.324677
+    },
+    {
+     "seed": "GW170809:377e921a",
+     "recovery": 0.325081
+    },
+    {
+     "seed": "GW170809:d5b60bcb",
+     "recovery": 0.345645
+    },
+    {
+     "seed": "GW170809:73ed857c",
+     "recovery": 0.35879
+    },
+    {
+     "seed": "GW170809:1224ff2d",
+     "recovery": 0.35379
+    },
+    {
+     "seed": "GW170809:b05c78de",
+     "recovery": 0.392016
+    },
+    {
+     "seed": "GW170809:4e93f28f",
+     "recovery": 0.328468
+    },
+    {
+     "seed": "GW170809:eccb6c40",
+     "recovery": 0.354677
+    },
+    {
+     "seed": "GW170809:8b02e5f1",
+     "recovery": 0.268952
+    },
+    {
+     "seed": "GW170809:293a5fa2",
+     "recovery": 0.333548
+    },
+    {
+     "seed": "GW170809:c771d953",
+     "recovery": 0.31879
+    },
+    {
+     "seed": "GW170809:65a95304",
+     "recovery": 0.407339
+    },
+    {
+     "seed": "GW170809:03e0ccb5",
+     "recovery": 0.353145
+    },
+    {
+     "seed": "GW170809:a2184666",
+     "recovery": 0.409839
+    },
+    {
+     "seed": "GW170809:404fc017",
+     "recovery": 0.417419
+    },
+    {
+     "seed": "GW170809:de8739c8",
+     "recovery": 0.362097
+    },
+    {
+     "seed": "GW170809:7cbeb379",
+     "recovery": 0.344194
+    },
+    {
+     "seed": "GW170809:1af62d2a",
+     "recovery": 0.310565
+    },
+    {
+     "seed": "GW170809:b92da6db",
+     "recovery": 0.380323
+    },
+    {
+     "seed": "GW170809:5765208c",
+     "recovery": 0.327661
+    },
+    {
+     "seed": "GW170809:f59c9a3d",
+     "recovery": 0.428871
+    },
+    {
+     "seed": "GW170809:93d413ee",
+     "recovery": 0.335726
+    },
+    {
+     "seed": "GW170809:320b8d9f",
+     "recovery": 0.378065
+    },
+    {
+     "seed": "GW170809:d0430750",
+     "recovery": 0.35121
+    },
+    {
+     "seed": "GW170809:6e7a8101",
+     "recovery": 0.348226
+    },
+    {
+     "seed": "GW170809:0cb1fab2",
+     "recovery": 0.295242
+    },
+    {
+     "seed": "GW170809:aae97463",
+     "recovery": 0.421452
+    },
+    {
+     "seed": "GW170809:4920ee14",
+     "recovery": 0.369435
+    },
+    {
+     "seed": "GW170809:e75867c5",
+     "recovery": 0.350403
+    },
+    {
+     "seed": "GW170809:858fe176",
+     "recovery": 0.379758
+    },
+    {
+     "seed": "GW170809:23c75b27",
+     "recovery": 0.412419
+    },
+    {
+     "seed": "GW170809:c1fed4d8",
+     "recovery": 0.292823
+    },
+    {
+     "seed": "GW170809:60364e89",
+     "recovery": 0.403145
+    },
+    {
+     "seed": "GW170809:fe6dc83a",
+     "recovery": 0.478145
+    },
+    {
+     "seed": "GW170809:9ca541eb",
+     "recovery": 0.316532
+    },
+    {
+     "seed": "GW170809:3adcbb9c",
+     "recovery": 0.322339
+    },
+    {
+     "seed": "GW170809:d914354d",
+     "recovery": 0.280323
+    },
+    {
+     "seed": "GW170809:774baefe",
+     "recovery": 0.398145
+    },
+    {
+     "seed": "GW170809:158328af",
+     "recovery": 0.330968
+    },
+    {
+     "seed": "GW170809:b3baa260",
+     "recovery": 0.349194
+    },
+    {
+     "seed": "GW170809:51f21c11",
+     "recovery": 0.280726
+    },
+    {
+     "seed": "GW170809:f02995c2",
+     "recovery": 0.265565
+    },
+    {
+     "seed": "GW170809:8e610f73",
+     "recovery": 0.449919
+    }
+   ]
+  },
+  {
+   "event": "GW150914",
+   "physical_recovery": 0.417341,
+   "template_sha256": "462aa64faab440376b8bbeef9ada0b1df679f417269e00e92192f46bd08eebee",
+   "scrambles": [
+    {
+     "seed": "GW150914:5eed0000",
+     "recovery": 0.276865
+    },
+    {
+     "seed": "GW150914:fd2479b1",
+     "recovery": 0.254048
+    },
+    {
+     "seed": "GW150914:9b5bf362",
+     "recovery": 0.241984
+    },
+    {
+     "seed": "GW150914:39936d13",
+     "recovery": 0.242421
+    },
+    {
+     "seed": "GW150914:d7cae6c4",
+     "recovery": 0.291468
+    },
+    {
+     "seed": "GW150914:76026075",
+     "recovery": 0.286032
+    },
+    {
+     "seed": "GW150914:1439da26",
+     "recovery": 0.275
+    },
+    {
+     "seed": "GW150914:b27153d7",
+     "recovery": 0.284405
+    },
+    {
+     "seed": "GW150914:50a8cd88",
+     "recovery": 0.317976
+    },
+    {
+     "seed": "GW150914:eee04739",
+     "recovery": 0.267381
+    },
+    {
+     "seed": "GW150914:8d17c0ea",
+     "recovery": 0.218333
+    },
+    {
+     "seed": "GW150914:2b4f3a9b",
+     "recovery": 0.234643
+    },
+    {
+     "seed": "GW150914:c986b44c",
+     "recovery": 0.224921
+    },
+    {
+     "seed": "GW150914:67be2dfd",
+     "recovery": 0.301667
+    },
+    {
+     "seed": "GW150914:05f5a7ae",
+     "recovery": 0.248214
+    },
+    {
+     "seed": "GW150914:a42d215f",
+     "recovery": 0.269524
+    },
+    {
+     "seed": "GW150914:42649b10",
+     "recovery": 0.233214
+    },
+    {
+     "seed": "GW150914:e09c14c1",
+     "recovery": 0.283611
+    },
+    {
+     "seed": "GW150914:7ed38e72",
+     "recovery": 0.245675
+    },
+    {
+     "seed": "GW150914:1d0b0823",
+     "recovery": 0.241429
+    },
+    {
+     "seed": "GW150914:bb4281d4",
+     "recovery": 0.265238
+    },
+    {
+     "seed": "GW150914:5979fb85",
+     "recovery": 0.264325
+    },
+    {
+     "seed": "GW150914:f7b17536",
+     "recovery": 0.244365
+    },
+    {
+     "seed": "GW150914:95e8eee7",
+     "recovery": 0.247341
+    },
+    {
+     "seed": "GW150914:34206898",
+     "recovery": 0.250397
+    },
+    {
+     "seed": "GW150914:d257e249",
+     "recovery": 0.254841
+    },
+    {
+     "seed": "GW150914:708f5bfa",
+     "recovery": 0.259484
+    },
+    {
+     "seed": "GW150914:0ec6d5ab",
+     "recovery": 0.257302
+    },
+    {
+     "seed": "GW150914:acfe4f5c",
+     "recovery": 0.262103
+    },
+    {
+     "seed": "GW150914:4b35c90d",
+     "recovery": 0.258095
+    },
+    {
+     "seed": "GW150914:e96d42be",
+     "recovery": 0.271548
+    },
+    {
+     "seed": "GW150914:87a4bc6f",
+     "recovery": 0.259365
+    },
+    {
+     "seed": "GW150914:25dc3620",
+     "recovery": 0.25246
+    },
+    {
+     "seed": "GW150914:c413afd1",
+     "recovery": 0.236786
+    },
+    {
+     "seed": "GW150914:624b2982",
+     "recovery": 0.219048
+    },
+    {
+     "seed": "GW150914:0082a333",
+     "recovery": 0.254206
+    },
+    {
+     "seed": "GW150914:9eba1ce4",
+     "recovery": 0.261627
+    },
+    {
+     "seed": "GW150914:3cf19695",
+     "recovery": 0.264921
+    },
+    {
+     "seed": "GW150914:db291046",
+     "recovery": 0.251389
+    },
+    {
+     "seed": "GW150914:796089f7",
+     "recovery": 0.245476
+    },
+    {
+     "seed": "GW150914:179803a8",
+     "recovery": 0.286905
+    },
+    {
+     "seed": "GW150914:b5cf7d59",
+     "recovery": 0.235714
+    },
+    {
+     "seed": "GW150914:5406f70a",
+     "recovery": 0.236032
+    },
+    {
+     "seed": "GW150914:f23e70bb",
+     "recovery": 0.255
+    },
+    {
+     "seed": "GW150914:9075ea6c",
+     "recovery": 0.266587
+    },
+    {
+     "seed": "GW150914:2ead641d",
+     "recovery": 0.261111
+    },
+    {
+     "seed": "GW150914:cce4ddce",
+     "recovery": 0.29369
+    },
+    {
+     "seed": "GW150914:6b1c577f",
+     "recovery": 0.268016
+    },
+    {
+     "seed": "GW150914:0953d130",
+     "recovery": 0.249603
+    },
+    {
+     "seed": "GW150914:a78b4ae1",
+     "recovery": 0.259246
+    },
+    {
+     "seed": "GW150914:45c2c492",
+     "recovery": 0.261984
+    },
+    {
+     "seed": "GW150914:e3fa3e43",
+     "recovery": 0.235873
+    },
+    {
+     "seed": "GW150914:8231b7f4",
+     "recovery": 0.259722
+    },
+    {
+     "seed": "GW150914:206931a5",
+     "recovery": 0.234405
+    },
+    {
+     "seed": "GW150914:bea0ab56",
+     "recovery": 0.295198
+    },
+    {
+     "seed": "GW150914:5cd82507",
+     "recovery": 0.241587
+    },
+    {
+     "seed": "GW150914:fb0f9eb8",
+     "recovery": 0.246111
+    },
+    {
+     "seed": "GW150914:99471869",
+     "recovery": 0.25881
+    },
+    {
+     "seed": "GW150914:377e921a",
+     "recovery": 0.255556
+    },
+    {
+     "seed": "GW150914:d5b60bcb",
+     "recovery": 0.240754
+    },
+    {
+     "seed": "GW150914:73ed857c",
+     "recovery": 0.274643
+    },
+    {
+     "seed": "GW150914:1224ff2d",
+     "recovery": 0.288373
+    },
+    {
+     "seed": "GW150914:b05c78de",
+     "recovery": 0.266865
+    },
+    {
+     "seed": "GW150914:4e93f28f",
+     "recovery": 0.264365
+    },
+    {
+     "seed": "GW150914:eccb6c40",
+     "recovery": 0.251944
+    },
+    {
+     "seed": "GW150914:8b02e5f1",
+     "recovery": 0.251706
+    },
+    {
+     "seed": "GW150914:293a5fa2",
+     "recovery": 0.264048
+    },
+    {
+     "seed": "GW150914:c771d953",
+     "recovery": 0.233175
+    },
+    {
+     "seed": "GW150914:65a95304",
+     "recovery": 0.259802
+    },
+    {
+     "seed": "GW150914:03e0ccb5",
+     "recovery": 0.284246
+    },
+    {
+     "seed": "GW150914:a2184666",
+     "recovery": 0.235873
+    },
+    {
+     "seed": "GW150914:404fc017",
+     "recovery": 0.268056
+    },
+    {
+     "seed": "GW150914:de8739c8",
+     "recovery": 0.235992
+    },
+    {
+     "seed": "GW150914:7cbeb379",
+     "recovery": 0.273016
+    },
+    {
+     "seed": "GW150914:1af62d2a",
+     "recovery": 0.250516
+    },
+    {
+     "seed": "GW150914:b92da6db",
+     "recovery": 0.287341
+    },
+    {
+     "seed": "GW150914:5765208c",
+     "recovery": 0.258929
+    },
+    {
+     "seed": "GW150914:f59c9a3d",
+     "recovery": 0.241349
+    },
+    {
+     "seed": "GW150914:93d413ee",
+     "recovery": 0.284563
+    },
+    {
+     "seed": "GW150914:320b8d9f",
+     "recovery": 0.294048
+    },
+    {
+     "seed": "GW150914:d0430750",
+     "recovery": 0.241548
+    },
+    {
+     "seed": "GW150914:6e7a8101",
+     "recovery": 0.255913
+    },
+    {
+     "seed": "GW150914:0cb1fab2",
+     "recovery": 0.277262
+    },
+    {
+     "seed": "GW150914:aae97463",
+     "recovery": 0.300437
+    },
+    {
+     "seed": "GW150914:4920ee14",
+     "recovery": 0.263651
+    },
+    {
+     "seed": "GW150914:e75867c5",
+     "recovery": 0.252897
+    },
+    {
+     "seed": "GW150914:858fe176",
+     "recovery": 0.208413
+    },
+    {
+     "seed": "GW150914:23c75b27",
+     "recovery": 0.231825
+    },
+    {
+     "seed": "GW150914:c1fed4d8",
+     "recovery": 0.265317
+    },
+    {
+     "seed": "GW150914:60364e89",
+     "recovery": 0.247857
+    },
+    {
+     "seed": "GW150914:fe6dc83a",
+     "recovery": 0.259762
+    },
+    {
+     "seed": "GW150914:9ca541eb",
+     "recovery": 0.298056
+    },
+    {
+     "seed": "GW150914:3adcbb9c",
+     "recovery": 0.261429
+    },
+    {
+     "seed": "GW150914:d914354d",
+     "recovery": 0.240119
+    },
+    {
+     "seed": "GW150914:774baefe",
+     "recovery": 0.267659
+    },
+    {
+     "seed": "GW150914:158328af",
+     "recovery": 0.265754
+    },
+    {
+     "seed": "GW150914:b3baa260",
+     "recovery": 0.264603
+    },
+    {
+     "seed": "GW150914:51f21c11",
+     "recovery": 0.243849
+    },
+    {
+     "seed": "GW150914:f02995c2",
+     "recovery": 0.276786
+    },
+    {
+     "seed": "GW150914:8e610f73",
+     "recovery": 0.246786
+    }
+   ]
+  },
+  {
+   "event": "GW170818",
+   "physical_recovery": 0.473009,
+   "template_sha256": "ae0e08df7164edeab10152c69b108a61870028c2b108ac38092a510050b0bd59",
+   "scrambles": [
+    {
+     "seed": "GW170818:5eed0000",
+     "recovery": 0.406549
+    },
+    {
+     "seed": "GW170818:fd2479b1",
+     "recovery": 0.367876
+    },
+    {
+     "seed": "GW170818:9b5bf362",
+     "recovery": 0.453982
+    },
+    {
+     "seed": "GW170818:39936d13",
+     "recovery": 0.423009
+    },
+    {
+     "seed": "GW170818:d7cae6c4",
+     "recovery": 0.392124
+    },
+    {
+     "seed": "GW170818:76026075",
+     "recovery": 0.412124
+    },
+    {
+     "seed": "GW170818:1439da26",
+     "recovery": 0.42646
+    },
+    {
+     "seed": "GW170818:b27153d7",
+     "recovery": 0.329735
+    },
+    {
+     "seed": "GW170818:50a8cd88",
+     "recovery": 0.40823
+    },
+    {
+     "seed": "GW170818:eee04739",
+     "recovery": 0.409469
+    },
+    {
+     "seed": "GW170818:8d17c0ea",
+     "recovery": 0.424956
+    },
+    {
+     "seed": "GW170818:2b4f3a9b",
+     "recovery": 0.380088
+    },
+    {
+     "seed": "GW170818:c986b44c",
+     "recovery": 0.379823
+    },
+    {
+     "seed": "GW170818:67be2dfd",
+     "recovery": 0.446991
+    },
+    {
+     "seed": "GW170818:05f5a7ae",
+     "recovery": 0.378407
+    },
+    {
+     "seed": "GW170818:a42d215f",
+     "recovery": 0.409558
+    },
+    {
+     "seed": "GW170818:42649b10",
+     "recovery": 0.372035
+    },
+    {
+     "seed": "GW170818:e09c14c1",
+     "recovery": 0.445575
+    },
+    {
+     "seed": "GW170818:7ed38e72",
+     "recovery": 0.399823
+    },
+    {
+     "seed": "GW170818:1d0b0823",
+     "recovery": 0.438319
+    },
+    {
+     "seed": "GW170818:bb4281d4",
+     "recovery": 0.434513
+    },
+    {
+     "seed": "GW170818:5979fb85",
+     "recovery": 0.444867
+    },
+    {
+     "seed": "GW170818:f7b17536",
+     "recovery": 0.386372
+    },
+    {
+     "seed": "GW170818:95e8eee7",
+     "recovery": 0.481858
+    },
+    {
+     "seed": "GW170818:34206898",
+     "recovery": 0.440088
+    },
+    {
+     "seed": "GW170818:d257e249",
+     "recovery": 0.440796
+    },
+    {
+     "seed": "GW170818:708f5bfa",
+     "recovery": 0.427345
+    },
+    {
+     "seed": "GW170818:0ec6d5ab",
+     "recovery": 0.360973
+    },
+    {
+     "seed": "GW170818:acfe4f5c",
+     "recovery": 0.406195
+    },
+    {
+     "seed": "GW170818:4b35c90d",
+     "recovery": 0.428496
+    },
+    {
+     "seed": "GW170818:e96d42be",
+     "recovery": 0.43708
+    },
+    {
+     "seed": "GW170818:87a4bc6f",
+     "recovery": 0.439204
+    },
+    {
+     "seed": "GW170818:25dc3620",
+     "recovery": 0.369381
+    },
+    {
+     "seed": "GW170818:c413afd1",
+     "recovery": 0.411681
+    },
+    {
+     "seed": "GW170818:624b2982",
+     "recovery": 0.462743
+    },
+    {
+     "seed": "GW170818:0082a333",
+     "recovery": 0.398053
+    },
+    {
+     "seed": "GW170818:9eba1ce4",
+     "recovery": 0.40354
+    },
+    {
+     "seed": "GW170818:3cf19695",
+     "recovery": 0.361416
+    },
+    {
+     "seed": "GW170818:db291046",
+     "recovery": 0.418761
+    },
+    {
+     "seed": "GW170818:796089f7",
+     "recovery": 0.462832
+    },
+    {
+     "seed": "GW170818:179803a8",
+     "recovery": 0.370177
+    },
+    {
+     "seed": "GW170818:b5cf7d59",
+     "recovery": 0.434513
+    },
+    {
+     "seed": "GW170818:5406f70a",
+     "recovery": 0.421947
+    },
+    {
+     "seed": "GW170818:f23e70bb",
+     "recovery": 0.397788
+    },
+    {
+     "seed": "GW170818:9075ea6c",
+     "recovery": 0.399646
+    },
+    {
+     "seed": "GW170818:2ead641d",
+     "recovery": 0.402566
+    },
+    {
+     "seed": "GW170818:cce4ddce",
+     "recovery": 0.392389
+    },
+    {
+     "seed": "GW170818:6b1c577f",
+     "recovery": 0.413717
+    },
+    {
+     "seed": "GW170818:0953d130",
+     "recovery": 0.377788
+    },
+    {
+     "seed": "GW170818:a78b4ae1",
+     "recovery": 0.40177
+    },
+    {
+     "seed": "GW170818:45c2c492",
+     "recovery": 0.453628
+    },
+    {
+     "seed": "GW170818:e3fa3e43",
+     "recovery": 0.391947
+    },
+    {
+     "seed": "GW170818:8231b7f4",
+     "recovery": 0.442655
+    },
+    {
+     "seed": "GW170818:206931a5",
+     "recovery": 0.387345
+    },
+    {
+     "seed": "GW170818:bea0ab56",
+     "recovery": 0.464779
+    },
+    {
+     "seed": "GW170818:5cd82507",
+     "recovery": 0.360177
+    },
+    {
+     "seed": "GW170818:fb0f9eb8",
+     "recovery": 0.448584
+    },
+    {
+     "seed": "GW170818:99471869",
+     "recovery": 0.385221
+    },
+    {
+     "seed": "GW170818:377e921a",
+     "recovery": 0.439469
+    },
+    {
+     "seed": "GW170818:d5b60bcb",
+     "recovery": 0.415133
+    },
+    {
+     "seed": "GW170818:73ed857c",
+     "recovery": 0.40115
+    },
+    {
+     "seed": "GW170818:1224ff2d",
+     "recovery": 0.461858
+    },
+    {
+     "seed": "GW170818:b05c78de",
+     "recovery": 0.435752
+    },
+    {
+     "seed": "GW170818:4e93f28f",
+     "recovery": 0.373186
+    },
+    {
+     "seed": "GW170818:eccb6c40",
+     "recovery": 0.353894
+    },
+    {
+     "seed": "GW170818:8b02e5f1",
+     "recovery": 0.446637
+    },
+    {
+     "seed": "GW170818:293a5fa2",
+     "recovery": 0.445133
+    },
+    {
+     "seed": "GW170818:c771d953",
+     "recovery": 0.513363
+    },
+    {
+     "seed": "GW170818:65a95304",
+     "recovery": 0.417965
+    },
+    {
+     "seed": "GW170818:03e0ccb5",
+     "recovery": 0.377965
+    },
+    {
+     "seed": "GW170818:a2184666",
+     "recovery": 0.490708
+    },
+    {
+     "seed": "GW170818:404fc017",
+     "recovery": 0.435664
+    },
+    {
+     "seed": "GW170818:de8739c8",
+     "recovery": 0.379027
+    },
+    {
+     "seed": "GW170818:7cbeb379",
+     "recovery": 0.451947
+    },
+    {
+     "seed": "GW170818:1af62d2a",
+     "recovery": 0.416549
+    },
+    {
+     "seed": "GW170818:b92da6db",
+     "recovery": 0.39708
+    },
+    {
+     "seed": "GW170818:5765208c",
+     "recovery": 0.386991
+    },
+    {
+     "seed": "GW170818:f59c9a3d",
+     "recovery": 0.358584
+    },
+    {
+     "seed": "GW170818:93d413ee",
+     "recovery": 0.362566
+    },
+    {
+     "seed": "GW170818:320b8d9f",
+     "recovery": 0.34177
+    },
+    {
+     "seed": "GW170818:d0430750",
+     "recovery": 0.43177
+    },
+    {
+     "seed": "GW170818:6e7a8101",
+     "recovery": 0.48469
+    },
+    {
+     "seed": "GW170818:0cb1fab2",
+     "recovery": 0.385664
+    },
+    {
+     "seed": "GW170818:aae97463",
+     "recovery": 0.418407
+    },
+    {
+     "seed": "GW170818:4920ee14",
+     "recovery": 0.383451
+    },
+    {
+     "seed": "GW170818:e75867c5",
+     "recovery": 0.368673
+    },
+    {
+     "seed": "GW170818:858fe176",
+     "recovery": 0.478053
+    },
+    {
+     "seed": "GW170818:23c75b27",
+     "recovery": 0.355221
+    },
+    {
+     "seed": "GW170818:c1fed4d8",
+     "recovery": 0.42292
+    },
+    {
+     "seed": "GW170818:60364e89",
+     "recovery": 0.498496
+    },
+    {
+     "seed": "GW170818:fe6dc83a",
+     "recovery": 0.50354
+    },
+    {
+     "seed": "GW170818:9ca541eb",
+     "recovery": 0.44885
+    },
+    {
+     "seed": "GW170818:3adcbb9c",
+     "recovery": 0.430177
+    },
+    {
+     "seed": "GW170818:d914354d",
+     "recovery": 0.360796
+    },
+    {
+     "seed": "GW170818:774baefe",
+     "recovery": 0.378496
+    },
+    {
+     "seed": "GW170818:158328af",
+     "recovery": 0.42469
+    },
+    {
+     "seed": "GW170818:b3baa260",
+     "recovery": 0.397345
+    },
+    {
+     "seed": "GW170818:51f21c11",
+     "recovery": 0.405575
+    },
+    {
+     "seed": "GW170818:f02995c2",
+     "recovery": 0.37531
+    },
+    {
+     "seed": "GW170818:8e610f73",
+     "recovery": 0.433628
+    }
+   ]
+  },
+  {
+   "event": "GW170823",
+   "physical_recovery": 0.550957,
+   "template_sha256": "4de46e0dd2e4884dd11a8774259a2c467acf76ada854e66f043284c75ad7a047",
+   "scrambles": [
+    {
+     "seed": "GW170823:5eed0000",
+     "recovery": 0.389478
+    },
+    {
+     "seed": "GW170823:fd2479b1",
+     "recovery": 0.39687
+    },
+    {
+     "seed": "GW170823:9b5bf362",
+     "recovery": 0.378696
+    },
+    {
+     "seed": "GW170823:39936d13",
+     "recovery": 0.408522
+    },
+    {
+     "seed": "GW170823:d7cae6c4",
+     "recovery": 0.343565
+    },
+    {
+     "seed": "GW170823:76026075",
+     "recovery": 0.410174
+    },
+    {
+     "seed": "GW170823:1439da26",
+     "recovery": 0.384261
+    },
+    {
+     "seed": "GW170823:b27153d7",
+     "recovery": 0.408348
+    },
+    {
+     "seed": "GW170823:50a8cd88",
+     "recovery": 0.316
+    },
+    {
+     "seed": "GW170823:eee04739",
+     "recovery": 0.393391
+    },
+    {
+     "seed": "GW170823:8d17c0ea",
+     "recovery": 0.388609
+    },
+    {
+     "seed": "GW170823:2b4f3a9b",
+     "recovery": 0.380783
+    },
+    {
+     "seed": "GW170823:c986b44c",
+     "recovery": 0.334261
+    },
+    {
+     "seed": "GW170823:67be2dfd",
+     "recovery": 0.34887
+    },
+    {
+     "seed": "GW170823:05f5a7ae",
+     "recovery": 0.366261
+    },
+    {
+     "seed": "GW170823:a42d215f",
+     "recovery": 0.43113
+    },
+    {
+     "seed": "GW170823:42649b10",
+     "recovery": 0.359913
+    },
+    {
+     "seed": "GW170823:e09c14c1",
+     "recovery": 0.380609
+    },
+    {
+     "seed": "GW170823:7ed38e72",
+     "recovery": 0.36287
+    },
+    {
+     "seed": "GW170823:1d0b0823",
+     "recovery": 0.358261
+    },
+    {
+     "seed": "GW170823:bb4281d4",
+     "recovery": 0.357913
+    },
+    {
+     "seed": "GW170823:5979fb85",
+     "recovery": 0.426522
+    },
+    {
+     "seed": "GW170823:f7b17536",
+     "recovery": 0.49887
+    },
+    {
+     "seed": "GW170823:95e8eee7",
+     "recovery": 0.403217
+    },
+    {
+     "seed": "GW170823:34206898",
+     "recovery": 0.42687
+    },
+    {
+     "seed": "GW170823:d257e249",
+     "recovery": 0.404435
+    },
+    {
+     "seed": "GW170823:708f5bfa",
+     "recovery": 0.387217
+    },
+    {
+     "seed": "GW170823:0ec6d5ab",
+     "recovery": 0.397391
+    },
+    {
+     "seed": "GW170823:acfe4f5c",
+     "recovery": 0.409478
+    },
+    {
+     "seed": "GW170823:4b35c90d",
+     "recovery": 0.387391
+    },
+    {
+     "seed": "GW170823:e96d42be",
+     "recovery": 0.367652
+    },
+    {
+     "seed": "GW170823:87a4bc6f",
+     "recovery": 0.378783
+    },
+    {
+     "seed": "GW170823:25dc3620",
+     "recovery": 0.364261
+    },
+    {
+     "seed": "GW170823:c413afd1",
+     "recovery": 0.333043
+    },
+    {
+     "seed": "GW170823:624b2982",
+     "recovery": 0.417217
+    },
+    {
+     "seed": "GW170823:0082a333",
+     "recovery": 0.358783
+    },
+    {
+     "seed": "GW170823:9eba1ce4",
+     "recovery": 0.337913
+    },
+    {
+     "seed": "GW170823:3cf19695",
+     "recovery": 0.397043
+    },
+    {
+     "seed": "GW170823:db291046",
+     "recovery": 0.385739
+    },
+    {
+     "seed": "GW170823:796089f7",
+     "recovery": 0.36687
+    },
+    {
+     "seed": "GW170823:179803a8",
+     "recovery": 0.433826
+    },
+    {
+     "seed": "GW170823:b5cf7d59",
+     "recovery": 0.356087
+    },
+    {
+     "seed": "GW170823:5406f70a",
+     "recovery": 0.388174
+    },
+    {
+     "seed": "GW170823:f23e70bb",
+     "recovery": 0.348783
+    },
+    {
+     "seed": "GW170823:9075ea6c",
+     "recovery": 0.382348
+    },
+    {
+     "seed": "GW170823:2ead641d",
+     "recovery": 0.404435
+    },
+    {
+     "seed": "GW170823:cce4ddce",
+     "recovery": 0.453217
+    },
+    {
+     "seed": "GW170823:6b1c577f",
+     "recovery": 0.426
+    },
+    {
+     "seed": "GW170823:0953d130",
+     "recovery": 0.352609
+    },
+    {
+     "seed": "GW170823:a78b4ae1",
+     "recovery": 0.406522
+    },
+    {
+     "seed": "GW170823:45c2c492",
+     "recovery": 0.458783
+    },
+    {
+     "seed": "GW170823:e3fa3e43",
+     "recovery": 0.411043
+    },
+    {
+     "seed": "GW170823:8231b7f4",
+     "recovery": 0.330087
+    },
+    {
+     "seed": "GW170823:206931a5",
+     "recovery": 0.426087
+    },
+    {
+     "seed": "GW170823:bea0ab56",
+     "recovery": 0.397304
+    },
+    {
+     "seed": "GW170823:5cd82507",
+     "recovery": 0.36313
+    },
+    {
+     "seed": "GW170823:fb0f9eb8",
+     "recovery": 0.477304
+    },
+    {
+     "seed": "GW170823:99471869",
+     "recovery": 0.436348
+    },
+    {
+     "seed": "GW170823:377e921a",
+     "recovery": 0.416087
+    },
+    {
+     "seed": "GW170823:d5b60bcb",
+     "recovery": 0.369826
+    },
+    {
+     "seed": "GW170823:73ed857c",
+     "recovery": 0.36313
+    },
+    {
+     "seed": "GW170823:1224ff2d",
+     "recovery": 0.392087
+    },
+    {
+     "seed": "GW170823:b05c78de",
+     "recovery": 0.494957
+    },
+    {
+     "seed": "GW170823:4e93f28f",
+     "recovery": 0.414609
+    },
+    {
+     "seed": "GW170823:eccb6c40",
+     "recovery": 0.393391
+    },
+    {
+     "seed": "GW170823:8b02e5f1",
+     "recovery": 0.43513
+    },
+    {
+     "seed": "GW170823:293a5fa2",
+     "recovery": 0.390522
+    },
+    {
+     "seed": "GW170823:c771d953",
+     "recovery": 0.430261
+    },
+    {
+     "seed": "GW170823:65a95304",
+     "recovery": 0.444522
+    },
+    {
+     "seed": "GW170823:03e0ccb5",
+     "recovery": 0.345826
+    },
+    {
+     "seed": "GW170823:a2184666",
+     "recovery": 0.387391
+    },
+    {
+     "seed": "GW170823:404fc017",
+     "recovery": 0.365478
+    },
+    {
+     "seed": "GW170823:de8739c8",
+     "recovery": 0.436957
+    },
+    {
+     "seed": "GW170823:7cbeb379",
+     "recovery": 0.422609
+    },
+    {
+     "seed": "GW170823:1af62d2a",
+     "recovery": 0.375217
+    },
+    {
+     "seed": "GW170823:b92da6db",
+     "recovery": 0.424957
+    },
+    {
+     "seed": "GW170823:5765208c",
+     "recovery": 0.369043
+    },
+    {
+     "seed": "GW170823:f59c9a3d",
+     "recovery": 0.473391
+    },
+    {
+     "seed": "GW170823:93d413ee",
+     "recovery": 0.365739
+    },
+    {
+     "seed": "GW170823:320b8d9f",
+     "recovery": 0.346609
+    },
+    {
+     "seed": "GW170823:d0430750",
+     "recovery": 0.417739
+    },
+    {
+     "seed": "GW170823:6e7a8101",
+     "recovery": 0.424435
+    },
+    {
+     "seed": "GW170823:0cb1fab2",
+     "recovery": 0.387739
+    },
+    {
+     "seed": "GW170823:aae97463",
+     "recovery": 0.348957
+    },
+    {
+     "seed": "GW170823:4920ee14",
+     "recovery": 0.390174
+    },
+    {
+     "seed": "GW170823:e75867c5",
+     "recovery": 0.435913
+    },
+    {
+     "seed": "GW170823:858fe176",
+     "recovery": 0.411565
+    },
+    {
+     "seed": "GW170823:23c75b27",
+     "recovery": 0.422435
+    },
+    {
+     "seed": "GW170823:c1fed4d8",
+     "recovery": 0.357043
+    },
+    {
+     "seed": "GW170823:60364e89",
+     "recovery": 0.377391
+    },
+    {
+     "seed": "GW170823:fe6dc83a",
+     "recovery": 0.39913
+    },
+    {
+     "seed": "GW170823:9ca541eb",
+     "recovery": 0.406348
+    },
+    {
+     "seed": "GW170823:3adcbb9c",
+     "recovery": 0.493043
+    },
+    {
+     "seed": "GW170823:d914354d",
+     "recovery": 0.421913
+    },
+    {
+     "seed": "GW170823:774baefe",
+     "recovery": 0.439217
+    },
+    {
+     "seed": "GW170823:158328af",
+     "recovery": 0.380609
+    },
+    {
+     "seed": "GW170823:b3baa260",
+     "recovery": 0.382087
+    },
+    {
+     "seed": "GW170823:51f21c11",
+     "recovery": 0.422261
+    },
+    {
+     "seed": "GW170823:f02995c2",
+     "recovery": 0.349478
+    },
+    {
+     "seed": "GW170823:8e610f73",
+     "recovery": 0.420609
+    }
+   ]
+  },
+  {
+   "event": "GW200220_124850",
+   "physical_recovery": 0.559176,
+   "template_sha256": "c2a5b65e9491ecb0d21ca103dc372c6225de856f73a5ce811ed87a82f6f26ef0",
+   "scrambles": [
+    {
+     "seed": "GW200220_124850:5eed0000",
+     "recovery": 0.439765
+    },
+    {
+     "seed": "GW200220_124850:fd2479b1",
+     "recovery": 0.430471
+    },
+    {
+     "seed": "GW200220_124850:9b5bf362",
+     "recovery": 0.397529
+    },
+    {
+     "seed": "GW200220_124850:39936d13",
+     "recovery": 0.427176
+    },
+    {
+     "seed": "GW200220_124850:d7cae6c4",
+     "recovery": 0.574471
+    },
+    {
+     "seed": "GW200220_124850:76026075",
+     "recovery": 0.565294
+    },
+    {
+     "seed": "GW200220_124850:1439da26",
+     "recovery": 0.433176
+    },
+    {
+     "seed": "GW200220_124850:b27153d7",
+     "recovery": 0.525059
+    },
+    {
+     "seed": "GW200220_124850:50a8cd88",
+     "recovery": 0.485059
+    },
+    {
+     "seed": "GW200220_124850:eee04739",
+     "recovery": 0.507765
+    },
+    {
+     "seed": "GW200220_124850:8d17c0ea",
+     "recovery": 0.447882
+    },
+    {
+     "seed": "GW200220_124850:2b4f3a9b",
+     "recovery": 0.494824
+    },
+    {
+     "seed": "GW200220_124850:c986b44c",
+     "recovery": 0.570235
+    },
+    {
+     "seed": "GW200220_124850:67be2dfd",
+     "recovery": 0.506118
+    },
+    {
+     "seed": "GW200220_124850:05f5a7ae",
+     "recovery": 0.516824
+    },
+    {
+     "seed": "GW200220_124850:a42d215f",
+     "recovery": 0.484
+    },
+    {
+     "seed": "GW200220_124850:42649b10",
+     "recovery": 0.513529
+    },
+    {
+     "seed": "GW200220_124850:e09c14c1",
+     "recovery": 0.529059
+    },
+    {
+     "seed": "GW200220_124850:7ed38e72",
+     "recovery": 0.424941
+    },
+    {
+     "seed": "GW200220_124850:1d0b0823",
+     "recovery": 0.541765
+    },
+    {
+     "seed": "GW200220_124850:bb4281d4",
+     "recovery": 0.49
+    },
+    {
+     "seed": "GW200220_124850:5979fb85",
+     "recovery": 0.502353
+    },
+    {
+     "seed": "GW200220_124850:f7b17536",
+     "recovery": 0.493176
+    },
+    {
+     "seed": "GW200220_124850:95e8eee7",
+     "recovery": 0.474235
+    },
+    {
+     "seed": "GW200220_124850:34206898",
+     "recovery": 0.561529
+    },
+    {
+     "seed": "GW200220_124850:d257e249",
+     "recovery": 0.590471
+    },
+    {
+     "seed": "GW200220_124850:708f5bfa",
+     "recovery": 0.466235
+    },
+    {
+     "seed": "GW200220_124850:0ec6d5ab",
+     "recovery": 0.448353
+    },
+    {
+     "seed": "GW200220_124850:acfe4f5c",
+     "recovery": 0.462353
+    },
+    {
+     "seed": "GW200220_124850:4b35c90d",
+     "recovery": 0.552118
+    },
+    {
+     "seed": "GW200220_124850:e96d42be",
+     "recovery": 0.545412
+    },
+    {
+     "seed": "GW200220_124850:87a4bc6f",
+     "recovery": 0.401294
+    },
+    {
+     "seed": "GW200220_124850:25dc3620",
+     "recovery": 0.446471
+    },
+    {
+     "seed": "GW200220_124850:c413afd1",
+     "recovery": 0.527176
+    },
+    {
+     "seed": "GW200220_124850:624b2982",
+     "recovery": 0.436706
+    },
+    {
+     "seed": "GW200220_124850:0082a333",
+     "recovery": 0.485647
+    },
+    {
+     "seed": "GW200220_124850:9eba1ce4",
+     "recovery": 0.519412
+    },
+    {
+     "seed": "GW200220_124850:3cf19695",
+     "recovery": 0.452118
+    },
+    {
+     "seed": "GW200220_124850:db291046",
+     "recovery": 0.442706
+    },
+    {
+     "seed": "GW200220_124850:796089f7",
+     "recovery": 0.432824
+    },
+    {
+     "seed": "GW200220_124850:179803a8",
+     "recovery": 0.565176
+    },
+    {
+     "seed": "GW200220_124850:b5cf7d59",
+     "recovery": 0.646941
+    },
+    {
+     "seed": "GW200220_124850:5406f70a",
+     "recovery": 0.488824
+    },
+    {
+     "seed": "GW200220_124850:f23e70bb",
+     "recovery": 0.531294
+    },
+    {
+     "seed": "GW200220_124850:9075ea6c",
+     "recovery": 0.504941
+    },
+    {
+     "seed": "GW200220_124850:2ead641d",
+     "recovery": 0.508706
+    },
+    {
+     "seed": "GW200220_124850:cce4ddce",
+     "recovery": 0.417294
+    },
+    {
+     "seed": "GW200220_124850:6b1c577f",
+     "recovery": 0.467176
+    },
+    {
+     "seed": "GW200220_124850:0953d130",
+     "recovery": 0.442118
+    },
+    {
+     "seed": "GW200220_124850:a78b4ae1",
+     "recovery": 0.457529
+    },
+    {
+     "seed": "GW200220_124850:45c2c492",
+     "recovery": 0.494588
+    },
+    {
+     "seed": "GW200220_124850:e3fa3e43",
+     "recovery": 0.461765
+    },
+    {
+     "seed": "GW200220_124850:8231b7f4",
+     "recovery": 0.458471
+    },
+    {
+     "seed": "GW200220_124850:206931a5",
+     "recovery": 0.509765
+    },
+    {
+     "seed": "GW200220_124850:bea0ab56",
+     "recovery": 0.454353
+    },
+    {
+     "seed": "GW200220_124850:5cd82507",
+     "recovery": 0.492353
+    },
+    {
+     "seed": "GW200220_124850:fb0f9eb8",
+     "recovery": 0.468941
+    },
+    {
+     "seed": "GW200220_124850:99471869",
+     "recovery": 0.396471
+    },
+    {
+     "seed": "GW200220_124850:377e921a",
+     "recovery": 0.420118
+    },
+    {
+     "seed": "GW200220_124850:d5b60bcb",
+     "recovery": 0.449529
+    },
+    {
+     "seed": "GW200220_124850:73ed857c",
+     "recovery": 0.387059
+    },
+    {
+     "seed": "GW200220_124850:1224ff2d",
+     "recovery": 0.381529
+    },
+    {
+     "seed": "GW200220_124850:b05c78de",
+     "recovery": 0.432588
+    },
+    {
+     "seed": "GW200220_124850:4e93f28f",
+     "recovery": 0.489529
+    },
+    {
+     "seed": "GW200220_124850:eccb6c40",
+     "recovery": 0.510941
+    },
+    {
+     "seed": "GW200220_124850:8b02e5f1",
+     "recovery": 0.543059
+    },
+    {
+     "seed": "GW200220_124850:293a5fa2",
+     "recovery": 0.471412
+    },
+    {
+     "seed": "GW200220_124850:c771d953",
+     "recovery": 0.422941
+    },
+    {
+     "seed": "GW200220_124850:65a95304",
+     "recovery": 0.464824
+    },
+    {
+     "seed": "GW200220_124850:03e0ccb5",
+     "recovery": 0.419882
+    },
+    {
+     "seed": "GW200220_124850:a2184666",
+     "recovery": 0.524
+    },
+    {
+     "seed": "GW200220_124850:404fc017",
+     "recovery": 0.574
+    },
+    {
+     "seed": "GW200220_124850:de8739c8",
+     "recovery": 0.490588
+    },
+    {
+     "seed": "GW200220_124850:7cbeb379",
+     "recovery": 0.416706
+    },
+    {
+     "seed": "GW200220_124850:1af62d2a",
+     "recovery": 0.438824
+    },
+    {
+     "seed": "GW200220_124850:b92da6db",
+     "recovery": 0.428118
+    },
+    {
+     "seed": "GW200220_124850:5765208c",
+     "recovery": 0.418941
+    },
+    {
+     "seed": "GW200220_124850:f59c9a3d",
+     "recovery": 0.435647
+    },
+    {
+     "seed": "GW200220_124850:93d413ee",
+     "recovery": 0.492706
+    },
+    {
+     "seed": "GW200220_124850:320b8d9f",
+     "recovery": 0.482
+    },
+    {
+     "seed": "GW200220_124850:d0430750",
+     "recovery": 0.386471
+    },
+    {
+     "seed": "GW200220_124850:6e7a8101",
+     "recovery": 0.546118
+    },
+    {
+     "seed": "GW200220_124850:0cb1fab2",
+     "recovery": 0.596118
+    },
+    {
+     "seed": "GW200220_124850:aae97463",
+     "recovery": 0.494353
+    },
+    {
+     "seed": "GW200220_124850:4920ee14",
+     "recovery": 0.426706
+    },
+    {
+     "seed": "GW200220_124850:e75867c5",
+     "recovery": 0.402
+    },
+    {
+     "seed": "GW200220_124850:858fe176",
+     "recovery": 0.491059
+    },
+    {
+     "seed": "GW200220_124850:23c75b27",
+     "recovery": 0.505059
+    },
+    {
+     "seed": "GW200220_124850:c1fed4d8",
+     "recovery": 0.497294
+    },
+    {
+     "seed": "GW200220_124850:60364e89",
+     "recovery": 0.397059
+    },
+    {
+     "seed": "GW200220_124850:fe6dc83a",
+     "recovery": 0.475294
+    },
+    {
+     "seed": "GW200220_124850:9ca541eb",
+     "recovery": 0.412588
+    },
+    {
+     "seed": "GW200220_124850:3adcbb9c",
+     "recovery": 0.465412
+    },
+    {
+     "seed": "GW200220_124850:d914354d",
+     "recovery": 0.469882
+    },
+    {
+     "seed": "GW200220_124850:774baefe",
+     "recovery": 0.479529
+    },
+    {
+     "seed": "GW200220_124850:158328af",
+     "recovery": 0.525529
+    },
+    {
+     "seed": "GW200220_124850:b3baa260",
+     "recovery": 0.408588
+    },
+    {
+     "seed": "GW200220_124850:51f21c11",
+     "recovery": 0.488824
+    },
+    {
+     "seed": "GW200220_124850:f02995c2",
+     "recovery": 0.506235
+    },
+    {
+     "seed": "GW200220_124850:8e610f73",
+     "recovery": 0.559059
+    }
+   ]
+  },
+  {
+   "event": "GW200219_094415",
+   "physical_recovery": 0.583645,
+   "template_sha256": "90484034293142d8bb235b0fed2360006f2bf1ace09457c8c8ada7efe8ab774e",
+   "scrambles": [
+    {
+     "seed": "GW200219_094415:5eed0000",
+     "recovery": 0.387477
+    },
+    {
+     "seed": "GW200219_094415:fd2479b1",
+     "recovery": 0.433458
+    },
+    {
+     "seed": "GW200219_094415:9b5bf362",
+     "recovery": 0.367009
+    },
+    {
+     "seed": "GW200219_094415:39936d13",
+     "recovery": 0.37028
+    },
+    {
+     "seed": "GW200219_094415:d7cae6c4",
+     "recovery": 0.411028
+    },
+    {
+     "seed": "GW200219_094415:76026075",
+     "recovery": 0.364673
+    },
+    {
+     "seed": "GW200219_094415:1439da26",
+     "recovery": 0.331869
+    },
+    {
+     "seed": "GW200219_094415:b27153d7",
+     "recovery": 0.402897
+    },
+    {
+     "seed": "GW200219_094415:50a8cd88",
+     "recovery": 0.367383
+    },
+    {
+     "seed": "GW200219_094415:eee04739",
+     "recovery": 0.373084
+    },
+    {
+     "seed": "GW200219_094415:8d17c0ea",
+     "recovery": 0.307477
+    },
+    {
+     "seed": "GW200219_094415:2b4f3a9b",
+     "recovery": 0.33215
+    },
+    {
+     "seed": "GW200219_094415:c986b44c",
+     "recovery": 0.367383
+    },
+    {
+     "seed": "GW200219_094415:67be2dfd",
+     "recovery": 0.50729
+    },
+    {
+     "seed": "GW200219_094415:05f5a7ae",
+     "recovery": 0.321028
+    },
+    {
+     "seed": "GW200219_094415:a42d215f",
+     "recovery": 0.351589
+    },
+    {
+     "seed": "GW200219_094415:42649b10",
+     "recovery": 0.362523
+    },
+    {
+     "seed": "GW200219_094415:e09c14c1",
+     "recovery": 0.367196
+    },
+    {
+     "seed": "GW200219_094415:7ed38e72",
+     "recovery": 0.416822
+    },
+    {
+     "seed": "GW200219_094415:1d0b0823",
+     "recovery": 0.436916
+    },
+    {
+     "seed": "GW200219_094415:bb4281d4",
+     "recovery": 0.47514
+    },
+    {
+     "seed": "GW200219_094415:5979fb85",
+     "recovery": 0.412523
+    },
+    {
+     "seed": "GW200219_094415:f7b17536",
+     "recovery": 0.394953
+    },
+    {
+     "seed": "GW200219_094415:95e8eee7",
+     "recovery": 0.355981
+    },
+    {
+     "seed": "GW200219_094415:34206898",
+     "recovery": 0.436542
+    },
+    {
+     "seed": "GW200219_094415:d257e249",
+     "recovery": 0.353551
+    },
+    {
+     "seed": "GW200219_094415:708f5bfa",
+     "recovery": 0.408785
+    },
+    {
+     "seed": "GW200219_094415:0ec6d5ab",
+     "recovery": 0.404673
+    },
+    {
+     "seed": "GW200219_094415:acfe4f5c",
+     "recovery": 0.340935
+    },
+    {
+     "seed": "GW200219_094415:4b35c90d",
+     "recovery": 0.407383
+    },
+    {
+     "seed": "GW200219_094415:e96d42be",
+     "recovery": 0.307757
+    },
+    {
+     "seed": "GW200219_094415:87a4bc6f",
+     "recovery": 0.395327
+    },
+    {
+     "seed": "GW200219_094415:25dc3620",
+     "recovery": 0.361028
+    },
+    {
+     "seed": "GW200219_094415:c413afd1",
+     "recovery": 0.439159
+    },
+    {
+     "seed": "GW200219_094415:624b2982",
+     "recovery": 0.375888
+    },
+    {
+     "seed": "GW200219_094415:0082a333",
+     "recovery": 0.526075
+    },
+    {
+     "seed": "GW200219_094415:9eba1ce4",
+     "recovery": 0.390748
+    },
+    {
+     "seed": "GW200219_094415:3cf19695",
+     "recovery": 0.374953
+    },
+    {
+     "seed": "GW200219_094415:db291046",
+     "recovery": 0.343551
+    },
+    {
+     "seed": "GW200219_094415:796089f7",
+     "recovery": 0.361589
+    },
+    {
+     "seed": "GW200219_094415:179803a8",
+     "recovery": 0.353925
+    },
+    {
+     "seed": "GW200219_094415:b5cf7d59",
+     "recovery": 0.43215
+    },
+    {
+     "seed": "GW200219_094415:5406f70a",
+     "recovery": 0.36243
+    },
+    {
+     "seed": "GW200219_094415:f23e70bb",
+     "recovery": 0.347664
+    },
+    {
+     "seed": "GW200219_094415:9075ea6c",
+     "recovery": 0.356262
+    },
+    {
+     "seed": "GW200219_094415:2ead641d",
+     "recovery": 0.38215
+    },
+    {
+     "seed": "GW200219_094415:cce4ddce",
+     "recovery": 0.385514
+    },
+    {
+     "seed": "GW200219_094415:6b1c577f",
+     "recovery": 0.353271
+    },
+    {
+     "seed": "GW200219_094415:0953d130",
+     "recovery": 0.346542
+    },
+    {
+     "seed": "GW200219_094415:a78b4ae1",
+     "recovery": 0.439907
+    },
+    {
+     "seed": "GW200219_094415:45c2c492",
+     "recovery": 0.493925
+    },
+    {
+     "seed": "GW200219_094415:e3fa3e43",
+     "recovery": 0.412056
+    },
+    {
+     "seed": "GW200219_094415:8231b7f4",
+     "recovery": 0.384393
+    },
+    {
+     "seed": "GW200219_094415:206931a5",
+     "recovery": 0.391402
+    },
+    {
+     "seed": "GW200219_094415:bea0ab56",
+     "recovery": 0.365794
+    },
+    {
+     "seed": "GW200219_094415:5cd82507",
+     "recovery": 0.367944
+    },
+    {
+     "seed": "GW200219_094415:fb0f9eb8",
+     "recovery": 0.343551
+    },
+    {
+     "seed": "GW200219_094415:99471869",
+     "recovery": 0.419813
+    },
+    {
+     "seed": "GW200219_094415:377e921a",
+     "recovery": 0.424486
+    },
+    {
+     "seed": "GW200219_094415:d5b60bcb",
+     "recovery": 0.377383
+    },
+    {
+     "seed": "GW200219_094415:73ed857c",
+     "recovery": 0.414579
+    },
+    {
+     "seed": "GW200219_094415:1224ff2d",
+     "recovery": 0.346449
+    },
+    {
+     "seed": "GW200219_094415:b05c78de",
+     "recovery": 0.440093
+    },
+    {
+     "seed": "GW200219_094415:4e93f28f",
+     "recovery": 0.406449
+    },
+    {
+     "seed": "GW200219_094415:eccb6c40",
+     "recovery": 0.468785
+    },
+    {
+     "seed": "GW200219_094415:8b02e5f1",
+     "recovery": 0.32514
+    },
+    {
+     "seed": "GW200219_094415:293a5fa2",
+     "recovery": 0.372056
+    },
+    {
+     "seed": "GW200219_094415:c771d953",
+     "recovery": 0.349252
+    },
+    {
+     "seed": "GW200219_094415:65a95304",
+     "recovery": 0.362523
+    },
+    {
+     "seed": "GW200219_094415:03e0ccb5",
+     "recovery": 0.462804
+    },
+    {
+     "seed": "GW200219_094415:a2184666",
+     "recovery": 0.417383
+    },
+    {
+     "seed": "GW200219_094415:404fc017",
+     "recovery": 0.339252
+    },
+    {
+     "seed": "GW200219_094415:de8739c8",
+     "recovery": 0.369626
+    },
+    {
+     "seed": "GW200219_094415:7cbeb379",
+     "recovery": 0.384019
+    },
+    {
+     "seed": "GW200219_094415:1af62d2a",
+     "recovery": 0.375701
+    },
+    {
+     "seed": "GW200219_094415:b92da6db",
+     "recovery": 0.417757
+    },
+    {
+     "seed": "GW200219_094415:5765208c",
+     "recovery": 0.386355
+    },
+    {
+     "seed": "GW200219_094415:f59c9a3d",
+     "recovery": 0.393084
+    },
+    {
+     "seed": "GW200219_094415:93d413ee",
+     "recovery": 0.387009
+    },
+    {
+     "seed": "GW200219_094415:320b8d9f",
+     "recovery": 0.354673
+    },
+    {
+     "seed": "GW200219_094415:d0430750",
+     "recovery": 0.332523
+    },
+    {
+     "seed": "GW200219_094415:6e7a8101",
+     "recovery": 0.380935
+    },
+    {
+     "seed": "GW200219_094415:0cb1fab2",
+     "recovery": 0.433738
+    },
+    {
+     "seed": "GW200219_094415:aae97463",
+     "recovery": 0.369907
+    },
+    {
+     "seed": "GW200219_094415:4920ee14",
+     "recovery": 0.399533
+    },
+    {
+     "seed": "GW200219_094415:e75867c5",
+     "recovery": 0.416168
+    },
+    {
+     "seed": "GW200219_094415:858fe176",
+     "recovery": 0.431589
+    },
+    {
+     "seed": "GW200219_094415:23c75b27",
+     "recovery": 0.451495
+    },
+    {
+     "seed": "GW200219_094415:c1fed4d8",
+     "recovery": 0.371776
+    },
+    {
+     "seed": "GW200219_094415:60364e89",
+     "recovery": 0.400374
+    },
+    {
+     "seed": "GW200219_094415:fe6dc83a",
+     "recovery": 0.367103
+    },
+    {
+     "seed": "GW200219_094415:9ca541eb",
+     "recovery": 0.451869
+    },
+    {
+     "seed": "GW200219_094415:3adcbb9c",
+     "recovery": 0.358318
+    },
+    {
+     "seed": "GW200219_094415:d914354d",
+     "recovery": 0.423832
+    },
+    {
+     "seed": "GW200219_094415:774baefe",
+     "recovery": 0.36271
+    },
+    {
+     "seed": "GW200219_094415:158328af",
+     "recovery": 0.334766
+    },
+    {
+     "seed": "GW200219_094415:b3baa260",
+     "recovery": 0.333925
+    },
+    {
+     "seed": "GW200219_094415:51f21c11",
+     "recovery": 0.345888
+    },
+    {
+     "seed": "GW200219_094415:f02995c2",
+     "recovery": 0.313925
+    },
+    {
+     "seed": "GW200219_094415:8e610f73",
+     "recovery": 0.345421
+    }
+   ]
+  },
+  {
+   "event": "GW200128_022011",
+   "physical_recovery": 0.542358,
+   "template_sha256": "6a2279ce8ff5bfc4de14c6dc25ae802877b61f45038d8b508ba009fb51e6f1b4",
+   "scrambles": [
+    {
+     "seed": "GW200128_022011:5eed0000",
+     "recovery": 0.445283
+    },
+    {
+     "seed": "GW200128_022011:fd2479b1",
+     "recovery": 0.471415
+    },
+    {
+     "seed": "GW200128_022011:9b5bf362",
+     "recovery": 0.461321
+    },
+    {
+     "seed": "GW200128_022011:39936d13",
+     "recovery": 0.405755
+    },
+    {
+     "seed": "GW200128_022011:d7cae6c4",
+     "recovery": 0.419623
+    },
+    {
+     "seed": "GW200128_022011:76026075",
+     "recovery": 0.374151
+    },
+    {
+     "seed": "GW200128_022011:1439da26",
+     "recovery": 0.36283
+    },
+    {
+     "seed": "GW200128_022011:b27153d7",
+     "recovery": 0.422453
+    },
+    {
+     "seed": "GW200128_022011:50a8cd88",
+     "recovery": 0.448774
+    },
+    {
+     "seed": "GW200128_022011:eee04739",
+     "recovery": 0.378019
+    },
+    {
+     "seed": "GW200128_022011:8d17c0ea",
+     "recovery": 0.378679
+    },
+    {
+     "seed": "GW200128_022011:2b4f3a9b",
+     "recovery": 0.397925
+    },
+    {
+     "seed": "GW200128_022011:c986b44c",
+     "recovery": 0.398491
+    },
+    {
+     "seed": "GW200128_022011:67be2dfd",
+     "recovery": 0.401981
+    },
+    {
+     "seed": "GW200128_022011:05f5a7ae",
+     "recovery": 0.391887
+    },
+    {
+     "seed": "GW200128_022011:a42d215f",
+     "recovery": 0.502736
+    },
+    {
+     "seed": "GW200128_022011:42649b10",
+     "recovery": 0.426226
+    },
+    {
+     "seed": "GW200128_022011:e09c14c1",
+     "recovery": 0.420755
+    },
+    {
+     "seed": "GW200128_022011:7ed38e72",
+     "recovery": 0.498019
+    },
+    {
+     "seed": "GW200128_022011:1d0b0823",
+     "recovery": 0.419528
+    },
+    {
+     "seed": "GW200128_022011:bb4281d4",
+     "recovery": 0.42434
+    },
+    {
+     "seed": "GW200128_022011:5979fb85",
+     "recovery": 0.421509
+    },
+    {
+     "seed": "GW200128_022011:f7b17536",
+     "recovery": 0.471509
+    },
+    {
+     "seed": "GW200128_022011:95e8eee7",
+     "recovery": 0.364057
+    },
+    {
+     "seed": "GW200128_022011:34206898",
+     "recovery": 0.392925
+    },
+    {
+     "seed": "GW200128_022011:d257e249",
+     "recovery": 0.396132
+    },
+    {
+     "seed": "GW200128_022011:708f5bfa",
+     "recovery": 0.411038
+    },
+    {
+     "seed": "GW200128_022011:0ec6d5ab",
+     "recovery": 0.353491
+    },
+    {
+     "seed": "GW200128_022011:acfe4f5c",
+     "recovery": 0.354057
+    },
+    {
+     "seed": "GW200128_022011:4b35c90d",
+     "recovery": 0.47934
+    },
+    {
+     "seed": "GW200128_022011:e96d42be",
+     "recovery": 0.346698
+    },
+    {
+     "seed": "GW200128_022011:87a4bc6f",
+     "recovery": 0.520189
+    },
+    {
+     "seed": "GW200128_022011:25dc3620",
+     "recovery": 0.407453
+    },
+    {
+     "seed": "GW200128_022011:c413afd1",
+     "recovery": 0.389057
+    },
+    {
+     "seed": "GW200128_022011:624b2982",
+     "recovery": 0.396509
+    },
+    {
+     "seed": "GW200128_022011:0082a333",
+     "recovery": 0.39066
+    },
+    {
+     "seed": "GW200128_022011:9eba1ce4",
+     "recovery": 0.425566
+    },
+    {
+     "seed": "GW200128_022011:3cf19695",
+     "recovery": 0.379057
+    },
+    {
+     "seed": "GW200128_022011:db291046",
+     "recovery": 0.438585
+    },
+    {
+     "seed": "GW200128_022011:796089f7",
+     "recovery": 0.354434
+    },
+    {
+     "seed": "GW200128_022011:179803a8",
+     "recovery": 0.422264
+    },
+    {
+     "seed": "GW200128_022011:b5cf7d59",
+     "recovery": 0.365755
+    },
+    {
+     "seed": "GW200128_022011:5406f70a",
+     "recovery": 0.440472
+    },
+    {
+     "seed": "GW200128_022011:f23e70bb",
+     "recovery": 0.429434
+    },
+    {
+     "seed": "GW200128_022011:9075ea6c",
+     "recovery": 0.385094
+    },
+    {
+     "seed": "GW200128_022011:2ead641d",
+     "recovery": 0.405943
+    },
+    {
+     "seed": "GW200128_022011:cce4ddce",
+     "recovery": 0.371038
+    },
+    {
+     "seed": "GW200128_022011:6b1c577f",
+     "recovery": 0.317925
+    },
+    {
+     "seed": "GW200128_022011:0953d130",
+     "recovery": 0.370377
+    },
+    {
+     "seed": "GW200128_022011:a78b4ae1",
+     "recovery": 0.44217
+    },
+    {
+     "seed": "GW200128_022011:45c2c492",
+     "recovery": 0.410566
+    },
+    {
+     "seed": "GW200128_022011:e3fa3e43",
+     "recovery": 0.424717
+    },
+    {
+     "seed": "GW200128_022011:8231b7f4",
+     "recovery": 0.37783
+    },
+    {
+     "seed": "GW200128_022011:206931a5",
+     "recovery": 0.419057
+    },
+    {
+     "seed": "GW200128_022011:bea0ab56",
+     "recovery": 0.43217
+    },
+    {
+     "seed": "GW200128_022011:5cd82507",
+     "recovery": 0.381981
+    },
+    {
+     "seed": "GW200128_022011:fb0f9eb8",
+     "recovery": 0.451509
+    },
+    {
+     "seed": "GW200128_022011:99471869",
+     "recovery": 0.355849
+    },
+    {
+     "seed": "GW200128_022011:377e921a",
+     "recovery": 0.384434
+    },
+    {
+     "seed": "GW200128_022011:d5b60bcb",
+     "recovery": 0.44066
+    },
+    {
+     "seed": "GW200128_022011:73ed857c",
+     "recovery": 0.380472
+    },
+    {
+     "seed": "GW200128_022011:1224ff2d",
+     "recovery": 0.421509
+    },
+    {
+     "seed": "GW200128_022011:b05c78de",
+     "recovery": 0.346038
+    },
+    {
+     "seed": "GW200128_022011:4e93f28f",
+     "recovery": 0.392264
+    },
+    {
+     "seed": "GW200128_022011:eccb6c40",
+     "recovery": 0.422642
+    },
+    {
+     "seed": "GW200128_022011:8b02e5f1",
+     "recovery": 0.351981
+    },
+    {
+     "seed": "GW200128_022011:293a5fa2",
+     "recovery": 0.440094
+    },
+    {
+     "seed": "GW200128_022011:c771d953",
+     "recovery": 0.450283
+    },
+    {
+     "seed": "GW200128_022011:65a95304",
+     "recovery": 0.413962
+    },
+    {
+     "seed": "GW200128_022011:03e0ccb5",
+     "recovery": 0.411887
+    },
+    {
+     "seed": "GW200128_022011:a2184666",
+     "recovery": 0.368962
+    },
+    {
+     "seed": "GW200128_022011:404fc017",
+     "recovery": 0.38066
+    },
+    {
+     "seed": "GW200128_022011:de8739c8",
+     "recovery": 0.404057
+    },
+    {
+     "seed": "GW200128_022011:7cbeb379",
+     "recovery": 0.408679
+    },
+    {
+     "seed": "GW200128_022011:1af62d2a",
+     "recovery": 0.460943
+    },
+    {
+     "seed": "GW200128_022011:b92da6db",
+     "recovery": 0.424151
+    },
+    {
+     "seed": "GW200128_022011:5765208c",
+     "recovery": 0.395
+    },
+    {
+     "seed": "GW200128_022011:f59c9a3d",
+     "recovery": 0.375755
+    },
+    {
+     "seed": "GW200128_022011:93d413ee",
+     "recovery": 0.417358
+    },
+    {
+     "seed": "GW200128_022011:320b8d9f",
+     "recovery": 0.354906
+    },
+    {
+     "seed": "GW200128_022011:d0430750",
+     "recovery": 0.452642
+    },
+    {
+     "seed": "GW200128_022011:6e7a8101",
+     "recovery": 0.404811
+    },
+    {
+     "seed": "GW200128_022011:0cb1fab2",
+     "recovery": 0.448491
+    },
+    {
+     "seed": "GW200128_022011:aae97463",
+     "recovery": 0.426321
+    },
+    {
+     "seed": "GW200128_022011:4920ee14",
+     "recovery": 0.423208
+    },
+    {
+     "seed": "GW200128_022011:e75867c5",
+     "recovery": 0.472736
+    },
+    {
+     "seed": "GW200128_022011:858fe176",
+     "recovery": 0.509811
+    },
+    {
+     "seed": "GW200128_022011:23c75b27",
+     "recovery": 0.377642
+    },
+    {
+     "seed": "GW200128_022011:c1fed4d8",
+     "recovery": 0.398962
+    },
+    {
+     "seed": "GW200128_022011:60364e89",
+     "recovery": 0.344528
+    },
+    {
+     "seed": "GW200128_022011:fe6dc83a",
+     "recovery": 0.442547
+    },
+    {
+     "seed": "GW200128_022011:9ca541eb",
+     "recovery": 0.43717
+    },
+    {
+     "seed": "GW200128_022011:3adcbb9c",
+     "recovery": 0.351321
+    },
+    {
+     "seed": "GW200128_022011:d914354d",
+     "recovery": 0.390943
+    },
+    {
+     "seed": "GW200128_022011:774baefe",
+     "recovery": 0.39217
+    },
+    {
+     "seed": "GW200128_022011:158328af",
+     "recovery": 0.343679
+    },
+    {
+     "seed": "GW200128_022011:b3baa260",
+     "recovery": 0.323019
+    },
+    {
+     "seed": "GW200128_022011:51f21c11",
+     "recovery": 0.398019
+    },
+    {
+     "seed": "GW200128_022011:f02995c2",
+     "recovery": 0.367642
+    },
+    {
+     "seed": "GW200128_022011:8e610f73",
+     "recovery": 0.432547
+    }
+   ]
+  },
+  {
+   "event": "GW191222_033537",
+   "physical_recovery": 0.5656,
+   "template_sha256": "06704f8603d0ecca12f2219f3dbca0df7f9b4b4ebf90795979a328b2e04a1564",
+   "scrambles": [
+    {
+     "seed": "GW191222_033537:5eed0000",
+     "recovery": 0.35632
+    },
+    {
+     "seed": "GW191222_033537:fd2479b1",
+     "recovery": 0.38144
+    },
+    {
+     "seed": "GW191222_033537:9b5bf362",
+     "recovery": 0.38728
+    },
+    {
+     "seed": "GW191222_033537:39936d13",
+     "recovery": 0.32088
+    },
+    {
+     "seed": "GW191222_033537:d7cae6c4",
+     "recovery": 0.312
+    },
+    {
+     "seed": "GW191222_033537:76026075",
+     "recovery": 0.30704
+    },
+    {
+     "seed": "GW191222_033537:1439da26",
+     "recovery": 0.35256
+    },
+    {
+     "seed": "GW191222_033537:b27153d7",
+     "recovery": 0.30608
+    },
+    {
+     "seed": "GW191222_033537:50a8cd88",
+     "recovery": 0.2988
+    },
+    {
+     "seed": "GW191222_033537:eee04739",
+     "recovery": 0.37256
+    },
+    {
+     "seed": "GW191222_033537:8d17c0ea",
+     "recovery": 0.39088
+    },
+    {
+     "seed": "GW191222_033537:2b4f3a9b",
+     "recovery": 0.34336
+    },
+    {
+     "seed": "GW191222_033537:c986b44c",
+     "recovery": 0.32424
+    },
+    {
+     "seed": "GW191222_033537:67be2dfd",
+     "recovery": 0.34656
+    },
+    {
+     "seed": "GW191222_033537:05f5a7ae",
+     "recovery": 0.32784
+    },
+    {
+     "seed": "GW191222_033537:a42d215f",
+     "recovery": 0.33096
+    },
+    {
+     "seed": "GW191222_033537:42649b10",
+     "recovery": 0.31888
+    },
+    {
+     "seed": "GW191222_033537:e09c14c1",
+     "recovery": 0.28872
+    },
+    {
+     "seed": "GW191222_033537:7ed38e72",
+     "recovery": 0.34448
+    },
+    {
+     "seed": "GW191222_033537:1d0b0823",
+     "recovery": 0.3068
+    },
+    {
+     "seed": "GW191222_033537:bb4281d4",
+     "recovery": 0.2932
+    },
+    {
+     "seed": "GW191222_033537:5979fb85",
+     "recovery": 0.30232
+    },
+    {
+     "seed": "GW191222_033537:f7b17536",
+     "recovery": 0.2868
+    },
+    {
+     "seed": "GW191222_033537:95e8eee7",
+     "recovery": 0.3176
+    },
+    {
+     "seed": "GW191222_033537:34206898",
+     "recovery": 0.30032
+    },
+    {
+     "seed": "GW191222_033537:d257e249",
+     "recovery": 0.30456
+    },
+    {
+     "seed": "GW191222_033537:708f5bfa",
+     "recovery": 0.32688
+    },
+    {
+     "seed": "GW191222_033537:0ec6d5ab",
+     "recovery": 0.28088
+    },
+    {
+     "seed": "GW191222_033537:acfe4f5c",
+     "recovery": 0.26088
+    },
+    {
+     "seed": "GW191222_033537:4b35c90d",
+     "recovery": 0.31352
+    },
+    {
+     "seed": "GW191222_033537:e96d42be",
+     "recovery": 0.34272
+    },
+    {
+     "seed": "GW191222_033537:87a4bc6f",
+     "recovery": 0.34
+    },
+    {
+     "seed": "GW191222_033537:25dc3620",
+     "recovery": 0.39432
+    },
+    {
+     "seed": "GW191222_033537:c413afd1",
+     "recovery": 0.3012
+    },
+    {
+     "seed": "GW191222_033537:624b2982",
+     "recovery": 0.31472
+    },
+    {
+     "seed": "GW191222_033537:0082a333",
+     "recovery": 0.29904
+    },
+    {
+     "seed": "GW191222_033537:9eba1ce4",
+     "recovery": 0.27504
+    },
+    {
+     "seed": "GW191222_033537:3cf19695",
+     "recovery": 0.33704
+    },
+    {
+     "seed": "GW191222_033537:db291046",
+     "recovery": 0.3108
+    },
+    {
+     "seed": "GW191222_033537:796089f7",
+     "recovery": 0.3196
+    },
+    {
+     "seed": "GW191222_033537:179803a8",
+     "recovery": 0.32344
+    },
+    {
+     "seed": "GW191222_033537:b5cf7d59",
+     "recovery": 0.30888
+    },
+    {
+     "seed": "GW191222_033537:5406f70a",
+     "recovery": 0.33968
+    },
+    {
+     "seed": "GW191222_033537:f23e70bb",
+     "recovery": 0.33768
+    },
+    {
+     "seed": "GW191222_033537:9075ea6c",
+     "recovery": 0.35384
+    },
+    {
+     "seed": "GW191222_033537:2ead641d",
+     "recovery": 0.33504
+    },
+    {
+     "seed": "GW191222_033537:cce4ddce",
+     "recovery": 0.3108
+    },
+    {
+     "seed": "GW191222_033537:6b1c577f",
+     "recovery": 0.29808
+    },
+    {
+     "seed": "GW191222_033537:0953d130",
+     "recovery": 0.332
+    },
+    {
+     "seed": "GW191222_033537:a78b4ae1",
+     "recovery": 0.24336
+    },
+    {
+     "seed": "GW191222_033537:45c2c492",
+     "recovery": 0.30784
+    },
+    {
+     "seed": "GW191222_033537:e3fa3e43",
+     "recovery": 0.29952
+    },
+    {
+     "seed": "GW191222_033537:8231b7f4",
+     "recovery": 0.30984
+    },
+    {
+     "seed": "GW191222_033537:206931a5",
+     "recovery": 0.3552
+    },
+    {
+     "seed": "GW191222_033537:bea0ab56",
+     "recovery": 0.26352
+    },
+    {
+     "seed": "GW191222_033537:5cd82507",
+     "recovery": 0.36552
+    },
+    {
+     "seed": "GW191222_033537:fb0f9eb8",
+     "recovery": 0.35368
+    },
+    {
+     "seed": "GW191222_033537:99471869",
+     "recovery": 0.3472
+    },
+    {
+     "seed": "GW191222_033537:377e921a",
+     "recovery": 0.30312
+    },
+    {
+     "seed": "GW191222_033537:d5b60bcb",
+     "recovery": 0.35888
+    },
+    {
+     "seed": "GW191222_033537:73ed857c",
+     "recovery": 0.35328
+    },
+    {
+     "seed": "GW191222_033537:1224ff2d",
+     "recovery": 0.34504
+    },
+    {
+     "seed": "GW191222_033537:b05c78de",
+     "recovery": 0.2868
+    },
+    {
+     "seed": "GW191222_033537:4e93f28f",
+     "recovery": 0.31136
+    },
+    {
+     "seed": "GW191222_033537:eccb6c40",
+     "recovery": 0.33328
+    },
+    {
+     "seed": "GW191222_033537:8b02e5f1",
+     "recovery": 0.30328
+    },
+    {
+     "seed": "GW191222_033537:293a5fa2",
+     "recovery": 0.3444
+    },
+    {
+     "seed": "GW191222_033537:c771d953",
+     "recovery": 0.27912
+    },
+    {
+     "seed": "GW191222_033537:65a95304",
+     "recovery": 0.31184
+    },
+    {
+     "seed": "GW191222_033537:03e0ccb5",
+     "recovery": 0.36856
+    },
+    {
+     "seed": "GW191222_033537:a2184666",
+     "recovery": 0.31184
+    },
+    {
+     "seed": "GW191222_033537:404fc017",
+     "recovery": 0.27
+    },
+    {
+     "seed": "GW191222_033537:de8739c8",
+     "recovery": 0.30968
+    },
+    {
+     "seed": "GW191222_033537:7cbeb379",
+     "recovery": 0.38344
+    },
+    {
+     "seed": "GW191222_033537:1af62d2a",
+     "recovery": 0.314
+    },
+    {
+     "seed": "GW191222_033537:b92da6db",
+     "recovery": 0.30216
+    },
+    {
+     "seed": "GW191222_033537:5765208c",
+     "recovery": 0.30424
+    },
+    {
+     "seed": "GW191222_033537:f59c9a3d",
+     "recovery": 0.28536
+    },
+    {
+     "seed": "GW191222_033537:93d413ee",
+     "recovery": 0.32752
+    },
+    {
+     "seed": "GW191222_033537:320b8d9f",
+     "recovery": 0.32088
+    },
+    {
+     "seed": "GW191222_033537:d0430750",
+     "recovery": 0.31032
+    },
+    {
+     "seed": "GW191222_033537:6e7a8101",
+     "recovery": 0.32848
+    },
+    {
+     "seed": "GW191222_033537:0cb1fab2",
+     "recovery": 0.3232
+    },
+    {
+     "seed": "GW191222_033537:aae97463",
+     "recovery": 0.33688
+    },
+    {
+     "seed": "GW191222_033537:4920ee14",
+     "recovery": 0.35192
+    },
+    {
+     "seed": "GW191222_033537:e75867c5",
+     "recovery": 0.34832
+    },
+    {
+     "seed": "GW191222_033537:858fe176",
+     "recovery": 0.36936
+    },
+    {
+     "seed": "GW191222_033537:23c75b27",
+     "recovery": 0.318
+    },
+    {
+     "seed": "GW191222_033537:c1fed4d8",
+     "recovery": 0.32856
+    },
+    {
+     "seed": "GW191222_033537:60364e89",
+     "recovery": 0.2708
+    },
+    {
+     "seed": "GW191222_033537:fe6dc83a",
+     "recovery": 0.34456
+    },
+    {
+     "seed": "GW191222_033537:9ca541eb",
+     "recovery": 0.2744
+    },
+    {
+     "seed": "GW191222_033537:3adcbb9c",
+     "recovery": 0.31808
+    },
+    {
+     "seed": "GW191222_033537:d914354d",
+     "recovery": 0.31576
+    },
+    {
+     "seed": "GW191222_033537:774baefe",
+     "recovery": 0.3392
+    },
+    {
+     "seed": "GW191222_033537:158328af",
+     "recovery": 0.31008
+    },
+    {
+     "seed": "GW191222_033537:b3baa260",
+     "recovery": 0.34896
+    },
+    {
+     "seed": "GW191222_033537:51f21c11",
+     "recovery": 0.32424
+    },
+    {
+     "seed": "GW191222_033537:f02995c2",
+     "recovery": 0.2808
+    },
+    {
+     "seed": "GW191222_033537:8e610f73",
+     "recovery": 0.31976
+    }
+   ]
+  },
+  {
+   "event": "GW191127_050227",
+   "physical_recovery": 0.607391,
+   "template_sha256": "fa20c06d6902c6702c3202bfb36224dcefbbde261e49c8fe8c94470015aff679",
+   "scrambles": [
+    {
+     "seed": "GW191127_050227:5eed0000",
+     "recovery": 0.47337
+    },
+    {
+     "seed": "GW191127_050227:fd2479b1",
+     "recovery": 0.416413
+    },
+    {
+     "seed": "GW191127_050227:9b5bf362",
+     "recovery": 0.439348
+    },
+    {
+     "seed": "GW191127_050227:39936d13",
+     "recovery": 0.444022
+    },
+    {
+     "seed": "GW191127_050227:d7cae6c4",
+     "recovery": 0.531957
+    },
+    {
+     "seed": "GW191127_050227:76026075",
+     "recovery": 0.42587
+    },
+    {
+     "seed": "GW191127_050227:1439da26",
+     "recovery": 0.4425
+    },
+    {
+     "seed": "GW191127_050227:b27153d7",
+     "recovery": 0.483478
+    },
+    {
+     "seed": "GW191127_050227:50a8cd88",
+     "recovery": 0.41663
+    },
+    {
+     "seed": "GW191127_050227:eee04739",
+     "recovery": 0.389348
+    },
+    {
+     "seed": "GW191127_050227:8d17c0ea",
+     "recovery": 0.402065
+    },
+    {
+     "seed": "GW191127_050227:2b4f3a9b",
+     "recovery": 0.437174
+    },
+    {
+     "seed": "GW191127_050227:c986b44c",
+     "recovery": 0.417391
+    },
+    {
+     "seed": "GW191127_050227:67be2dfd",
+     "recovery": 0.432717
+    },
+    {
+     "seed": "GW191127_050227:05f5a7ae",
+     "recovery": 0.450761
+    },
+    {
+     "seed": "GW191127_050227:a42d215f",
+     "recovery": 0.424783
+    },
+    {
+     "seed": "GW191127_050227:42649b10",
+     "recovery": 0.408804
+    },
+    {
+     "seed": "GW191127_050227:e09c14c1",
+     "recovery": 0.435109
+    },
+    {
+     "seed": "GW191127_050227:7ed38e72",
+     "recovery": 0.46413
+    },
+    {
+     "seed": "GW191127_050227:1d0b0823",
+     "recovery": 0.492717
+    },
+    {
+     "seed": "GW191127_050227:bb4281d4",
+     "recovery": 0.432609
+    },
+    {
+     "seed": "GW191127_050227:5979fb85",
+     "recovery": 0.50337
+    },
+    {
+     "seed": "GW191127_050227:f7b17536",
+     "recovery": 0.418804
+    },
+    {
+     "seed": "GW191127_050227:95e8eee7",
+     "recovery": 0.415
+    },
+    {
+     "seed": "GW191127_050227:34206898",
+     "recovery": 0.49663
+    },
+    {
+     "seed": "GW191127_050227:d257e249",
+     "recovery": 0.439022
+    },
+    {
+     "seed": "GW191127_050227:708f5bfa",
+     "recovery": 0.436196
+    },
+    {
+     "seed": "GW191127_050227:0ec6d5ab",
+     "recovery": 0.474239
+    },
+    {
+     "seed": "GW191127_050227:acfe4f5c",
+     "recovery": 0.432935
+    },
+    {
+     "seed": "GW191127_050227:4b35c90d",
+     "recovery": 0.444565
+    },
+    {
+     "seed": "GW191127_050227:e96d42be",
+     "recovery": 0.472609
+    },
+    {
+     "seed": "GW191127_050227:87a4bc6f",
+     "recovery": 0.49587
+    },
+    {
+     "seed": "GW191127_050227:25dc3620",
+     "recovery": 0.4025
+    },
+    {
+     "seed": "GW191127_050227:c413afd1",
+     "recovery": 0.436087
+    },
+    {
+     "seed": "GW191127_050227:624b2982",
+     "recovery": 0.410652
+    },
+    {
+     "seed": "GW191127_050227:0082a333",
+     "recovery": 0.51663
+    },
+    {
+     "seed": "GW191127_050227:9eba1ce4",
+     "recovery": 0.424022
+    },
+    {
+     "seed": "GW191127_050227:3cf19695",
+     "recovery": 0.47663
+    },
+    {
+     "seed": "GW191127_050227:db291046",
+     "recovery": 0.533804
+    },
+    {
+     "seed": "GW191127_050227:796089f7",
+     "recovery": 0.445435
+    },
+    {
+     "seed": "GW191127_050227:179803a8",
+     "recovery": 0.424348
+    },
+    {
+     "seed": "GW191127_050227:b5cf7d59",
+     "recovery": 0.43413
+    },
+    {
+     "seed": "GW191127_050227:5406f70a",
+     "recovery": 0.468696
+    },
+    {
+     "seed": "GW191127_050227:f23e70bb",
+     "recovery": 0.492935
+    },
+    {
+     "seed": "GW191127_050227:9075ea6c",
+     "recovery": 0.408478
+    },
+    {
+     "seed": "GW191127_050227:2ead641d",
+     "recovery": 0.47587
+    },
+    {
+     "seed": "GW191127_050227:cce4ddce",
+     "recovery": 0.397935
+    },
+    {
+     "seed": "GW191127_050227:6b1c577f",
+     "recovery": 0.498478
+    },
+    {
+     "seed": "GW191127_050227:0953d130",
+     "recovery": 0.486413
+    },
+    {
+     "seed": "GW191127_050227:a78b4ae1",
+     "recovery": 0.449891
+    },
+    {
+     "seed": "GW191127_050227:45c2c492",
+     "recovery": 0.409239
+    },
+    {
+     "seed": "GW191127_050227:e3fa3e43",
+     "recovery": 0.403587
+    },
+    {
+     "seed": "GW191127_050227:8231b7f4",
+     "recovery": 0.45587
+    },
+    {
+     "seed": "GW191127_050227:206931a5",
+     "recovery": 0.4175
+    },
+    {
+     "seed": "GW191127_050227:bea0ab56",
+     "recovery": 0.401522
+    },
+    {
+     "seed": "GW191127_050227:5cd82507",
+     "recovery": 0.541304
+    },
+    {
+     "seed": "GW191127_050227:fb0f9eb8",
+     "recovery": 0.448152
+    },
+    {
+     "seed": "GW191127_050227:99471869",
+     "recovery": 0.439022
+    },
+    {
+     "seed": "GW191127_050227:377e921a",
+     "recovery": 0.438696
+    },
+    {
+     "seed": "GW191127_050227:d5b60bcb",
+     "recovery": 0.439783
+    },
+    {
+     "seed": "GW191127_050227:73ed857c",
+     "recovery": 0.414783
+    },
+    {
+     "seed": "GW191127_050227:1224ff2d",
+     "recovery": 0.406848
+    },
+    {
+     "seed": "GW191127_050227:b05c78de",
+     "recovery": 0.458804
+    },
+    {
+     "seed": "GW191127_050227:4e93f28f",
+     "recovery": 0.441304
+    },
+    {
+     "seed": "GW191127_050227:eccb6c40",
+     "recovery": 0.458261
+    },
+    {
+     "seed": "GW191127_050227:8b02e5f1",
+     "recovery": 0.477826
+    },
+    {
+     "seed": "GW191127_050227:293a5fa2",
+     "recovery": 0.4625
+    },
+    {
+     "seed": "GW191127_050227:c771d953",
+     "recovery": 0.455
+    },
+    {
+     "seed": "GW191127_050227:65a95304",
+     "recovery": 0.409783
+    },
+    {
+     "seed": "GW191127_050227:03e0ccb5",
+     "recovery": 0.542826
+    },
+    {
+     "seed": "GW191127_050227:a2184666",
+     "recovery": 0.428696
+    },
+    {
+     "seed": "GW191127_050227:404fc017",
+     "recovery": 0.422935
+    },
+    {
+     "seed": "GW191127_050227:de8739c8",
+     "recovery": 0.437391
+    },
+    {
+     "seed": "GW191127_050227:7cbeb379",
+     "recovery": 0.498696
+    },
+    {
+     "seed": "GW191127_050227:1af62d2a",
+     "recovery": 0.394457
+    },
+    {
+     "seed": "GW191127_050227:b92da6db",
+     "recovery": 0.426087
+    },
+    {
+     "seed": "GW191127_050227:5765208c",
+     "recovery": 0.448152
+    },
+    {
+     "seed": "GW191127_050227:f59c9a3d",
+     "recovery": 0.4325
+    },
+    {
+     "seed": "GW191127_050227:93d413ee",
+     "recovery": 0.475435
+    },
+    {
+     "seed": "GW191127_050227:320b8d9f",
+     "recovery": 0.445217
+    },
+    {
+     "seed": "GW191127_050227:d0430750",
+     "recovery": 0.396957
+    },
+    {
+     "seed": "GW191127_050227:6e7a8101",
+     "recovery": 0.428804
+    },
+    {
+     "seed": "GW191127_050227:0cb1fab2",
+     "recovery": 0.435
+    },
+    {
+     "seed": "GW191127_050227:aae97463",
+     "recovery": 0.472717
+    },
+    {
+     "seed": "GW191127_050227:4920ee14",
+     "recovery": 0.447717
+    },
+    {
+     "seed": "GW191127_050227:e75867c5",
+     "recovery": 0.427826
+    },
+    {
+     "seed": "GW191127_050227:858fe176",
+     "recovery": 0.411522
+    },
+    {
+     "seed": "GW191127_050227:23c75b27",
+     "recovery": 0.448152
+    },
+    {
+     "seed": "GW191127_050227:c1fed4d8",
+     "recovery": 0.457826
+    },
+    {
+     "seed": "GW191127_050227:60364e89",
+     "recovery": 0.4575
+    },
+    {
+     "seed": "GW191127_050227:fe6dc83a",
+     "recovery": 0.529239
+    },
+    {
+     "seed": "GW191127_050227:9ca541eb",
+     "recovery": 0.350109
+    },
+    {
+     "seed": "GW191127_050227:3adcbb9c",
+     "recovery": 0.464565
+    },
+    {
+     "seed": "GW191127_050227:d914354d",
+     "recovery": 0.445978
+    },
+    {
+     "seed": "GW191127_050227:774baefe",
+     "recovery": 0.442717
+    },
+    {
+     "seed": "GW191127_050227:158328af",
+     "recovery": 0.503696
+    },
+    {
+     "seed": "GW191127_050227:b3baa260",
+     "recovery": 0.469891
+    },
+    {
+     "seed": "GW191127_050227:51f21c11",
+     "recovery": 0.409022
+    },
+    {
+     "seed": "GW191127_050227:f02995c2",
+     "recovery": 0.407717
+    },
+    {
+     "seed": "GW191127_050227:8e610f73",
+     "recovery": 0.388152
+    }
+   ]
+  },
+  {
+   "event": "GW191109_010717",
+   "physical_recovery": 0.518208,
+   "template_sha256": "602d7238a7d498e71b5b71fb05f485a7b6fc41cf8bc13751fe1fcbfbbaeb775c",
+   "scrambles": [
+    {
+     "seed": "GW191109_010717:5eed0000",
+     "recovery": 0.208324
+    },
+    {
+     "seed": "GW191109_010717:fd2479b1",
+     "recovery": 0.21711
+    },
+    {
+     "seed": "GW191109_010717:9b5bf362",
+     "recovery": 0.223237
+    },
+    {
+     "seed": "GW191109_010717:39936d13",
+     "recovery": 0.20815
+    },
+    {
+     "seed": "GW191109_010717:d7cae6c4",
+     "recovery": 0.24815
+    },
+    {
+     "seed": "GW191109_010717:76026075",
+     "recovery": 0.231387
+    },
+    {
+     "seed": "GW191109_010717:1439da26",
+     "recovery": 0.262486
+    },
+    {
+     "seed": "GW191109_010717:b27153d7",
+     "recovery": 0.200116
+    },
+    {
+     "seed": "GW191109_010717:50a8cd88",
+     "recovery": 0.224566
+    },
+    {
+     "seed": "GW191109_010717:eee04739",
+     "recovery": 0.226763
+    },
+    {
+     "seed": "GW191109_010717:8d17c0ea",
+     "recovery": 0.286647
+    },
+    {
+     "seed": "GW191109_010717:2b4f3a9b",
+     "recovery": 0.232312
+    },
+    {
+     "seed": "GW191109_010717:c986b44c",
+     "recovery": 0.240578
+    },
+    {
+     "seed": "GW191109_010717:67be2dfd",
+     "recovery": 0.22
+    },
+    {
+     "seed": "GW191109_010717:05f5a7ae",
+     "recovery": 0.245202
+    },
+    {
+     "seed": "GW191109_010717:a42d215f",
+     "recovery": 0.228035
+    },
+    {
+     "seed": "GW191109_010717:42649b10",
+     "recovery": 0.199075
+    },
+    {
+     "seed": "GW191109_010717:e09c14c1",
+     "recovery": 0.190636
+    },
+    {
+     "seed": "GW191109_010717:7ed38e72",
+     "recovery": 0.23052
+    },
+    {
+     "seed": "GW191109_010717:1d0b0823",
+     "recovery": 0.209017
+    },
+    {
+     "seed": "GW191109_010717:bb4281d4",
+     "recovery": 0.21711
+    },
+    {
+     "seed": "GW191109_010717:5979fb85",
+     "recovery": 0.232023
+    },
+    {
+     "seed": "GW191109_010717:f7b17536",
+     "recovery": 0.204451
+    },
+    {
+     "seed": "GW191109_010717:95e8eee7",
+     "recovery": 0.191561
+    },
+    {
+     "seed": "GW191109_010717:34206898",
+     "recovery": 0.223873
+    },
+    {
+     "seed": "GW191109_010717:d257e249",
+     "recovery": 0.221792
+    },
+    {
+     "seed": "GW191109_010717:708f5bfa",
+     "recovery": 0.234798
+    },
+    {
+     "seed": "GW191109_010717:0ec6d5ab",
+     "recovery": 0.237225
+    },
+    {
+     "seed": "GW191109_010717:acfe4f5c",
+     "recovery": 0.227746
+    },
+    {
+     "seed": "GW191109_010717:4b35c90d",
+     "recovery": 0.211156
+    },
+    {
+     "seed": "GW191109_010717:e96d42be",
+     "recovery": 0.237168
+    },
+    {
+     "seed": "GW191109_010717:87a4bc6f",
+     "recovery": 0.242197
+    },
+    {
+     "seed": "GW191109_010717:25dc3620",
+     "recovery": 0.241156
+    },
+    {
+     "seed": "GW191109_010717:c413afd1",
+     "recovery": 0.219191
+    },
+    {
+     "seed": "GW191109_010717:624b2982",
+     "recovery": 0.214335
+    },
+    {
+     "seed": "GW191109_010717:0082a333",
+     "recovery": 0.255838
+    },
+    {
+     "seed": "GW191109_010717:9eba1ce4",
+     "recovery": 0.201156
+    },
+    {
+     "seed": "GW191109_010717:3cf19695",
+     "recovery": 0.230231
+    },
+    {
+     "seed": "GW191109_010717:db291046",
+     "recovery": 0.208092
+    },
+    {
+     "seed": "GW191109_010717:796089f7",
+     "recovery": 0.22341
+    },
+    {
+     "seed": "GW191109_010717:179803a8",
+     "recovery": 0.310867
+    },
+    {
+     "seed": "GW191109_010717:b5cf7d59",
+     "recovery": 0.191272
+    },
+    {
+     "seed": "GW191109_010717:5406f70a",
+     "recovery": 0.267919
+    },
+    {
+     "seed": "GW191109_010717:f23e70bb",
+     "recovery": 0.204104
+    },
+    {
+     "seed": "GW191109_010717:9075ea6c",
+     "recovery": 0.255145
+    },
+    {
+     "seed": "GW191109_010717:2ead641d",
+     "recovery": 0.261908
+    },
+    {
+     "seed": "GW191109_010717:cce4ddce",
+     "recovery": 0.239538
+    },
+    {
+     "seed": "GW191109_010717:6b1c577f",
+     "recovery": 0.220809
+    },
+    {
+     "seed": "GW191109_010717:0953d130",
+     "recovery": 0.243237
+    },
+    {
+     "seed": "GW191109_010717:a78b4ae1",
+     "recovery": 0.225723
+    },
+    {
+     "seed": "GW191109_010717:45c2c492",
+     "recovery": 0.242659
+    },
+    {
+     "seed": "GW191109_010717:e3fa3e43",
+     "recovery": 0.261561
+    },
+    {
+     "seed": "GW191109_010717:8231b7f4",
+     "recovery": 0.194682
+    },
+    {
+     "seed": "GW191109_010717:206931a5",
+     "recovery": 0.220462
+    },
+    {
+     "seed": "GW191109_010717:bea0ab56",
+     "recovery": 0.238844
+    },
+    {
+     "seed": "GW191109_010717:5cd82507",
+     "recovery": 0.233064
+    },
+    {
+     "seed": "GW191109_010717:fb0f9eb8",
+     "recovery": 0.226821
+    },
+    {
+     "seed": "GW191109_010717:99471869",
+     "recovery": 0.26422
+    },
+    {
+     "seed": "GW191109_010717:377e921a",
+     "recovery": 0.203179
+    },
+    {
+     "seed": "GW191109_010717:d5b60bcb",
+     "recovery": 0.253121
+    },
+    {
+     "seed": "GW191109_010717:73ed857c",
+     "recovery": 0.229133
+    },
+    {
+     "seed": "GW191109_010717:1224ff2d",
+     "recovery": 0.207572
+    },
+    {
+     "seed": "GW191109_010717:b05c78de",
+     "recovery": 0.27341
+    },
+    {
+     "seed": "GW191109_010717:4e93f28f",
+     "recovery": 0.208671
+    },
+    {
+     "seed": "GW191109_010717:eccb6c40",
+     "recovery": 0.233468
+    },
+    {
+     "seed": "GW191109_010717:8b02e5f1",
+     "recovery": 0.254798
+    },
+    {
+     "seed": "GW191109_010717:293a5fa2",
+     "recovery": 0.248382
+    },
+    {
+     "seed": "GW191109_010717:c771d953",
+     "recovery": 0.183006
+    },
+    {
+     "seed": "GW191109_010717:65a95304",
+     "recovery": 0.186301
+    },
+    {
+     "seed": "GW191109_010717:03e0ccb5",
+     "recovery": 0.219942
+    },
+    {
+     "seed": "GW191109_010717:a2184666",
+     "recovery": 0.244913
+    },
+    {
+     "seed": "GW191109_010717:404fc017",
+     "recovery": 0.219711
+    },
+    {
+     "seed": "GW191109_010717:de8739c8",
+     "recovery": 0.253757
+    },
+    {
+     "seed": "GW191109_010717:7cbeb379",
+     "recovery": 0.207803
+    },
+    {
+     "seed": "GW191109_010717:1af62d2a",
+     "recovery": 0.231965
+    },
+    {
+     "seed": "GW191109_010717:b92da6db",
+     "recovery": 0.251272
+    },
+    {
+     "seed": "GW191109_010717:5765208c",
+     "recovery": 0.218844
+    },
+    {
+     "seed": "GW191109_010717:f59c9a3d",
+     "recovery": 0.228786
+    },
+    {
+     "seed": "GW191109_010717:93d413ee",
+     "recovery": 0.24763
+    },
+    {
+     "seed": "GW191109_010717:320b8d9f",
+     "recovery": 0.238324
+    },
+    {
+     "seed": "GW191109_010717:d0430750",
+     "recovery": 0.198844
+    },
+    {
+     "seed": "GW191109_010717:6e7a8101",
+     "recovery": 0.205087
+    },
+    {
+     "seed": "GW191109_010717:0cb1fab2",
+     "recovery": 0.219942
+    },
+    {
+     "seed": "GW191109_010717:aae97463",
+     "recovery": 0.21185
+    },
+    {
+     "seed": "GW191109_010717:4920ee14",
+     "recovery": 0.258555
+    },
+    {
+     "seed": "GW191109_010717:e75867c5",
+     "recovery": 0.26185
+    },
+    {
+     "seed": "GW191109_010717:858fe176",
+     "recovery": 0.266301
+    },
+    {
+     "seed": "GW191109_010717:23c75b27",
+     "recovery": 0.255202
+    },
+    {
+     "seed": "GW191109_010717:c1fed4d8",
+     "recovery": 0.26
+    },
+    {
+     "seed": "GW191109_010717:60364e89",
+     "recovery": 0.200058
+    },
+    {
+     "seed": "GW191109_010717:fe6dc83a",
+     "recovery": 0.233179
+    },
+    {
+     "seed": "GW191109_010717:9ca541eb",
+     "recovery": 0.260925
+    },
+    {
+     "seed": "GW191109_010717:3adcbb9c",
+     "recovery": 0.195318
+    },
+    {
+     "seed": "GW191109_010717:d914354d",
+     "recovery": 0.250405
+    },
+    {
+     "seed": "GW191109_010717:774baefe",
+     "recovery": 0.247457
+    },
+    {
+     "seed": "GW191109_010717:158328af",
+     "recovery": 0.260173
+    },
+    {
+     "seed": "GW191109_010717:b3baa260",
+     "recovery": 0.186763
+    },
+    {
+     "seed": "GW191109_010717:51f21c11",
+     "recovery": 0.209653
+    },
+    {
+     "seed": "GW191109_010717:f02995c2",
+     "recovery": 0.227514
+    },
+    {
+     "seed": "GW191109_010717:8e610f73",
+     "recovery": 0.193121
+    }
+   ]
+  }
+ ]
+}

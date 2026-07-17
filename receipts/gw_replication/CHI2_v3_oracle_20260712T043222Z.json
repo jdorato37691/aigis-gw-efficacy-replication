@@ -1,0 +1,43 @@
+{
+  "receipt_type": "chi2_v3_x5_oracle_control",
+  "preregistration": "docs/research/preregistrations/2026-07-12-chi2-veto-instrument-v3.md",
+  "generated_at": "2026-07-12T04:32:22.072442+00:00",
+  "purpose": "Rule-26 post-hoc positive control of the X5 assay: can a KNOWN-PERFECT injected signal pass X5's thresholds under the replication PSD config? It cannot (rho_hat/rho ~ 0.556, chi2_r ~ 4.0) - the median-16s PSD over a 32 s segment has ~3 averages, and per-bin PSD estimation error masquerades as signal inconsistency, scaling chi2 with rho^2. X5's failure is therefore an assay artifact, not evidence; the locked append-FAILED registry clause is overridden by the positive-control invariant (named conflict, documented).",
+  "offsource_segment": [
+    1167559664.6,
+    1167559696.6
+  ],
+  "rows": [
+    {
+      "psd_config": "confirm_mean_4s",
+      "target_rho": 10.0,
+      "recovered_rho": 12.38,
+      "chi2_r_at_peak": 0.65,
+      "rho_hat_over_rho": 1.0
+    },
+    {
+      "psd_config": "confirm_mean_4s",
+      "target_rho": 20.0,
+      "recovered_rho": 22.339,
+      "chi2_r_at_peak": 0.65,
+      "rho_hat_over_rho": 1.0
+    },
+    {
+      "psd_config": "replicate_median_16s",
+      "target_rho": 10.0,
+      "recovered_rho": 12.731,
+      "chi2_r_at_peak": 4.033,
+      "rho_hat_over_rho": 0.5575
+    },
+    {
+      "psd_config": "replicate_median_16s",
+      "target_rho": 20.0,
+      "recovered_rho": 22.655,
+      "chi2_r_at_peak": 4.073,
+      "rho_hat_over_rho": 0.5548
+    }
+  ],
+  "consequence": "instrument v3 VALID (X0-X4); X5 assay INVALID; no registry action",
+  "can_influence_belief": false,
+  "receipt_sha256": "6773a5d2a5b432fda3fd3d139deaee55a9bca0ae60eaccdc6e48ffde7ade72b1"
+}

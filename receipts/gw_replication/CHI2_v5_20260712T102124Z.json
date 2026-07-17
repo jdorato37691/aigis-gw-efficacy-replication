@@ -1,0 +1,41 @@
+{
+  "receipt_type": "chi2_v5_reevaluation",
+  "preregistration": "docs/research/preregistrations/2026-07-12-chi2-median4s-protocol-v5.md",
+  "experiment_id": "exp_83871cc6eeadf4d1b80ec4d8",
+  "executor": "matched_filter_replicator",
+  "generated_at": "2026-07-12T10:21:24.527473+00:00",
+  "source_receipt": "/Users/jamesdoratoiii/.aigis/research/gw_replication/CHI2_v4_20260712T101908Z.json",
+  "source_receipt_sha256": "c6dcdfa23e11c132b05e79238d11853494d333232231f5e98f4ba41d6348638f",
+  "predictions": {
+    "Y0_oracles_in_config": {
+      "passed": true
+    },
+    "Y1_prime_no_clean_event_veto": {
+      "n_rows": 12,
+      "worst_ratio": 0.9143,
+      "passed": true
+    },
+    "Y2_glitch_suppression": {
+      "h1_rho_max": 14.123,
+      "h1_rho_hat_max": 1.849,
+      "v4": 5.223,
+      "passed": true
+    },
+    "Y3_known_bad": {
+      "passed": true
+    },
+    "Y5_replication": {
+      "R1_median": 0.912,
+      "R1_pass": true,
+      "R2_median_n6": 0.839,
+      "R2_pass": true,
+      "R3_median_abs_diff": 0.012,
+      "R3_pass": true,
+      "passed": true
+    }
+  },
+  "instrument_valid": true,
+  "outcome": "confirmed",
+  "can_influence_belief": false,
+  "receipt_sha256": "68061f14f192d161fe03cbe4fddf1d4fb6cdec7ac32e807a89c5a9ea02c424a6"
+}

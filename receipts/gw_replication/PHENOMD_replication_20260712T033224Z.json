@@ -1,0 +1,243 @@
+{
+  "receipt_type": "phenomd_phase_replication",
+  "protocol": "docs/research/preregistrations/2026-07-12-phenomd-sourced-phase-replication.md",
+  "experiment_id": "exp_83871cc6eeadf4d1b80ec4d8",
+  "executor": "matched_filter_replicator",
+  "generated_at": "2026-07-12T03:32:24.327914+00:00",
+  "gates": {
+    "G6_a_parse_and_map": true,
+    "G6_b_stitch_positive_control": true,
+    "G6_c_c1_continuity": true,
+    "G6_d_amplitude_regression": true
+  },
+  "rows": [
+    {
+      "event": "GW170104",
+      "group": "heavy_gwtc1",
+      "published_snr": 13.0,
+      "r_confirm": 0.969,
+      "status": "measured",
+      "r_replicate": 0.842,
+      "abs_diff": 0.127,
+      "offsource_max": 6.171,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "109b1b94a191e1e1038b5de06269eb2d72400b188d8a56321d36bbda33b26c4f",
+      "segment_gps": [
+        1167559920.6,
+        1167559952.6
+      ]
+    },
+    {
+      "event": "GW170814",
+      "group": "heavy_gwtc1",
+      "published_snr": 17.2,
+      "r_confirm": 0.865,
+      "status": "measured",
+      "r_replicate": 0.929,
+      "abs_diff": 0.064,
+      "offsource_max": 6.219,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "da03682b2f9a76e142199998bd6e9bf098b8f5d554d4bd70d55811889bc58284",
+      "segment_gps": [
+        1186741845.5,
+        1186741877.5
+      ]
+    },
+    {
+      "event": "GW170809",
+      "group": "heavy_gwtc1",
+      "published_snr": 12.4,
+      "r_confirm": 0.928,
+      "status": "measured",
+      "r_replicate": 0.691,
+      "abs_diff": 0.237,
+      "offsource_max": 6.289,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "3d84dbae9b9b7e06b4b283e34916a5d2251fab134cdf9bad4ba8ffa4f37ef37c",
+      "segment_gps": [
+        1186302503.8,
+        1186302535.8
+      ]
+    },
+    {
+      "event": "GW150914",
+      "group": "heavy_gwtc1",
+      "published_snr": 25.2,
+      "r_confirm": 0.89,
+      "status": "measured",
+      "r_replicate": 0.802,
+      "abs_diff": 0.088,
+      "offsource_max": 6.505,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "f3b3f8dd5413a3af6b73860223cd366fdfce883d6e556b0b31cb98736fd79edf",
+      "segment_gps": [
+        1126259446.4,
+        1126259478.4
+      ]
+    },
+    {
+      "event": "GW170818",
+      "group": "heavy_gwtc1",
+      "published_snr": 11.3,
+      "r_confirm": 0.902,
+      "status": "measured",
+      "r_replicate": 0.866,
+      "abs_diff": 0.036,
+      "offsource_max": 6.159,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "c3033696a9fcf123b54027d9834ce6a5fbfb30696719aa9e4b5d1cb84153bd26",
+      "segment_gps": [
+        1187058311.1,
+        1187058343.1
+      ]
+    },
+    {
+      "event": "GW170823",
+      "group": "heavy_gwtc1",
+      "published_snr": 11.5,
+      "r_confirm": 0.955,
+      "status": "measured",
+      "r_replicate": 0.966,
+      "abs_diff": 0.011,
+      "offsource_max": 6.221,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "a3811c07a16779b786510edfef344458f109adc467e113df35405eef43693dae",
+      "segment_gps": [
+        1187529240.5,
+        1187529272.5
+      ]
+    },
+    {
+      "event": "GW170729",
+      "group": "heavy_gwtc1",
+      "published_snr": 10.8,
+      "r_confirm": 0.89,
+      "status": "measured",
+      "r_replicate": 0.76,
+      "abs_diff": 0.13,
+      "offsource_max": 6.183,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "8150854aab49dc1469b7d4e75457038044df0ef07aa5678fe01fa5a681e97e85",
+      "segment_gps": [
+        1185389791.3,
+        1185389823.3
+      ]
+    },
+    {
+      "event": "GW200220_124850",
+      "group": "heavy_gwtc3",
+      "published_snr": 8.5,
+      "r_confirm": 0.602,
+      "status": "measured",
+      "r_replicate": 4.654,
+      "abs_diff": 4.052,
+      "offsource_max": 6.272,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "d7e0a8df71af55a2f59832afa4e0c86a65f051da2617c2d2e93d7f4cef69fec9",
+      "segment_gps": [
+        1266238132.1,
+        1266238164.1
+      ]
+    },
+    {
+      "event": "GW200219_094415",
+      "group": "heavy_gwtc3",
+      "published_snr": 10.7,
+      "r_confirm": 0.897,
+      "status": "measured",
+      "r_replicate": 0.79,
+      "abs_diff": 0.107,
+      "offsource_max": 5.831,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "7c677691a2d59ea41b60d4cb218cfdaaec51f18cee5a4f82f7f29d9fea2b28b7",
+      "segment_gps": [
+        1266140657.1,
+        1266140689.1
+      ]
+    },
+    {
+      "event": "GW200128_022011",
+      "group": "heavy_gwtc3",
+      "published_snr": 10.6,
+      "r_confirm": 0.883,
+      "status": "measured",
+      "r_replicate": 0.608,
+      "abs_diff": 0.275,
+      "offsource_max": 6.126,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "2a66915a4ff0126f8bfae3fd9289e16ececdfecc4d852bf01a927dfcd7fe2971",
+      "segment_gps": [
+        1264213213.9,
+        1264213245.9
+      ]
+    },
+    {
+      "event": "GW191222_033537",
+      "group": "heavy_gwtc3",
+      "published_snr": 12.5,
+      "r_confirm": 0.864,
+      "status": "measured",
+      "r_replicate": 0.909,
+      "abs_diff": 0.045,
+      "offsource_max": 6.221,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "2d0dc4a8064eb15f2561e04b56b4df03b45e723d56f9d2d40920087726465901",
+      "segment_gps": [
+        1261020939.1,
+        1261020971.1
+      ]
+    },
+    {
+      "event": "GW191127_050227",
+      "group": "heavy_gwtc3",
+      "published_snr": 9.2,
+      "r_confirm": 0.836,
+      "status": "measured",
+      "r_replicate": 0.911,
+      "abs_diff": 0.075,
+      "offsource_max": 5.916,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "17e2a0935c3884f5f18886e292e862e946b88d8c52afabce084702328245072c",
+      "segment_gps": [
+        1258866149.5,
+        1258866181.5
+      ]
+    },
+    {
+      "event": "GW191109_010717",
+      "group": "heavy_gwtc3",
+      "published_snr": 17.3,
+      "r_confirm": 0.851,
+      "status": "measured",
+      "r_replicate": 0.778,
+      "abs_diff": 0.073,
+      "offsource_max": 6.334,
+      "psd_estimator": "welch_median_16s",
+      "template_sha256": "55e10033a0f04a7c503cc9763ddd26e93ee3d65cedd1d073771905d232a32df6",
+      "segment_gps": [
+        1257296839.2,
+        1257296871.2
+      ]
+    }
+  ],
+  "criteria": {
+    "R1_headline": {
+      "criterion": "median heavy GWTC-1 >= 0.65 AND within +/-0.1 of 0.902",
+      "median": 0.842,
+      "passed": true
+    },
+    "R2_oos_arm": {
+      "criterion": "median GWTC-3 >= 0.408",
+      "median": 0.85,
+      "passed": true
+    },
+    "R3_per_event_agreement": {
+      "criterion": "median |R_rep - R_conf| <= 0.1",
+      "median_abs_diff": 0.088,
+      "passed": true
+    }
+  },
+  "outcome": "confirmed",
+  "can_influence_belief": false,
+  "receipt_sha256": "303a9ec21fd4859a08c7dc5d0cb5aebe35676726db6cca01ed51989fa5059286"
+}

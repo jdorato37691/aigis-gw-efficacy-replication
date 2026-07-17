@@ -1,0 +1,59 @@
+{
+  "built_at": "20260717T115457Z",
+  "bundle_name": "aigis-gw-efficacy-bundle-20260717T115457Z",
+  "counts": {
+    "package_files": 14,
+    "preregistrations": 20,
+    "receipts": 18,
+    "scripts": 22,
+    "scripts_missing": 0
+  },
+  "determinism_note": "MANIFEST.sha256 hashes every bundled file except MANIFEST.sha256 and BUNDLE_SHA256, in fixed sorted order. Re-running at the same git HEAD with the same receipt store reproduces identical file hashes for all scientific content (package, preregistrations, verification artifacts, pipeline code, receipts) and for the path-normalized READINESS_AT_BUILD.json. The only files that differ across rebuilds are the build-stamp-bearing metadata (BUILD_INFO.json, START_HERE.md) and the point-in-time environment/*.freeze.txt snapshots. bundle.tar.gz is not byte-reproducible (embedded mtimes); compare MANIFEST, not tar.gz.",
+  "environment": {
+    "lal_oracle_environment_sha256_live": "4135a6c3fd1c192f8ad2dc0faace81a13a9affa61220e92c2d7d764f58956716",
+    "lal_venv_freeze_method": "uv pip list --format=freeze",
+    "lal_venv_python": "3.13.12",
+    "main_venv_freeze_method": "uv pip list --format=freeze",
+    "main_venv_python": "3.13.12"
+  },
+  "excluded_from_bundle": [
+    "docs/research/papers/gw-inspiral-template-efficacy/DRAFT-ASK.md"
+  ],
+  "git_head": "9365ae751e4d3b87564f9657ab3481624cf8218b",
+  "git_head_subject": "research(gw): builder emits ssh-signing push+tag natively (operator has no gpg key)",
+  "readiness_at_build": {
+    "analysis_ready_for_external_review": true,
+    "epistemic_status": "analysis_ready_for_external_review",
+    "external_ready": false,
+    "gate_status_counts": {
+      "pass": 6
+    }
+  },
+  "receipts_matched_by": {
+    "by_hash": [
+      "FRESH_HOLDOUT_eval_20260716T232341Z.json",
+      "FRESH_HOLDOUT_eval_latest.json",
+      "FRESH_HOLDOUT_freeze_20260716T230536Z.json"
+    ],
+    "by_name": [
+      "CHI2_v3_20260712T043014Z.json",
+      "CHI2_v3_oracle_20260712T043222Z.json",
+      "CHI2_v4_20260712T101908Z.json",
+      "CHI2_v5_20260712T102124Z.json",
+      "COINCIDENT_v2_20260712T042113Z.json",
+      "FRESH_HOLDOUT_freeze_latest.json",
+      "GW150914_4_template.hdf5",
+      "GW151226_4_template.hdf5",
+      "GWTC3_oos_20260712T023453Z.json",
+      "LAL_oracle_20260716T113628Z.json",
+      "LAL_oracle_20260717T001009Z.json",
+      "PHENOMD_phase_20260712T032158Z.json",
+      "PHENOMD_replication_20260712T033224Z.json",
+      "PSD_robustness_20260716T154349Z.json",
+      "STUDY6_review_coincidence_audit_20260712T040807Z.json"
+    ]
+  },
+  "schema": "aigis.gw.replication_bundle.v1",
+  "scripts_missing": [],
+  "source_policy": "all git-tracked files read from HEAD; receipts and venv freezes from the live filesystem"
+}
