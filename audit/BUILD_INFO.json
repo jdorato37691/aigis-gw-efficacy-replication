@@ -1,6 +1,6 @@
 {
-  "built_at": "20260717T151519Z",
-  "bundle_name": "aigis-gw-efficacy-bundle-20260717T151519Z",
+  "built_at": "20260717T154623Z",
+  "bundle_name": "aigis-gw-efficacy-bundle-20260717T154623Z",
   "counts": {
     "package_files": 15,
     "preregistrations": 20,
@@ -19,8 +19,8 @@
   "excluded_from_bundle": [
     "docs/research/papers/gw-inspiral-template-efficacy/DRAFT-ASK.md"
   ],
-  "git_head": "2ac548b70bbaf746e5b79067ecf1c423fb37a6e2",
-  "git_head_subject": "research(gw): replicator-first bundle layout v2 (PI: repo was messy)",
+  "git_head": "a2192d51cbae0dcc0519055d3859410e5be69dc1",
+  "git_head_subject": "research(gw): -r1 revision - pinned replication locks, pristine-workflow runbook, preregistration qualification, signature recipe (PI audit)",
   "layout": "replicator-first-v2",
   "layout_note": "Shallow replicator-first tree: README.md + REPLICATION.md at root, paper/, preregistrations/, scripts/research/ (nesting kept for runnability), receipts/, environment/, audit/. docs/research/papers/gw-inspiral-template-efficacy is a relative symlink to paper/ so the pipeline code resolves its repo-relative package path unmodified (macOS/Linux).",
   "readiness_at_build": {
@@ -58,5 +58,5 @@
   "schema": "aigis.gw.replication_bundle.v2",
   "scripts_missing": [],
   "source_policy": "all git-tracked files read from HEAD; receipts and venv freezes from the live filesystem",
-  "tag_name": "aigis-gw-efficacy-20260717.2"
+  "tag_name": "aigis-gw-efficacy-20260717-r1"
 }

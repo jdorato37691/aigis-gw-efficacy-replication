@@ -12,11 +12,16 @@ this paper is claimed as cleanly novel. What is offered for replication is
 specific and bounded: (1) the **R statistic** — quadrature of independently
 maximized H1/L1 inspiral-only 3.5PN TaylorF2 SNRs over the published catalog
 network SNR — measured per event across three GWTC catalogs, with its values and
-mass correlations; and (2) the **preregistered out-of-sample and fresh-holdout
-transfer** of that mass-recovery curve. The mass-decline relationship itself is
-an anticipated, textbook one (Flanagan & Hughes 1998; Damour, Iyer &
-Sathyaprakash 2001); the contribution under test is the per-event quantification
-and its transfer, not the physics of the decline.
+mass correlations; and (2) the **out-of-sample and fresh-holdout transfer** of
+that mass-recovery curve. Internally preregistered and hash-receipted before
+each run, with the complete package first externally anchored in the signed
+July 17, 2026 tag. The mass-decline relationship itself is an anticipated,
+textbook one (Flanagan & Hughes 1998; Damour, Iyer & Sathyaprakash 2001); the
+contribution under test is the per-event quantification and its transfer, not
+the physics of the decline.
+
+The three computations require roughly 40-50 minutes on the reference setup,
+excluding initial environment installation and network variability.
 
 **Honest status.** The local readiness auditor reports
 `analysis_ready_for_external_review` (six gates pass under the committed
@@ -72,13 +77,26 @@ cat BUNDLE_SHA256
 the builder at the same git HEAD with the same receipts reproduces identical
 hashes for all scientific content (package, preregistrations, verification
 artifacts, pipeline code, receipts) and for the path-normalized
-`READINESS_AT_BUILD.json`. The only files that differ across rebuilds are the
-build-stamp-bearing metadata (`BUILD_INFO.json`, `START_HERE.md`) and the
-point-in-time `environment/*.freeze.txt` snapshots. `bundle.tar.gz` is not
-byte-reproducible (embedded mtimes) — compare the manifest, never the tarball.
+`audit/READINESS_AT_BUILD.json`. The only files that differ across rebuilds are
+the build-stamp-bearing `audit/BUILD_INFO.json` and the point-in-time
+`environment/*.freeze.txt` snapshots. `bundle.tar.gz` is not byte-reproducible
+(embedded mtimes) — compare the manifest, never the tarball.
 
 Read `audit/BUILD_INFO.json` (git HEAD, counts, environment fingerprints) and
 `audit/READINESS_AT_BUILD.json` (the six-gate state captured at build time).
+
+**Then make a disposable working copy and run everything there.** The gate
+runners overwrite `paper/verification/*.json` in place, so keep the verified
+checkout pristine for later re-verification and diffing:
+
+```bash
+cp -a "$BUNDLE" "$BUNDLE-work"
+export BUNDLE="$BUNDLE-work"
+cd "$BUNDLE"
+```
+
+Pristine original, disposable working copy — every command below runs in the
+working copy.
 
 ---
 
@@ -89,18 +107,22 @@ audit; a **separate** env holds `lalsuite` for the external oracle only (never
 mix them).
 
 ```bash
-# (a) main pipeline env — needs only numpy + scipy from the manifest
+# (a) main pipeline env — pinned replication lock
 python3.13 -m venv ~/gwrepl-venv
-~/gwrepl-venv/bin/pip install numpy scipy
-# exact pins are in environment/main_venv.freeze.txt if you want a byte match
+~/gwrepl-venv/bin/pip install -r environment/main-replication.txt
 
 # (b) oracle env — lalsimulation (used ONLY in step 3f)
 python3.13 -m venv ~/gwrepl-lal-venv
-~/gwrepl-lal-venv/bin/pip install lalsuite numpy
-# exact pins in environment/lal_venv.freeze.txt
+~/gwrepl-lal-venv/bin/pip install -r environment/oracle-replication.txt
 export MAIN=~/gwrepl-venv/bin/python
 export LAL=~/gwrepl-lal-venv/bin/python
 ```
+
+The `environment/*-replication.txt` files are the fit-for-purpose replication
+locks (exactly the packages the runbook needs, at the versions the reference
+runs used); the `environment/*_venv.freeze.txt` files are the full environment
+inventories of the reference machine, kept for byte-level environment matching
+and forensics — install from the locks, consult the inventories.
 
 `environment/lal_venv.oracle_environment.txt` records the sha256 the oracle
 runner computes over its package list. Date-versioned transitive deps (e.g.
@@ -150,21 +172,24 @@ receipt as its positive control.
 
 Ten O3a / GWTC-2.1-confident events selected by a deterministic preregistered
 rule, disjoint from the 31-event development manifest, evaluated exactly once.
-Three idempotent, checkpointed phases:
+
+**Seed the exact frozen cohort first.** The freeze phase is idempotent: if a
+freeze receipt is already in place it is reused, so seeding the bundled receipt
+pins your evaluation to the exact cohort the reference run froze (rather than
+re-deriving it against today's GWOSC event API):
+
+```bash
+mkdir -p ~/.aigis/research/gw_replication
+cp receipts/FRESH_HOLDOUT_freeze_latest.json ~/.aigis/research/gw_replication/
+```
+
+Then run the three idempotent, checkpointed phases:
 
 ```bash
 $MAIN scripts/research/fresh_holdout_study.py --freeze
 $MAIN scripts/research/fresh_holdout_study.py --evaluate
 $MAIN scripts/research/fresh_holdout_study.py --build-artifact
 # regenerates paper/verification/fresh_untouched_holdout.json, then self-validates it
-```
-
-To reproduce the *exact* frozen cohort rather than re-deriving it, copy the
-bundled freeze receipt into place before `--evaluate` (the freeze phase is
-idempotent and will reuse it):
-
-```bash
-cp receipts/FRESH_HOLDOUT_freeze_latest.json ~/.aigis/research/gw_replication/
 ```
 
 **Agreement:** outcome `confirmed` — both locked criteria hold: trend

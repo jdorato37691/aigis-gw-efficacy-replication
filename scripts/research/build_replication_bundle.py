@@ -345,6 +345,24 @@ def _python_version(python_path: Path) -> str:
     return out.strip() if code == 0 else "unknown"
 
 
+def _pins_from_freeze(freeze_text: str, names: tuple[str, ...]) -> tuple[list[str], list[str]]:
+    """Extract exact ``name==version`` pins for the given packages from a freeze listing.
+
+    The freeze is the source of truth (a hand-maintained pin that disagrees with
+    the environment that actually ran the studies would be a control gap).
+    Returns (pins, missing).
+    """
+    by_name: dict[str, str] = {}
+    for line in freeze_text.splitlines():
+        line = line.strip()
+        if "==" in line and not line.startswith("#"):
+            pkg = line.split("==", 1)[0].strip().lower()
+            by_name[pkg] = line
+    pins = [by_name[n] for n in names if n in by_name]
+    missing = [n for n in names if n not in by_name]
+    return pins, missing
+
+
 # ---------------------------------------------------------------------------
 # Safety scan
 # ---------------------------------------------------------------------------
@@ -396,12 +414,20 @@ def _under_compat_symlink(path: Path, bundle_root: Path) -> bool:
     return rel.startswith(f"{_COMPAT_SYMLINK_PARENT}/{_COMPAT_SYMLINK_NAME}/")
 
 
-def build(*, output_root: Path, dry_run: bool, tag_name: str | None = None, remote_url: str | None = None) -> int:
+def build(
+    *,
+    output_root: Path,
+    dry_run: bool,
+    tag_name: str | None = None,
+    remote_url: str | None = None,
+    badge_state: str | None = None,
+) -> int:
     stamp = _utc_stamp()
     bundle_name = f"aigis-gw-efficacy-bundle-{stamp}"
     bundle_root = output_root / bundle_name
     tag_name = tag_name or f"aigis-gw-efficacy-{stamp[:8]}"
     remote_url = remote_url or "<YOUR_PUBLIC_REMOTE_URL>"
+    badge_state = badge_state or "pending signing-key registration on the account"
 
     head_sha = git_head_sha()
     head_subject = git_head_subject()
@@ -452,6 +478,7 @@ def build(*, output_root: Path, dry_run: bool, tag_name: str | None = None, remo
         dest_rel = bundle_dest_rel(rel)
         if dest_rel == "README.md":
             data = data.replace(b"{{TAG_NAME}}", tag_name.encode("utf-8"))
+            data = data.replace(b"{{BADGE_STATE}}", badge_state.encode("utf-8"))
         _write(bundle_root / dest_rel, data)
     # scripts package markers so `scripts.research.*` imports resolve if used.
     if git_is_tracked("scripts/__init__.py"):
@@ -494,6 +521,25 @@ def build(*, output_root: Path, dry_run: bool, tag_name: str | None = None, remo
         encoding="utf-8",
     )
     (env_dir / "lal_venv.oracle_environment.txt").write_text(lal_oracle_text, encoding="utf-8")
+    # Fit-for-purpose replication locks, derived FROM the freezes (freezes win):
+    # exactly the packages the runbook needs, at the versions the reference runs used.
+    main_pins, main_pins_missing = _pins_from_freeze(main_freeze, ("numpy", "scipy"))
+    oracle_pins, oracle_pins_missing = _pins_from_freeze(lal_freeze, ("lalsuite", "numpy", "scipy"))
+    if main_pins_missing or oracle_pins_missing:
+        print(
+            f"WARNING: replication-lock pins missing from freezes: main={main_pins_missing} oracle={oracle_pins_missing}",
+            file=sys.stderr,
+        )
+    (env_dir / "main-replication.txt").write_text(
+        "# Replication lock for the main pipeline env (REPLICATION.md step 2a).\n"
+        "# Derived from main_venv.freeze.txt -- the freeze is the source of truth.\n" + "\n".join(main_pins) + "\n",
+        encoding="utf-8",
+    )
+    (env_dir / "oracle-replication.txt").write_text(
+        "# Replication lock for the oracle env (REPLICATION.md step 2b / 3f).\n"
+        "# Derived from lal_venv.freeze.txt -- the freeze is the source of truth.\n" + "\n".join(oracle_pins) + "\n",
+        encoding="utf-8",
+    )
 
     # 6. audit/READINESS_AT_BUILD.json -- run the BUNDLED audit over the bundled
     # HEAD artifacts (exercising the docs/ compat symlink), then normalize the
@@ -682,9 +728,19 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="report selection without writing the bundle")
     parser.add_argument("--tag-name", help="signed-tag name templated into README + the operator START_HERE")
     parser.add_argument("--remote-url", help="origin URL templated into the operator START_HERE")
+    parser.add_argument(
+        "--badge-state",
+        help="truthful GitHub Verified-badge state sentence fragment templated into the README signature section",
+    )
     args = parser.parse_args()
     args.output_root.mkdir(parents=True, exist_ok=True)
-    return build(output_root=args.output_root, dry_run=args.dry_run, tag_name=args.tag_name, remote_url=args.remote_url)
+    return build(
+        output_root=args.output_root,
+        dry_run=args.dry_run,
+        tag_name=args.tag_name,
+        remote_url=args.remote_url,
+        badge_state=args.badge_state,
+    )
 
 
 if __name__ == "__main__":

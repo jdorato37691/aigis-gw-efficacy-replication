@@ -1,0 +1,5 @@
+# Replication lock for the oracle env (REPLICATION.md step 2b / 3f).
+# Derived from lal_venv.freeze.txt -- the freeze is the source of truth.
+lalsuite==7.26.15
+numpy==2.5.1
+scipy==1.18.0

@@ -1,0 +1,4 @@
+# Replication lock for the main pipeline env (REPLICATION.md step 2a).
+# Derived from main_venv.freeze.txt -- the freeze is the source of truth.
+numpy==2.4.6
+scipy==1.17.1
