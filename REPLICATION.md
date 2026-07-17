@@ -39,8 +39,11 @@ confirmation, partial, or refutation — is a valid and welcome result.
 
 Set a working root and know where outputs go. All runners write their run
 receipts to `~/.aigis/research/gw_replication/` on **your** machine and (for the
-gate runners) overwrite the corresponding `verification/<gate>.json` inside the
-bundle in place:
+gate runners) overwrite the corresponding `paper/verification/<gate>.json`
+inside the bundle in place. One layout note: the bundle's `docs/` entry is a
+compatibility symlink into `paper/` — the pipeline scripts resolve their
+repo-relative paths from their own location, and the symlink lets them run
+unmodified (macOS/Linux; the symlink does not resolve on Windows):
 
 ```bash
 export BUNDLE=/path/to/aigis-gw-efficacy-bundle-<stamp>
@@ -74,8 +77,8 @@ build-stamp-bearing metadata (`BUILD_INFO.json`, `START_HERE.md`) and the
 point-in-time `environment/*.freeze.txt` snapshots. `bundle.tar.gz` is not
 byte-reproducible (embedded mtimes) — compare the manifest, never the tarball.
 
-Read `BUILD_INFO.json` (git HEAD, counts, environment fingerprints) and
-`READINESS_AT_BUILD.json` (the six-gate state captured at build time).
+Read `audit/BUILD_INFO.json` (git HEAD, counts, environment fingerprints) and
+`audit/READINESS_AT_BUILD.json` (the six-gate state captured at build time).
 
 ---
 
@@ -153,7 +156,7 @@ Three idempotent, checkpointed phases:
 $MAIN scripts/research/fresh_holdout_study.py --freeze
 $MAIN scripts/research/fresh_holdout_study.py --evaluate
 $MAIN scripts/research/fresh_holdout_study.py --build-artifact
-# regenerates verification/fresh_untouched_holdout.json, then self-validates it
+# regenerates paper/verification/fresh_untouched_holdout.json, then self-validates it
 ```
 
 To reproduce the *exact* frozen cohort rather than re-deriving it, copy the
@@ -161,7 +164,7 @@ bundled freeze receipt into place before `--evaluate` (the freeze phase is
 idempotent and will reuse it):
 
 ```bash
-cp receipts/gw_replication/FRESH_HOLDOUT_freeze_latest.json ~/.aigis/research/gw_replication/
+cp receipts/FRESH_HOLDOUT_freeze_latest.json ~/.aigis/research/gw_replication/
 ```
 
 **Agreement:** outcome `confirmed` — both locked criteria hold: trend
@@ -178,7 +181,7 @@ with the **oracle** env only.
 
 ```bash
 $LAL scripts/research/lal_oracle_compare.py
-# regenerates verification/phenomd_external_oracle.json
+# regenerates paper/verification/phenomd_external_oracle.json
 ```
 
 **Agreement:** minimum noise-weighted phase match `>= 0.99` across the frozen
@@ -209,14 +212,15 @@ curve criterion is preserved, not gated.
 Because GWOSC fetches, PSD estimation, and posterior draws carry run-to-run
 structure, **agreement is judged by the preregistered verdicts and tolerances
 above, not by byte-identical artifacts.** The manifest confirms you started from
-the pristine bundle; the gate criteria define a pass. Each preregistration under
-`docs/research/preregistrations/` states its own locked metric, tolerance, data
-segments, and falsifiers — read the relevant one before scoring a gate.
+the pristine bundle; the gate criteria define a pass.
 
 A useful replication reports, per computation: the recomputed statistic, whether
 it clears the locked tolerance, your environment fingerprint
 (`$MAIN -m pip freeze`), and any step that diverged. A refutation is as valuable
-as a confirmation and should be reported with the same detail.
+as a confirmation and should be reported with the same detail. Each
+preregistration under `preregistrations/` states its own locked metric,
+tolerance, data segments, and falsifiers — read the relevant one before scoring
+a gate.
 
 **Report results to the party who provided this bundle.** This package sends
 nothing automatically; there is no callback. The provider will fold your outcome

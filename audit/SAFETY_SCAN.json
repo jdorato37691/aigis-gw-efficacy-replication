@@ -1,0 +1,35 @@
+{
+  "binary_files_skipped": [
+    "receipts/GW150914_4_template.hdf5",
+    "receipts/GW151226_4_template.hdf5"
+  ],
+  "blocker_count": 0,
+  "blockers": [],
+  "home_path_file_count": 13,
+  "home_path_files_sample": [
+    "REPLICATION.md",
+    "paper/paper.md",
+    "paper/verification/STUDY3_COHORT_COUNT_FINDING.md",
+    "paper/verification/phenomd_external_oracle.json",
+    "preregistrations/2026-07-16-fresh-untouched-holdout.md",
+    "preregistrations/2026-07-16-phenomd-oracle-match-grid.md",
+    "preregistrations/2026-07-16-phenomd-oracle-spin-sector-retry.md",
+    "receipts/CHI2_v5_20260712T102124Z.json",
+    "scripts/research/build_replication_bundle.py",
+    "scripts/research/lal_oracle_compare.py",
+    "scripts/research/matched_filter_gw150914.py",
+    "scripts/research/phenomd_coefficients.py",
+    "scripts/research/psd_robustness_sweep.py"
+  ],
+  "keyword_hit_count": 2,
+  "keyword_hits": [
+    {
+      "file": "environment/main_venv.freeze.txt",
+      "keyword": "token"
+    },
+    {
+      "file": "scripts/research/build_replication_bundle.py",
+      "keyword": "secret"
+    }
+  ]
+}

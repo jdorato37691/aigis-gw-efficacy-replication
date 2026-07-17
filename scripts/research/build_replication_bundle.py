@@ -32,7 +32,12 @@ Design contract (Decision C, OPERATOR-DECISIONS.md):
     Home-directory path strings are reported as informational only: receipts
     legitimately record ``~/.aigis/...`` run paths.
   * ``DRAFT-ASK.md`` (the operator's outreach draft, Decision D) is deliberately
-    excluded from the replicator-facing bundle.
+    excluded from the replicator-facing bundle, and the operator push+tag
+    runsheet (START_HERE) is written OUTSIDE the bundle as a sibling file.
+  * Layout is replicator-first (v2): README.md + REPLICATION.md at root, then
+    paper/, preregistrations/, scripts/research/, receipts/, environment/,
+    audit/, plus a docs/ compatibility symlink into paper/ that keeps the
+    pipeline code runnable unmodified.
 
 Usage:
     .venv/bin/python3 scripts/research/build_replication_bundle.py
@@ -65,6 +70,36 @@ DEFAULT_OUTPUT_ROOT = RECEIPTS_DIR / "bundle"
 
 # Package files that are deliverables for the operator, not the replicator.
 EXCLUDE_FROM_BUNDLE = {f"{PACKAGE_REL}/DRAFT-ASK.md"}
+
+# --- Replicator-first bundle layout (v2, PI-requested restructure) -----------
+# The v1 bundle mirrored internal repo paths (docs/research/papers/...); the PI
+# review called the public repo "messy". v2 presents a shallow tree:
+#   README.md REPLICATION.md MANIFEST.sha256 BUNDLE_SHA256
+#   paper/ preregistrations/ scripts/research/ receipts/ environment/ audit/
+# Scripts stay nested at scripts/research/ because they resolve repo-relative
+# paths from __file__ (REPO_ROOT = parents[2]) and import siblings; flattening
+# would break them. A relative symlink docs/research/papers/<package> -> paper/
+# keeps the pipeline code runnable UNMODIFIED: the readiness auditor and the
+# gate runners find the package dir through the symlink (macOS/Linux only).
+_PACKAGE_TO_ROOT = {
+    f"{PACKAGE_REL}/REPLICATION.md": "REPLICATION.md",
+    f"{PACKAGE_REL}/BUNDLE-README.md": "README.md",
+}
+_COMPAT_SYMLINK_PARENT = "docs/research/papers"
+_COMPAT_SYMLINK_NAME = "gw-inspiral-template-efficacy"
+_COMPAT_SYMLINK_TARGET = "../../../paper"
+
+
+def bundle_dest_rel(rel: str) -> str:
+    """Map a repo-relative tracked path to its replicator-first bundle path."""
+    if rel in _PACKAGE_TO_ROOT:
+        return _PACKAGE_TO_ROOT[rel]
+    if rel.startswith(f"{PACKAGE_REL}/"):
+        return "paper/" + rel[len(PACKAGE_REL) + 1 :]
+    if rel.startswith(f"{PREREG_REL}/"):
+        return "preregistrations/" + rel[len(PREREG_REL) + 1 :]
+    return rel  # scripts/... keep their nesting for runnability
+
 
 # --- Pipeline + verification code the bundle must carry -----------------------
 # The paper's section 1 lists the pipeline scripts; the six-gate verification
@@ -355,10 +390,18 @@ def _write(dest: Path, data: bytes) -> None:
     dest.write_bytes(data)
 
 
-def build(*, output_root: Path, dry_run: bool) -> int:
+def _under_compat_symlink(path: Path, bundle_root: Path) -> bool:
+    """True if a walked path is inside the docs/ compat symlink (already hashed under paper/)."""
+    rel = path.relative_to(bundle_root).as_posix()
+    return rel.startswith(f"{_COMPAT_SYMLINK_PARENT}/{_COMPAT_SYMLINK_NAME}/")
+
+
+def build(*, output_root: Path, dry_run: bool, tag_name: str | None = None, remote_url: str | None = None) -> int:
     stamp = _utc_stamp()
     bundle_name = f"aigis-gw-efficacy-bundle-{stamp}"
     bundle_root = output_root / bundle_name
+    tag_name = tag_name or f"aigis-gw-efficacy-{stamp[:8]}"
+    remote_url = remote_url or "<YOUR_PUBLIC_REMOTE_URL>"
 
     head_sha = git_head_sha()
     head_subject = git_head_subject()
@@ -403,17 +446,26 @@ def build(*, output_root: Path, dry_run: bool) -> int:
 
     bundle_root.mkdir(parents=True, exist_ok=False)
 
-    # 1-3. Tracked files, from HEAD, mirroring repo layout.
+    # 1-3. Tracked files, from HEAD, remapped to the replicator-first layout.
     for rel in package_rel + prereg_rel + script_rel:
-        _write(bundle_root / rel, head_bytes[rel])
+        data = head_bytes[rel]
+        dest_rel = bundle_dest_rel(rel)
+        if dest_rel == "README.md":
+            data = data.replace(b"{{TAG_NAME}}", tag_name.encode("utf-8"))
+        _write(bundle_root / dest_rel, data)
     # scripts package markers so `scripts.research.*` imports resolve if used.
     if git_is_tracked("scripts/__init__.py"):
         _write(bundle_root / "scripts" / "__init__.py", git_show_bytes("scripts/__init__.py"))
     (bundle_root / SCRIPTS_REL / "__init__.py").write_text("", encoding="utf-8")
+    # Compatibility symlink so the pipeline code finds the package dir at its
+    # repo-relative path (the scripts compute REPO_ROOT from __file__).
+    symlink_parent = bundle_root / _COMPAT_SYMLINK_PARENT
+    symlink_parent.mkdir(parents=True, exist_ok=True)
+    (symlink_parent / _COMPAT_SYMLINK_NAME).symlink_to(_COMPAT_SYMLINK_TARGET, target_is_directory=True)
 
     # 4. Receipts (mechanically selected only; from the live store).
     for src in receipt_files:
-        dest = bundle_root / "receipts" / "gw_replication" / src.name
+        dest = bundle_root / "receipts" / src.name
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dest)
 
@@ -443,9 +495,12 @@ def build(*, output_root: Path, dry_run: bool) -> int:
     )
     (env_dir / "lal_venv.oracle_environment.txt").write_text(lal_oracle_text, encoding="utf-8")
 
-    # 6. READINESS_AT_BUILD.json -- run the BUNDLED audit over the bundled HEAD
-    # artifacts, then normalize the bundle path so the record is deterministic.
-    readiness_path = bundle_root / "READINESS_AT_BUILD.json"
+    # 6. audit/READINESS_AT_BUILD.json -- run the BUNDLED audit over the bundled
+    # HEAD artifacts (exercising the docs/ compat symlink), then normalize the
+    # bundle path so the record is deterministic.
+    audit_dir = bundle_root / "audit"
+    audit_dir.mkdir(parents=True, exist_ok=True)
+    readiness_path = audit_dir / "READINESS_AT_BUILD.json"
     # -B: do not write .pyc bytecode into the bundle's scripts/research dir.
     code, readiness_out, readiness_err = _run(
         [str(MAIN_VENV_PY), "-B", str(bundle_root / SCRIPTS_REL / "gw_package_readiness.py")],
@@ -477,14 +532,23 @@ def build(*, output_root: Path, dry_run: bool) -> int:
     except (json.JSONDecodeError, OSError):
         readiness_state = {"error": "unparseable readiness output"}
 
-    # 7. BUILD_INFO.json -- provenance + reproduction note.
+    # 7. audit/BUILD_INFO.json -- provenance + reproduction note.
     build_info = {
-        "schema": "aigis.gw.replication_bundle.v1",
+        "schema": "aigis.gw.replication_bundle.v2",
+        "layout": "replicator-first-v2",
         "bundle_name": bundle_name,
         "built_at": stamp,
         "git_head": head_sha,
         "git_head_subject": head_subject,
+        "tag_name": tag_name,
         "source_policy": "all git-tracked files read from HEAD; receipts and venv freezes from the live filesystem",
+        "layout_note": (
+            "Shallow replicator-first tree: README.md + REPLICATION.md at root, paper/, "
+            "preregistrations/, scripts/research/ (nesting kept for runnability), receipts/, "
+            "environment/, audit/. docs/research/papers/gw-inspiral-template-efficacy is a "
+            "relative symlink to paper/ so the pipeline code resolves its repo-relative "
+            "package path unmodified (macOS/Linux)."
+        ),
         "counts": summary["counts"],
         "receipts_matched_by": receipt_reasons,
         "scripts_missing": scripts_missing,
@@ -498,58 +562,55 @@ def build(*, output_root: Path, dry_run: bool) -> int:
         },
         "readiness_at_build": readiness_state,
         "determinism_note": (
-            "MANIFEST.sha256 hashes every bundled file except MANIFEST.sha256 and "
-            "BUNDLE_SHA256, in fixed sorted order. Re-running at the same git HEAD "
-            "with the same receipt store reproduces identical file hashes for all "
-            "scientific content (package, preregistrations, verification artifacts, "
-            "pipeline code, receipts) and for the path-normalized READINESS_AT_BUILD.json. "
-            "The only files that differ across rebuilds are the build-stamp-bearing "
-            "metadata (BUILD_INFO.json, START_HERE.md) and the point-in-time "
+            "MANIFEST.sha256 hashes every bundled regular file except MANIFEST.sha256 and "
+            "BUNDLE_SHA256, in fixed sorted order (the docs/ compat symlink is not a regular "
+            "file and is not hashed). Re-running at the same git HEAD with the same receipt "
+            "store reproduces identical file hashes for all scientific content and for the "
+            "path-normalized audit/READINESS_AT_BUILD.json. The only files that differ across "
+            "rebuilds are the build-stamp-bearing audit/BUILD_INFO.json and the point-in-time "
             "environment/*.freeze.txt snapshots. bundle.tar.gz is not byte-reproducible "
             "(embedded mtimes); compare MANIFEST, not tar.gz."
         ),
     }
-    (bundle_root / "BUILD_INFO.json").write_text(json.dumps(build_info, indent=2, sort_keys=True), encoding="utf-8")
+    (audit_dir / "BUILD_INFO.json").write_text(json.dumps(build_info, indent=2, sort_keys=True), encoding="utf-8")
 
-    # 8. START_HERE pointer (+ the operator's ssh-signing push+tag command).
-    # The tag message binds the bundle hash via $(cat BUNDLE_SHA256) shell
-    # substitution rather than a literal: START_HERE.md is itself covered by the
-    # manifest, and the bundle hash IS the manifest hash, so embedding the
-    # literal value would be circular. The substitution resolves to the exact
-    # same value at tag time.
+    # 8. Operator START_HERE -- written OUTSIDE the bundle as a sibling file.
+    # Its audience is the operator (push+tag instructions), not the replicator,
+    # so it must not ship inside the bundle. The tag message binds the bundle
+    # hash via $(cat BUNDLE_SHA256) shell substitution rather than a literal:
+    # the hash does not exist until the manifest is finalized, and the
+    # substitution resolves to the exact same value at tag time.
     display_root = str(bundle_root).replace(str(Path.home()), "~")
-    tag_name = f"aigis-gw-efficacy-{stamp[:8]}"
-    (bundle_root / "START_HERE.md").write_text(
-        "# AIGIS GW inspiral-template-efficacy replication bundle\n\n"
+    (output_root / f"{bundle_name}.START_HERE.md").write_text(
+        "# OPERATOR ONLY -- push+tag instructions (not part of the bundle)\n\n"
+        f"Bundle: `{display_root}`\n"
         f"Built {stamp} at git HEAD `{head_sha}`\n"
         f"({head_subject}).\n\n"
-        "Start with the runbook:\n"
-        f"`{PACKAGE_REL}/REPLICATION.md`\n\n"
-        "Integrity: verify `MANIFEST.sha256` (the anchor), then read `BUILD_INFO.json`\n"
-        "and `READINESS_AT_BUILD.json`. `BUNDLE_SHA256` is the sha256 of `MANIFEST.sha256`.\n\n"
-        "## Operator push+tag (ssh-signing; run from this directory)\n\n"
-        "This is the operator's single identity-bearing step; nothing runs it\n"
-        "automatically. git's ssh-signing mode is used because no gpg signing key\n"
-        "is configured on the build machine; the SSH key already used for GitHub\n"
-        "auth signs the tag. The tag message binds the bundle hash at tag time via\n"
-        "`$(cat BUNDLE_SHA256)`, so this block needs no manual hash edit. One\n"
-        "decision: replace `<YOUR_PUBLIC_REMOTE_URL>` -- or create the repo first\n"
-        "with `gh repo create aigis-gw-efficacy-replication --public --source=.\n"
-        "--push` from inside this directory after the commit step, then skip the\n"
-        "remote/push lines.\n\n"
+        "This file is written OUTSIDE the bundle directory on purpose: it is the\n"
+        "operator's push+tag runsheet, and the replicator-facing entry point is\n"
+        "the bundle's own README.md + REPLICATION.md.\n\n"
+        "## Push + signed tag (ssh-signing; no gpg key on this machine)\n\n"
+        "git's ssh-signing mode signs the tag with the SSH key already used for\n"
+        "GitHub auth. The tag message binds the bundle hash at tag time via\n"
+        "`$(cat BUNDLE_SHA256)`, so this block needs no manual hash edit. If the\n"
+        "remote already has history (a prior bundle layout), the force-push\n"
+        "replaces main; do NOT delete prior signed tags -- they stay as the\n"
+        "anchored history of earlier builds.\n\n"
         "```bash\n"
         f"cd {display_root}\n"
         "git init -q\n"
         "git config gpg.format ssh\n"
         "git config user.signingkey ~/.ssh/id_ed25519.pub\n"
         "git add -A\n"
-        'git commit -qm "AIGIS GW inspiral-template-efficacy replication bundle"\n'
+        'git commit -qm "AIGIS GW inspiral-template-efficacy replication bundle (replicator-first layout)"\n'
         f'git tag -s {tag_name} -m "BUNDLE_SHA256=$(cat BUNDLE_SHA256)"\n'
-        "git remote add origin <YOUR_PUBLIC_REMOTE_URL>\n"
-        "git push -u origin HEAD --tags\n"
+        f"git remote add origin {remote_url}\n"
+        "git fetch origin\n"
+        "git push -f -u origin HEAD:main\n"
+        f"git push origin {tag_name}\n"
         "```\n\n"
-        'For the tag signature to show "Verified" on GitHub, also register the same\n'
-        "key as a SIGNING key (it may currently be registered for auth only):\n"
+        'For the tag signature to show "Verified" on GitHub, the same key must be\n'
+        "registered as a SIGNING key (auth-only registration is not enough):\n"
         "`gh ssh-key add ~/.ssh/id_ed25519.pub --type signing`\n",
         encoding="utf-8",
     )
@@ -560,9 +621,9 @@ def build(*, output_root: Path, dry_run: bool) -> int:
         shutil.rmtree(pyc_dir, ignore_errors=True)
 
     # 10. Safety scan (before finalizing the manifest / tarball).
-    staged_now = sorted(p for p in bundle_root.rglob("*") if p.is_file())
+    staged_now = sorted(p for p in bundle_root.rglob("*") if p.is_file() and not _under_compat_symlink(p, bundle_root))
     scan = safety_scan(staged_now, bundle_root)
-    (bundle_root / "SAFETY_SCAN.json").write_text(json.dumps(scan, indent=2, sort_keys=True), encoding="utf-8")
+    (audit_dir / "SAFETY_SCAN.json").write_text(json.dumps(scan, indent=2, sort_keys=True), encoding="utf-8")
 
     if scan["blocker_count"] > 0:
         print("SAFETY SCAN BLOCKED -- credential-class findings:", file=sys.stderr)
@@ -573,7 +634,7 @@ def build(*, output_root: Path, dry_run: bool) -> int:
 
     # 11. MANIFEST.sha256 -- deterministic, sorted, excludes itself + BUNDLE_SHA256.
     manifest_lines: list[str] = []
-    for path in sorted(p for p in bundle_root.rglob("*") if p.is_file()):
+    for path in sorted(p for p in bundle_root.rglob("*") if p.is_file() and not _under_compat_symlink(p, bundle_root)):
         rel = path.relative_to(bundle_root).as_posix()
         if rel in {"MANIFEST.sha256", "BUNDLE_SHA256"}:
             continue
@@ -609,6 +670,8 @@ def build(*, output_root: Path, dry_run: bool) -> int:
         f"blockers={scan['blocker_count']} keyword_hits={scan['keyword_hit_count']} "
         f"home_path_files={scan['home_path_file_count']} (home paths informational)"
     )
+    print(f"operator runsheet (outside bundle): {output_root / f'{bundle_name}.START_HERE.md'}")
+    print(f"tag name: {tag_name}")
     print("=" * 72)
     return 0
 
@@ -617,9 +680,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
     parser.add_argument("--dry-run", action="store_true", help="report selection without writing the bundle")
+    parser.add_argument("--tag-name", help="signed-tag name templated into README + the operator START_HERE")
+    parser.add_argument("--remote-url", help="origin URL templated into the operator START_HERE")
     args = parser.parse_args()
     args.output_root.mkdir(parents=True, exist_ok=True)
-    return build(output_root=args.output_root, dry_run=args.dry_run)
+    return build(output_root=args.output_root, dry_run=args.dry_run, tag_name=args.tag_name, remote_url=args.remote_url)
 
 
 if __name__ == "__main__":

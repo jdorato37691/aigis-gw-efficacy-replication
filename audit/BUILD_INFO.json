@@ -1,14 +1,14 @@
 {
-  "built_at": "20260717T115457Z",
-  "bundle_name": "aigis-gw-efficacy-bundle-20260717T115457Z",
+  "built_at": "20260717T151519Z",
+  "bundle_name": "aigis-gw-efficacy-bundle-20260717T151519Z",
   "counts": {
-    "package_files": 14,
+    "package_files": 15,
     "preregistrations": 20,
     "receipts": 18,
     "scripts": 22,
     "scripts_missing": 0
   },
-  "determinism_note": "MANIFEST.sha256 hashes every bundled file except MANIFEST.sha256 and BUNDLE_SHA256, in fixed sorted order. Re-running at the same git HEAD with the same receipt store reproduces identical file hashes for all scientific content (package, preregistrations, verification artifacts, pipeline code, receipts) and for the path-normalized READINESS_AT_BUILD.json. The only files that differ across rebuilds are the build-stamp-bearing metadata (BUILD_INFO.json, START_HERE.md) and the point-in-time environment/*.freeze.txt snapshots. bundle.tar.gz is not byte-reproducible (embedded mtimes); compare MANIFEST, not tar.gz.",
+  "determinism_note": "MANIFEST.sha256 hashes every bundled regular file except MANIFEST.sha256 and BUNDLE_SHA256, in fixed sorted order (the docs/ compat symlink is not a regular file and is not hashed). Re-running at the same git HEAD with the same receipt store reproduces identical file hashes for all scientific content and for the path-normalized audit/READINESS_AT_BUILD.json. The only files that differ across rebuilds are the build-stamp-bearing audit/BUILD_INFO.json and the point-in-time environment/*.freeze.txt snapshots. bundle.tar.gz is not byte-reproducible (embedded mtimes); compare MANIFEST, not tar.gz.",
   "environment": {
     "lal_oracle_environment_sha256_live": "4135a6c3fd1c192f8ad2dc0faace81a13a9affa61220e92c2d7d764f58956716",
     "lal_venv_freeze_method": "uv pip list --format=freeze",
@@ -19,8 +19,10 @@
   "excluded_from_bundle": [
     "docs/research/papers/gw-inspiral-template-efficacy/DRAFT-ASK.md"
   ],
-  "git_head": "9365ae751e4d3b87564f9657ab3481624cf8218b",
-  "git_head_subject": "research(gw): builder emits ssh-signing push+tag natively (operator has no gpg key)",
+  "git_head": "2ac548b70bbaf746e5b79067ecf1c423fb37a6e2",
+  "git_head_subject": "research(gw): replicator-first bundle layout v2 (PI: repo was messy)",
+  "layout": "replicator-first-v2",
+  "layout_note": "Shallow replicator-first tree: README.md + REPLICATION.md at root, paper/, preregistrations/, scripts/research/ (nesting kept for runnability), receipts/, environment/, audit/. docs/research/papers/gw-inspiral-template-efficacy is a relative symlink to paper/ so the pipeline code resolves its repo-relative package path unmodified (macOS/Linux).",
   "readiness_at_build": {
     "analysis_ready_for_external_review": true,
     "epistemic_status": "analysis_ready_for_external_review",
@@ -53,7 +55,8 @@
       "STUDY6_review_coincidence_audit_20260712T040807Z.json"
     ]
   },
-  "schema": "aigis.gw.replication_bundle.v1",
+  "schema": "aigis.gw.replication_bundle.v2",
   "scripts_missing": [],
-  "source_policy": "all git-tracked files read from HEAD; receipts and venv freezes from the live filesystem"
+  "source_policy": "all git-tracked files read from HEAD; receipts and venv freezes from the live filesystem",
+  "tag_name": "aigis-gw-efficacy-20260717.2"
 }

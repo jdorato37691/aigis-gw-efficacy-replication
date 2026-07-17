@@ -47,6 +47,18 @@ the contract; charter §0 makes this yours.
 
 ## Decision C — the external lane
 
+> **Status: APPROVED & EXECUTED BY DELEGATION (2026-07-17).** At the operator's
+> explicit in-session instruction ("you go"), the agent pushed the final bundle
+> (`aigis-gw-efficacy-bundle-20260717T115457Z`, 83 files) to the public remote
+> https://github.com/jdorato37691/aigis-gw-efficacy-replication with ssh-signed
+> tag `aigis-gw-efficacy-20260717` binding
+> `BUNDLE_SHA256=adb1b336fa5e8f01c47e3f4a11ba94bdf080f9d6cf6c65eaa277dc70afb33deb`.
+> Delegation is recorded in the bundle commit message. GitHub "Verified" badge
+> pends one operator step
+> (`gh auth refresh -h github.com -s admin:ssh_signing_key` then
+> `gh ssh-key add ~/.ssh/id_ed25519.pub --type signing`). Decision D's personal
+> ask remains the operator's.
+
 `external_ready` is hardcoded false by design: it demands an external immutable
 trust anchor and an attestation validator that deliberately do not exist
 locally. The ceiling AIGIS reaches alone is `analysis_ready_for_external_review`
