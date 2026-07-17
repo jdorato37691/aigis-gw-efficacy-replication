@@ -47,7 +47,7 @@ refutation helps as much as a confirmation.
    ```
 4. Success looks like:
    `Good "git" signature for jdorato37691 with ED25519 key SHA256:L9aqePBZg0bj/+Qh03KQQLmkrhR0bGmsKv1FN8JbTBM`
-5. GitHub's web "Verified" badge state: pending signing-key registration on the account. The cryptographic
+5. GitHub's web "Verified" badge state: the signing key is registered on the account and all three tags display Verified (confirmed 2026-07-17). The cryptographic
    verification in steps 2-3 does not depend on GitHub.
 
 ## Layout
