@@ -1,0 +1,223 @@
+{
+  "can_influence_belief": false,
+  "catalog_release": "GWTC-2.1-confident",
+  "evaluation_completed_at": "2026-07-16T23:23:41.717725+00:00",
+  "evaluation_started_at": "2026-07-16T23:06:17.150772+00:00",
+  "outcome": "confirmed",
+  "preregistration": "docs/research/preregistrations/2026-07-16-fresh-untouched-holdout.md",
+  "receipt_type": "fresh_untouched_holdout_eval",
+  "result": {
+    "O1_trend_generalizes": {
+      "criterion": "spearman rho(M_det, R) <= -0.5",
+      "p_value": 0.000475,
+      "passed": true,
+      "rho": -0.9636
+    },
+    "O2_curve_predicts": {
+      "criterion": "median |R - r_hat(M_det)| <= 0.15",
+      "median_abs_error": 0.129,
+      "passed": true
+    },
+    "catalog_release": "GWTC-2.1-confident",
+    "excluded": [
+      {
+        "event": "GW190630_185205",
+        "status": "data_unavailable"
+      },
+      {
+        "event": "GW190910_112807",
+        "status": "data_unavailable"
+      },
+      {
+        "event": "GW190708_232457",
+        "status": "data_unavailable"
+      }
+    ],
+    "measured_rows": [
+      {
+        "abs_error_vs_r_hat": 0.081,
+        "chi_eff": 0.1,
+        "event": "GW190521_074359",
+        "m_det": 92.9,
+        "published_snr": 25.9,
+        "r_hat": 0.428,
+        "recovered_snr": 8.986,
+        "recovery_fraction": 0.347
+      },
+      {
+        "abs_error_vs_r_hat": 0.129,
+        "chi_eff": 0.21,
+        "event": "GW190412",
+        "m_det": 42.2,
+        "published_snr": 19.8,
+        "r_hat": 0.554,
+        "recovered_snr": 13.53,
+        "recovery_fraction": 0.683
+      },
+      {
+        "abs_error_vs_r_hat": 0.014,
+        "chi_eff": 0.15,
+        "event": "GW190828_063405",
+        "m_det": 79.6,
+        "published_snr": 16.5,
+        "r_hat": 0.428,
+        "recovered_snr": 6.832,
+        "recovery_fraction": 0.414
+      },
+      {
+        "abs_error_vs_r_hat": 0.21,
+        "chi_eff": 0.33,
+        "event": "GW190519_153544",
+        "m_det": 153.6,
+        "published_snr": 15.9,
+        "r_hat": 0.21,
+        "recovered_snr": 0.0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "abs_error_vs_r_hat": 0.123,
+        "chi_eff": -0.03,
+        "event": "GW190408_181802",
+        "m_det": 55.9,
+        "published_snr": 14.6,
+        "r_hat": 0.554,
+        "recovered_snr": 9.886,
+        "recovery_fraction": 0.677
+      },
+      {
+        "abs_error_vs_r_hat": 0.21,
+        "chi_eff": -0.14,
+        "event": "GW190521",
+        "m_det": 242.7,
+        "published_snr": 14.3,
+        "r_hat": 0.21,
+        "recovered_snr": 0.0,
+        "recovery_fraction": 0.0
+      },
+      {
+        "abs_error_vs_r_hat": 0.21,
+        "chi_eff": 0.28,
+        "event": "GW190706_222641",
+        "m_det": 181.4,
+        "published_snr": 13.4,
+        "r_hat": 0.21,
+        "recovered_snr": 0.0,
+        "recovery_fraction": 0.0
+      }
+    ],
+    "n_cohort": 10,
+    "n_measured": 7,
+    "outcome": "confirmed"
+  },
+  "rows": [
+    {
+      "abs_error_vs_r_hat": 0.081,
+      "chi_eff": 0.1,
+      "event": "GW190521_074359",
+      "m_det": 92.9,
+      "offsource_max": 5.515,
+      "published_snr": 25.9,
+      "r_hat": 0.428,
+      "recovered_snr": 8.986,
+      "recovery_fraction": 0.347,
+      "status": "measured"
+    },
+    {
+      "abs_error_vs_r_hat": 0.129,
+      "chi_eff": 0.21,
+      "event": "GW190412",
+      "m_det": 42.2,
+      "offsource_max": 5.892,
+      "published_snr": 19.8,
+      "r_hat": 0.554,
+      "recovered_snr": 13.53,
+      "recovery_fraction": 0.683,
+      "status": "measured"
+    },
+    {
+      "abs_error_vs_r_hat": 0.014,
+      "chi_eff": 0.15,
+      "event": "GW190828_063405",
+      "m_det": 79.6,
+      "offsource_max": 5.242,
+      "published_snr": 16.5,
+      "r_hat": 0.428,
+      "recovered_snr": 6.832,
+      "recovery_fraction": 0.414,
+      "status": "measured"
+    },
+    {
+      "chi_eff": 0.1,
+      "event": "GW190630_185205",
+      "m_det": 69.7,
+      "published_snr": 16.4,
+      "r_hat": 0.554,
+      "status": "data_unavailable"
+    },
+    {
+      "abs_error_vs_r_hat": 0.21,
+      "chi_eff": 0.33,
+      "event": "GW190519_153544",
+      "m_det": 153.6,
+      "offsource_max": 0.0,
+      "published_snr": 15.9,
+      "r_hat": 0.21,
+      "recovered_snr": 0.0,
+      "recovery_fraction": 0.0,
+      "status": "measured"
+    },
+    {
+      "abs_error_vs_r_hat": 0.123,
+      "chi_eff": -0.03,
+      "event": "GW190408_181802",
+      "m_det": 55.9,
+      "offsource_max": 6.29,
+      "published_snr": 14.6,
+      "r_hat": 0.554,
+      "recovered_snr": 9.886,
+      "recovery_fraction": 0.677,
+      "status": "measured"
+    },
+    {
+      "chi_eff": 0.0,
+      "event": "GW190910_112807",
+      "m_det": 100.6,
+      "published_snr": 14.5,
+      "r_hat": 0.21,
+      "status": "data_unavailable"
+    },
+    {
+      "abs_error_vs_r_hat": 0.21,
+      "chi_eff": -0.14,
+      "event": "GW190521",
+      "m_det": 242.7,
+      "offsource_max": 0.0,
+      "published_snr": 14.3,
+      "r_hat": 0.21,
+      "recovered_snr": 0.0,
+      "recovery_fraction": 0.0,
+      "status": "measured"
+    },
+    {
+      "abs_error_vs_r_hat": 0.21,
+      "chi_eff": 0.28,
+      "event": "GW190706_222641",
+      "m_det": 181.4,
+      "offsource_max": 0.0,
+      "published_snr": 13.4,
+      "r_hat": 0.21,
+      "recovered_snr": 0.0,
+      "recovery_fraction": 0.0,
+      "status": "measured"
+    },
+    {
+      "chi_eff": 0.05,
+      "event": "GW190708_232457",
+      "m_det": 37.4,
+      "published_snr": 13.4,
+      "r_hat": 0.554,
+      "status": "data_unavailable"
+    }
+  ],
+  "template_commit_sha256": "4c43f31143db2a98cf53c19d8fce6f062d18c5c920cd6c4c4ca5d54a62340446"
+}

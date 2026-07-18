@@ -1,0 +1,981 @@
+{
+  "bands": {
+    "heavy": {
+      "all_pool_R_measured_zero": true,
+      "band_hi": 0.05,
+      "band_lo": 0.0,
+      "epsilon": 0.05,
+      "n": 8,
+      "residuals": [
+        {
+          "event": "GW190519_153544",
+          "m_det": 153.6,
+          "residual": 0.0
+        },
+        {
+          "event": "GW190706_222641",
+          "m_det": 181.4,
+          "residual": 0.0
+        },
+        {
+          "event": "GW190521",
+          "m_det": 242.7,
+          "residual": 0.0
+        },
+        {
+          "event": "GW231102_071736",
+          "m_det": 167.9,
+          "residual": 0.0
+        },
+        {
+          "event": "GW230601_224134",
+          "m_det": 172.8,
+          "residual": 0.0
+        },
+        {
+          "event": "GW230922_040658",
+          "m_det": 248.9,
+          "residual": 0.0
+        },
+        {
+          "event": "GW231028_153006",
+          "m_det": 257.0,
+          "residual": 0.0
+        },
+        {
+          "event": "GW231123_135430",
+          "m_det": 333.2,
+          "residual": 0.0
+        }
+      ],
+      "rule": "[0, epsilon] (R->0 sub-claim, frozen)"
+    },
+    "intermediate": {
+      "band_offset_hi": 0.245271,
+      "band_offset_lo": -0.188836,
+      "n": 35,
+      "residual_max": 0.292942,
+      "residual_min": -0.230739,
+      "residuals": [
+        {
+          "event": "GW191204_171526",
+          "m_det": 22.7,
+          "residual": -0.223299
+        },
+        {
+          "event": "GW200316_215756",
+          "m_det": 25.5,
+          "residual": -0.080801
+        },
+        {
+          "event": "GW191126_115259",
+          "m_det": 26.5,
+          "residual": -0.08236
+        },
+        {
+          "event": "GW200225_060421",
+          "m_det": 40.6,
+          "residual": -0.01797
+        },
+        {
+          "event": "GW191215_223052",
+          "m_det": 58.1,
+          "residual": -0.010357
+        },
+        {
+          "event": "GW200311_115853",
+          "m_det": 76.1,
+          "residual": -0.027389
+        },
+        {
+          "event": "GW200219_094415",
+          "m_det": 102.7,
+          "residual": 0.031898
+        },
+        {
+          "event": "GW200220_124850",
+          "m_det": 110.9,
+          "residual": 0.085325
+        },
+        {
+          "event": "GW200128_022011",
+          "m_det": 116.7,
+          "residual": 0.292942
+        },
+        {
+          "event": "GW191222_033537",
+          "m_det": 120.5,
+          "residual": 0.162263
+        },
+        {
+          "event": "GW191127_050227",
+          "m_det": 120.9,
+          "residual": 0.263756
+        },
+        {
+          "event": "GW191109_010717",
+          "m_det": 140.0,
+          "residual": 0.039245
+        },
+        {
+          "event": "GW191230_180458",
+          "m_det": 146.0,
+          "residual": 0.237349
+        },
+        {
+          "event": "GW190412",
+          "m_det": 42.2,
+          "residual": 0.02567
+        },
+        {
+          "event": "GW190408_181802",
+          "m_det": 55.9,
+          "residual": 0.156123
+        },
+        {
+          "event": "GW190828_063405",
+          "m_det": 79.6,
+          "residual": 0.083179
+        },
+        {
+          "event": "GW190521_074359",
+          "m_det": 92.9,
+          "residual": 0.093238
+        },
+        {
+          "event": "GW230731_215307",
+          "m_det": 22.2,
+          "residual": -0.174066
+        },
+        {
+          "event": "GW231020_142947",
+          "m_det": 24.1,
+          "residual": -0.230739
+        },
+        {
+          "event": "GW230927_153832",
+          "m_det": 47.1,
+          "residual": 0.010842
+        },
+        {
+          "event": "GW231108_125142",
+          "m_det": 55.6,
+          "residual": 0.100287
+        },
+        {
+          "event": "GW240513_183302",
+          "m_det": 57.8,
+          "residual": -0.060126
+        },
+        {
+          "event": "GW230919_215712",
+          "m_det": 60.9,
+          "residual": 0.164005
+        },
+        {
+          "event": "GW230924_124453",
+          "m_det": 73.8,
+          "residual": 0.071286
+        },
+        {
+          "event": "GW230811_032116",
+          "m_det": 79.6,
+          "residual": 0.220179
+        },
+        {
+          "event": "GW230628_231200",
+          "m_det": 83.3,
+          "residual": 0.120503
+        },
+        {
+          "event": "GW231206_233901",
+          "m_det": 84.6,
+          "residual": 0.03933
+        },
+        {
+          "event": "GW230922_020344",
+          "m_det": 89.7,
+          "residual": 0.109326
+        },
+        {
+          "event": "GW240515_005301",
+          "m_det": 90.6,
+          "residual": 0.054177
+        },
+        {
+          "event": "GW231226_101520",
+          "m_det": 92.6,
+          "residual": 0.117691
+        },
+        {
+          "event": "GW230927_043729",
+          "m_det": 96.3,
+          "residual": 0.156241
+        },
+        {
+          "event": "GW231206_233134",
+          "m_det": 98.3,
+          "residual": 0.056817
+        },
+        {
+          "event": "GW240511_031507",
+          "m_det": 98.9,
+          "residual": 0.179633
+        },
+        {
+          "event": "GW240514_121713",
+          "m_det": 121.1,
+          "residual": 0.120502
+        },
+        {
+          "event": "GW230914_111401",
+          "m_det": 142.6,
+          "residual": 0.02113
+        }
+      ],
+      "rule": "point + empirical [5th,95th] residual percentile, clipped [0,1]",
+      "twin_percentile_disagreement": 0.0
+    },
+    "light": {
+      "band_offset_hi": -0.058264,
+      "band_offset_lo": -0.288532,
+      "n": 5,
+      "residual_max": -0.049938,
+      "residual_min": -0.303932,
+      "residuals": [
+        {
+          "event": "GW200202_154313",
+          "m_det": 19.0,
+          "residual": -0.049938
+        },
+        {
+          "event": "GW191129_134029",
+          "m_det": 20.2,
+          "residual": -0.09157
+        },
+        {
+          "event": "GW230627_015337",
+          "m_det": 15.1,
+          "residual": -0.226932
+        },
+        {
+          "event": "GW240413_022019",
+          "m_det": 15.1,
+          "residual": -0.303932
+        },
+        {
+          "event": "GW231224_024321",
+          "m_det": 19.8,
+          "residual": -0.161072
+        }
+      ],
+      "rule": "point + empirical [5th,95th] residual percentile, clipped [0,1]",
+      "twin_percentile_disagreement": 0.0
+    }
+  },
+  "belief_moved": false,
+  "can_influence_belief": false,
+  "clip": [
+    0.0,
+    1.0
+  ],
+  "content_sha256": "677135a901d0469d00d1865b4177423f836dd4f875726da9e128e4179445661b",
+  "coverage_target": 0.9,
+  "development_manifest": {
+    "events": [
+      "GW150914",
+      "GW151012",
+      "GW151226",
+      "GW170104",
+      "GW170608",
+      "GW170729",
+      "GW170809",
+      "GW170814",
+      "GW170817",
+      "GW170818",
+      "GW170823",
+      "GW190408_181802",
+      "GW190412",
+      "GW190519_153544",
+      "GW190521",
+      "GW190521_074359",
+      "GW190630_185205",
+      "GW190706_222641",
+      "GW190708_232457",
+      "GW190828_063405",
+      "GW190910_112807",
+      "GW191109_010717",
+      "GW191126_115259",
+      "GW191127_050227",
+      "GW191129_134029",
+      "GW191204_110529",
+      "GW191204_171526",
+      "GW191215_223052",
+      "GW191216_213338",
+      "GW191222_033537",
+      "GW191230_180458",
+      "GW200112_155838",
+      "GW200128_022011",
+      "GW200202_154313",
+      "GW200219_094415",
+      "GW200220_124850",
+      "GW200224_222234",
+      "GW200225_060421",
+      "GW200302_015811",
+      "GW200311_115853",
+      "GW200316_215756",
+      "GW230601_224134",
+      "GW230627_015337",
+      "GW230628_231200",
+      "GW230731_215307",
+      "GW230811_032116",
+      "GW230814_230901",
+      "GW230914_111401",
+      "GW230919_215712",
+      "GW230922_020344",
+      "GW230922_040658",
+      "GW230924_124453",
+      "GW230927_043729",
+      "GW230927_153832",
+      "GW231020_142947",
+      "GW231028_153006",
+      "GW231102_071736",
+      "GW231108_125142",
+      "GW231123_135430",
+      "GW231206_233134",
+      "GW231206_233901",
+      "GW231224_024321",
+      "GW231226_101520",
+      "GW231231_154016",
+      "GW240104_164932",
+      "GW240413_022019",
+      "GW240428_225440",
+      "GW240511_031507",
+      "GW240513_183302",
+      "GW240514_121713",
+      "GW240515_005301",
+      "GW240615_113620",
+      "GW240615_160735",
+      "GW240621_195059",
+      "GW240622_004008",
+      "GW240629_145256",
+      "GW240705_053215",
+      "GW240716_034900",
+      "GW240910_103535",
+      "GW240915_001357",
+      "GW240915_105151",
+      "GW240919_061559",
+      "GW240920_073424",
+      "GW240920_124024",
+      "GW240922_142106",
+      "GW240923_204006",
+      "GW240925_005809",
+      "GW240930_035959",
+      "GW241006_015333",
+      "GW241009_084816",
+      "GW241011_233834",
+      "GW241102_124058",
+      "GW241102_144729",
+      "GW241111_111552",
+      "GW241113_163507",
+      "GW241114_235258",
+      "GW241127_061008",
+      "GW241129_021832",
+      "GW241130_034908",
+      "GW241210_060606",
+      "GW241225_042553",
+      "GW241225_082815",
+      "GW241230_233618",
+      "GW241231_054133",
+      "GW250104_015122",
+      "GW250109_010541",
+      "GW250114",
+      "GW250118_170523",
+      "GW250119_025138",
+      "GW250119_190238"
+    ],
+    "n": 110,
+    "note": "union of the P1.5 42-event exclusion set, every event named in the three residual-pool receipts, and all O4a/O4b eligible+cap-dropped events; O4c cohort excludes any event whose commonName or GWYYMMDD prefix is in this set",
+    "sha256": "4fc80b95b0d8cecda0b401347a5344e5e22e9a4c32ef0029c8c0bc2ff526b812"
+  },
+  "epsilon_r_to_zero": 0.05,
+  "extraction_positive_control_max_r_mech_delta": 0.000561,
+  "extraction_positive_control_n_rows": 26,
+  "frozen_date": "2026-07-17",
+  "frozen_frequencies_hz": {
+    "f_high": 2048.0,
+    "f_low": 30.0,
+    "f_ref": 215.0
+  },
+  "percentile_rule": "numpy.percentile linear interp on (R_measured - r_mech), twin-checked",
+  "predictor_commit": "767d93bbd576d598f81e9b16c71bdff095c97f22",
+  "preregistration": "docs/research/preregistrations/2026-07-17-p2-prospective-freeze.md",
+  "preregistration_commit": "8e43efdb5ca6a3d29b8fddce7e938feb7beccd03",
+  "regime_boundaries": {
+    "c_hz_msun": 4397.174691,
+    "heavy_min_m_det_msun": 146.5725,
+    "light_max_m_det_msun": 20.452,
+    "rule": "f_ISCO<=30 -> heavy; f_ISCO>=215 -> light; else intermediate"
+  },
+  "residual_pool": {
+    "n_total": 48,
+    "receipts": [
+      {
+        "cohort": "study3_oos",
+        "file_bytes_sha256": "273811476e55f36121b2f931c748024b400cdcc639fd699445fefa4559ecbeab",
+        "filename": "GWTC3_oos_20260712T023453Z.json",
+        "n_measured": 15,
+        "receipt_sha256_field": "e38e953f1d89bc280a2ef7c7562b665129ee0e5c6f40e8c01c048f24c70ced53"
+      },
+      {
+        "cohort": "o3a_fresh_holdout",
+        "file_bytes_sha256": "2d3b5248f7f25ba3aad571b7f833c41e94f59c6f761b7b250cf7d2cb6631064b",
+        "filename": "FRESH_HOLDOUT_eval_20260716T232341Z.json",
+        "n_measured": 7,
+        "receipt_sha256_field": null
+      },
+      {
+        "cohort": "p15_o4_expanded",
+        "file_bytes_sha256": "1ec3358f973949f9e2637dd44826b0719e0fbcb135369af6a283118dafd0ca19",
+        "filename": "O4_EXPANDED_eval_20260717T214059Z.json",
+        "n_measured": 26,
+        "receipt_sha256_field": "82738cf926a3e2d9693df3453f3779fdb3cf604918eabcd9ab2c6570d76da020"
+      }
+    ],
+    "rows": [
+      {
+        "R_measured": 0.88,
+        "cohort": "study3_oos",
+        "event": "GW200202_154313",
+        "f_isco_hz": 231.43,
+        "m_det": 19.0,
+        "r_mech": 0.929938,
+        "regime": "light",
+        "residual": -0.049938,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.822,
+        "cohort": "study3_oos",
+        "event": "GW191129_134029",
+        "f_isco_hz": 217.682,
+        "m_det": 20.2,
+        "r_mech": 0.91357,
+        "regime": "light",
+        "residual": -0.09157,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.656,
+        "cohort": "study3_oos",
+        "event": "GW191204_171526",
+        "f_isco_hz": 193.708,
+        "m_det": 22.7,
+        "r_mech": 0.879299,
+        "regime": "intermediate",
+        "residual": -0.223299,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.762,
+        "cohort": "study3_oos",
+        "event": "GW200316_215756",
+        "f_isco_hz": 172.438,
+        "m_det": 25.5,
+        "r_mech": 0.842801,
+        "regime": "intermediate",
+        "residual": -0.080801,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.748,
+        "cohort": "study3_oos",
+        "event": "GW191126_115259",
+        "f_isco_hz": 165.931,
+        "m_det": 26.5,
+        "r_mech": 0.83036,
+        "regime": "intermediate",
+        "residual": -0.08236,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.656,
+        "cohort": "study3_oos",
+        "event": "GW200225_060421",
+        "f_isco_hz": 108.305,
+        "m_det": 40.6,
+        "r_mech": 0.67397,
+        "regime": "intermediate",
+        "residual": -0.01797,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.49,
+        "cohort": "study3_oos",
+        "event": "GW191215_223052",
+        "f_isco_hz": 75.683,
+        "m_det": 58.1,
+        "r_mech": 0.500357,
+        "regime": "intermediate",
+        "residual": -0.010357,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.327,
+        "cohort": "study3_oos",
+        "event": "GW200311_115853",
+        "f_isco_hz": 57.782,
+        "m_det": 76.1,
+        "r_mech": 0.354389,
+        "regime": "intermediate",
+        "residual": -0.027389,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.239,
+        "cohort": "study3_oos",
+        "event": "GW200219_094415",
+        "f_isco_hz": 42.816,
+        "m_det": 102.7,
+        "r_mech": 0.207102,
+        "regime": "intermediate",
+        "residual": 0.031898,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.258,
+        "cohort": "study3_oos",
+        "event": "GW200220_124850",
+        "f_isco_hz": 39.65,
+        "m_det": 110.9,
+        "r_mech": 0.172675,
+        "regime": "intermediate",
+        "residual": 0.085325,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.443,
+        "cohort": "study3_oos",
+        "event": "GW200128_022011",
+        "f_isco_hz": 37.679,
+        "m_det": 116.7,
+        "r_mech": 0.150058,
+        "regime": "intermediate",
+        "residual": 0.292942,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.298,
+        "cohort": "study3_oos",
+        "event": "GW191222_033537",
+        "f_isco_hz": 36.491,
+        "m_det": 120.5,
+        "r_mech": 0.135737,
+        "regime": "intermediate",
+        "residual": 0.162263,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.398,
+        "cohort": "study3_oos",
+        "event": "GW191127_050227",
+        "f_isco_hz": 36.37,
+        "m_det": 120.9,
+        "r_mech": 0.134244,
+        "regime": "intermediate",
+        "residual": 0.263756,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.098,
+        "cohort": "study3_oos",
+        "event": "GW191109_010717",
+        "f_isco_hz": 31.408,
+        "m_det": 140.0,
+        "r_mech": 0.058755,
+        "regime": "intermediate",
+        "residual": 0.039245,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.254,
+        "cohort": "study3_oos",
+        "event": "GW191230_180458",
+        "f_isco_hz": 30.118,
+        "m_det": 146.0,
+        "r_mech": 0.016651,
+        "regime": "intermediate",
+        "residual": 0.237349,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.683,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190412",
+        "f_isco_hz": 104.198,
+        "m_det": 42.2,
+        "r_mech": 0.65733,
+        "regime": "intermediate",
+        "residual": 0.02567,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.677,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190408_181802",
+        "f_isco_hz": 78.661,
+        "m_det": 55.9,
+        "r_mech": 0.520877,
+        "regime": "intermediate",
+        "residual": 0.156123,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.414,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190828_063405",
+        "f_isco_hz": 55.241,
+        "m_det": 79.6,
+        "r_mech": 0.330821,
+        "regime": "intermediate",
+        "residual": 0.083179,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.347,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190521_074359",
+        "f_isco_hz": 47.332,
+        "m_det": 92.9,
+        "r_mech": 0.253762,
+        "regime": "intermediate",
+        "residual": 0.093238,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190519_153544",
+        "f_isco_hz": 28.627,
+        "m_det": 153.6,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190706_222641",
+        "f_isco_hz": 24.24,
+        "m_det": 181.4,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "o3a_fresh_holdout",
+        "event": "GW190521",
+        "f_isco_hz": 18.118,
+        "m_det": 242.7,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": null
+      },
+      {
+        "R_measured": 0.747,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230627_015337",
+        "f_isco_hz": 291.204,
+        "m_det": 15.1,
+        "r_mech": 0.973932,
+        "regime": "light",
+        "residual": -0.226932,
+        "stored_r_mech": 0.9737
+      },
+      {
+        "R_measured": 0.67,
+        "cohort": "p15_o4_expanded",
+        "event": "GW240413_022019",
+        "f_isco_hz": 291.204,
+        "m_det": 15.1,
+        "r_mech": 0.973932,
+        "regime": "light",
+        "residual": -0.303932,
+        "stored_r_mech": 0.974
+      },
+      {
+        "R_measured": 0.758,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231224_024321",
+        "f_isco_hz": 222.08,
+        "m_det": 19.8,
+        "r_mech": 0.919072,
+        "regime": "light",
+        "residual": -0.161072,
+        "stored_r_mech": 0.9195
+      },
+      {
+        "R_measured": 0.712,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230731_215307",
+        "f_isco_hz": 198.071,
+        "m_det": 22.2,
+        "r_mech": 0.886066,
+        "regime": "intermediate",
+        "residual": -0.174066,
+        "stored_r_mech": 0.886
+      },
+      {
+        "R_measured": 0.63,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231020_142947",
+        "f_isco_hz": 182.455,
+        "m_det": 24.1,
+        "r_mech": 0.860739,
+        "regime": "intermediate",
+        "residual": -0.230739,
+        "stored_r_mech": 0.8613
+      },
+      {
+        "R_measured": 0.618,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230927_153832",
+        "f_isco_hz": 93.358,
+        "m_det": 47.1,
+        "r_mech": 0.607158,
+        "regime": "intermediate",
+        "residual": 0.010842,
+        "stored_r_mech": 0.6071
+      },
+      {
+        "R_measured": 0.624,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231108_125142",
+        "f_isco_hz": 79.086,
+        "m_det": 55.6,
+        "r_mech": 0.523713,
+        "regime": "intermediate",
+        "residual": 0.100287,
+        "stored_r_mech": 0.5235
+      },
+      {
+        "R_measured": 0.443,
+        "cohort": "p15_o4_expanded",
+        "event": "GW240513_183302",
+        "f_isco_hz": 76.076,
+        "m_det": 57.8,
+        "r_mech": 0.503126,
+        "regime": "intermediate",
+        "residual": -0.060126,
+        "stored_r_mech": 0.5029
+      },
+      {
+        "R_measured": 0.639,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230919_215712",
+        "f_isco_hz": 72.203,
+        "m_det": 60.9,
+        "r_mech": 0.474995,
+        "regime": "intermediate",
+        "residual": 0.164005,
+        "stored_r_mech": 0.4752
+      },
+      {
+        "R_measured": 0.442,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230924_124453",
+        "f_isco_hz": 59.582,
+        "m_det": 73.8,
+        "r_mech": 0.370714,
+        "regime": "intermediate",
+        "residual": 0.071286,
+        "stored_r_mech": 0.3704
+      },
+      {
+        "R_measured": 0.551,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230811_032116",
+        "f_isco_hz": 55.241,
+        "m_det": 79.6,
+        "r_mech": 0.330821,
+        "regime": "intermediate",
+        "residual": 0.220179,
+        "stored_r_mech": 0.3307
+      },
+      {
+        "R_measured": 0.428,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230628_231200",
+        "f_isco_hz": 52.787,
+        "m_det": 83.3,
+        "r_mech": 0.307497,
+        "regime": "intermediate",
+        "residual": 0.120503,
+        "stored_r_mech": 0.3075
+      },
+      {
+        "R_measured": 0.339,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231206_233901",
+        "f_isco_hz": 51.976,
+        "m_det": 84.6,
+        "r_mech": 0.29967,
+        "regime": "intermediate",
+        "residual": 0.03933,
+        "stored_r_mech": 0.2996
+      },
+      {
+        "R_measured": 0.38,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230922_020344",
+        "f_isco_hz": 49.021,
+        "m_det": 89.7,
+        "r_mech": 0.270674,
+        "regime": "intermediate",
+        "residual": 0.109326,
+        "stored_r_mech": 0.2705
+      },
+      {
+        "R_measured": 0.32,
+        "cohort": "p15_o4_expanded",
+        "event": "GW240515_005301",
+        "f_isco_hz": 48.534,
+        "m_det": 90.6,
+        "r_mech": 0.265823,
+        "regime": "intermediate",
+        "residual": 0.054177,
+        "stored_r_mech": 0.2657
+      },
+      {
+        "R_measured": 0.373,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231226_101520",
+        "f_isco_hz": 47.486,
+        "m_det": 92.6,
+        "r_mech": 0.255309,
+        "regime": "intermediate",
+        "residual": 0.117691,
+        "stored_r_mech": 0.2552
+      },
+      {
+        "R_measured": 0.393,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230927_043729",
+        "f_isco_hz": 45.661,
+        "m_det": 96.3,
+        "r_mech": 0.236759,
+        "regime": "intermediate",
+        "residual": 0.156241,
+        "stored_r_mech": 0.237
+      },
+      {
+        "R_measured": 0.284,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231206_233134",
+        "f_isco_hz": 44.732,
+        "m_det": 98.3,
+        "r_mech": 0.227183,
+        "regime": "intermediate",
+        "residual": 0.056817,
+        "stored_r_mech": 0.2274
+      },
+      {
+        "R_measured": 0.404,
+        "cohort": "p15_o4_expanded",
+        "event": "GW240511_031507",
+        "f_isco_hz": 44.461,
+        "m_det": 98.9,
+        "r_mech": 0.224367,
+        "regime": "intermediate",
+        "residual": 0.179633,
+        "stored_r_mech": 0.2245
+      },
+      {
+        "R_measured": 0.254,
+        "cohort": "p15_o4_expanded",
+        "event": "GW240514_121713",
+        "f_isco_hz": 36.31,
+        "m_det": 121.1,
+        "r_mech": 0.133498,
+        "regime": "intermediate",
+        "residual": 0.120502,
+        "stored_r_mech": 0.1336
+      },
+      {
+        "R_measured": 0.066,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230914_111401",
+        "f_isco_hz": 30.836,
+        "m_det": 142.6,
+        "r_mech": 0.04487,
+        "regime": "intermediate",
+        "residual": 0.02113,
+        "stored_r_mech": 0.0449
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231102_071736",
+        "f_isco_hz": 26.189,
+        "m_det": 167.9,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": 0.0
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230601_224134",
+        "f_isco_hz": 25.447,
+        "m_det": 172.8,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": 0.0
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "p15_o4_expanded",
+        "event": "GW230922_040658",
+        "f_isco_hz": 17.666,
+        "m_det": 248.9,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": 0.0
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231028_153006",
+        "f_isco_hz": 17.11,
+        "m_det": 257.0,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": 0.0
+      },
+      {
+        "R_measured": 0.0,
+        "cohort": "p15_o4_expanded",
+        "event": "GW231123_135430",
+        "f_isco_hz": 13.197,
+        "m_det": 333.2,
+        "r_mech": 0.0,
+        "regime": "heavy",
+        "residual": 0.0,
+        "stored_r_mech": 0.0
+      }
+    ]
+  },
+  "schema": "aigis.gw.p2_prospective_bands.v1",
+  "self_sha256": "2f08d3fb879f6842d1040f2961ca17a9924aaeb75fe4d52b79ff77af0aba7c7b",
+  "template_commit_sha256": "4c43f31143db2a98cf53c19d8fce6f062d18c5c920cd6c4c4ca5d54a62340446",
+  "twin_max_disagreement_percentile": 0.0,
+  "twin_max_disagreement_r_mech": 4.541251152900827e-09
+}
